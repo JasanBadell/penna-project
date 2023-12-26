@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        defaultBlue: "#4778D3",
-        defaultRed: "#D52737",
-        defaultGray: "#C2C2C2",
+        defaultBlue: "#336699",
+        defaultRed: "#CC3333",
+        defaultGray: "#333333",
         BlueGray: "#93A6C0",
-        Gray: "#7E7E7E",
+        Gray: "#565d70",
       },
     },
   },

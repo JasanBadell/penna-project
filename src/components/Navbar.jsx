@@ -27,17 +27,17 @@ const Navbar = () => {
     window.addEventListener(scroll, handleScroll);
 
     return () => {
-      window.addEventListener(scroll, handleScroll);
+      window.removeEventListener(scroll, handleScroll);
     };
   });
 
   // Navigate items array
   const navItems = [
-    { link: "Quienes Somos", path: "quienes somos" },
-    { link: "Nuestros Servicios", path: "nuestros servicios" },
-    { link: "Producciones", path: "producciones" },
-    { link: "Socios y colaboradores", path: "socios y colaboradores" },
-    { link: "Novedades", path: "novedades" },
+    { link: "Quienes Somos", path: "about" },
+    { link: "Nuestros Servicios", path: "services" },
+    { link: "Producciones", path: "products" },
+    { link: "Socios y colaboradores", path: "team" },
+    { link: "Novedades", path: "brandnews" },
   ];
 
   return (
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <img src={banner} alt="triangulo rojo" className="w-16" />
                 </div>
               </div>
-              <div className="md:hidden flex flex-row-reverse gap-8">
+              <div className="lg:hidden flex flex-row-reverse gap-8">
                 <button
                   onClick={toggleMenu}
                   className="text-defaultBlue focus:outline-none focus:text-defaultBlue w-12"
@@ -112,7 +112,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="md:flex space-x-12 hidden items-center justify-end my-0">
-              <ul className="md:flex space-x-12 hidden p-5">
+              <ul className="lg:flex space-x-12 hidden p-5">
                 {navItems.map(({ link, path }) => (
                   <Link
                     to={path}
@@ -141,8 +141,7 @@ const Navbar = () => {
                     <input
                       type="text"
                       className="w-full max-w-[160px] bg-defaultBlue pl-2 text-base text-white  outline-0"
-                      placeholder=""
-                      id=""
+                      placeholder="Buscar"
                     />
                   </div>
                 </div>
