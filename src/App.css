@@ -3,3 +3,55 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.p-space {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.p-space p {
+  margin-top: 1rem;
+}
+
+.p-space h4 {
+  margin-top: 2rem;
+}
+
+/* .black-diag-top {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top right, gray 50%, white 50%);
+}
+
+.black-diag-top-2 {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top right, white 100%,);
+}
+
+.white-diag {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left, white 50%, gray 50%);
+}
+.white-diag-2 {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top left, white 25%, gray 25%);
+}
+
+.black-diag-bottom {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, gray 25%, white 25%);
+} */

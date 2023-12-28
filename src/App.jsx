@@ -24,11 +24,12 @@ function App() {
       setCurrentPath(window.location.pathname);
     };
     window.addEventListener(NAVIGATION_EVENT, onLocationChange);
+    window.addEventListener("popstate", onLocationChange);
 
     return () => {
-    window.removeEventListener(NAVIGATION_EVENT, onLocationChange);
-      
-    }
+      window.removeEventListener(NAVIGATION_EVENT, onLocationChange);
+      window.removeEventListener("popstate", onLocationChange);
+    };
   }, []);
   return (
     <>
