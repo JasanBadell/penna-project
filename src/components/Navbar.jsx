@@ -36,7 +36,7 @@ const Navbar = () => {
     { link: "Quienes Somos", path: "about" },
     { link: "Nuestros Servicios", path: "services" },
     { link: "Producciones", path: "products" },
-    { link: "Socios y colaboradores", path: "team" },
+    { link: "Clientes", path: "client" },
     { link: "Novedades", path: "brandnews" },
   ];
 

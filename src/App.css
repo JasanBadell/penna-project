@@ -17,6 +17,15 @@ body {
   margin-top: 2rem;
 }
 
+header {
+  z-index: 10001 !important;
+}
+
+.bg-img {
+  background-image: url(/src/assets/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* .black-diag-top {
   margin: 0%;
   padding: 0%;

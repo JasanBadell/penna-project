@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-scroll";
-import home from "../assets/banner.png";
-import brandnews from "../assets/BrandNews.png";
-import news from "../assets/news.png";
+import home from "../../assets/banner.png";
+import brandnews from "../../assets/BrandNews.png";
+import news from "../../assets/news.png";
+import Clients from "../Clients";
 
 const BrandNews = () => {
   const brandNews = [
     {
-      img: { news },
+      img: `${news}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -16,7 +17,7 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -25,7 +26,7 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -34,7 +35,7 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -43,7 +44,7 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -52,7 +53,7 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -61,13 +62,13 @@ const BrandNews = () => {
       path: "/Lorem",
     },
     {
-      img: { home },
+      img: `${home}`,
       title: "Lorem Ipsum",
       parraph:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       resume:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      path: "/Lorem",
+      path: "https://www.cubaplusmagazine.com",
     },
   ];
 
@@ -78,7 +79,7 @@ const BrandNews = () => {
           <h2>LA MEJOR FORMA DE ESTAR,</h2>
           <h2 className="font-extrabold text-5xl">NUESTRAS NOVEDADES</h2>
         </div>
-        <div className="grid grid-cols-2 gap-5 w-100 ">
+        <div className="grid grid-cols-2 gap-5 w-100 mb-4">
           {brandNews.map(({ img, title, resume, path }) => (
             <Link
               to={path}
@@ -86,21 +87,27 @@ const BrandNews = () => {
               smooth={true}
               offset={-100}
               key={path}
-              className=" mt-20 flex md:flex-row text-xxl text-black hover:text-white rounded-lg  hover:bg-defaultBlue first:font-medium"
+              className=" mt-20 flex md:flex-row text-xxl text-black first:font-medium items-center"
             >
-              <div>
-                <img src={img} alt="img" className="w-20" />
+              <div className="m-4 rounded-sm w-1/3">
+                <img src={img} alt="img" className="rounded-lg" />
               </div>
-              <div>
+              <div className="w-1/2">
                 <h3 className="font-bold text-xl">{title}</h3>
                 <p className="">{resume}</p>
+                <button className="border rounded-md m-4 shadow-md hover:text-white hover:bg-defaultBlue transition-all duration-300">
+                  <a href={path} className="m-4">
+                    Ver más →
+                  </a>
+                </button>
               </div>
             </Link>
           ))}
         </div>
       </div>
+      <Clients />
       <div>
-        <img src={brandnews} alt="img" className="w-full"/>
+        <img src={brandnews} alt="img" className="w-full" />
       </div>
     </>
   );

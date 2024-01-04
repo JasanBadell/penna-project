@@ -1,13 +1,14 @@
 import React from "react";
-import services from "../assets/services.png";
-import services1 from "../assets/services1.png";
-import services2 from "../assets/services2.png";
-import services3 from "../assets/services3.png";
-import services4 from "../assets/services4.png";
-import maintenance from "../assets/maintenance.svg";
-import painting from "../assets/painting.svg";
-import pencil from "../assets/pencil.svg";
-import rocket from "../assets/rocket.svg";
+import services from "../../assets/services.png";
+import services1 from "../../assets/services1.png";
+import services2 from "../../assets/services2.png";
+import services3 from "../../assets/services3.png";
+import services4 from "../../assets/services4.png";
+import maintenance from "../../assets/maintenance.svg";
+import painting from "../../assets/painting.svg";
+import pencil from "../../assets/pencil.svg";
+import rocket from "../../assets/rocket.svg";
+import Clients from "../Clients";
 
 const Services = () => {
   return (
@@ -84,6 +85,7 @@ const Services = () => {
             </button>
           </div>
         </div>
+        <Clients />
       </div>
     </>
   );

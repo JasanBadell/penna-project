@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import About from "./components/About";
-import BrandNews from "./components/BrandNews";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Products from "./components/Products";
-import Services from "./components/Services";
-import Team from "./components/Team";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Services from "./components/pages/Services";
+import Products from "./components/pages/Products";
+import Team from "./components/pages/Team";
+import BrandNews from "./components/pages/BrandNews";
 
 function App() {
   const NAVIGATION_EVENT = "pushstate";

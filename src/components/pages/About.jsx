@@ -1,6 +1,8 @@
 import React from "react";
-import about from "../assets/About.png";
-import about2 from "../assets/about2.png";
+import about from "../../assets/about.png";
+import about2 from "../../assets/about2.png";
+import News from "../News";
+import Clients from "../Clients";
 
 const About = () => {
   return (
@@ -11,8 +13,8 @@ const About = () => {
           <h2 className="font-bold text-2xl mr-60 ml-40">
             Líderes en la fabricación de remolques y semirremolques en Cuba.
           </h2>
-          <div className="flex md:flex-row justify-between text-xs p-space mr-60 ml-40 mb-6">
-            <div className="flex md:flex-col text-xs p-space w-6/12">
+          <div className="flex md:flex-row justify-between p-space mr-60 ml-40 mb-6">
+            <div className="flex md:flex-col text-xxl p-space w-6/12">
               <div>
                 <h4 className="font-bold">¿Quiénes somos?</h4>
                 <p>
@@ -63,7 +65,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex md:flex-col text-xs p-space w-6/12">
+            <div className="flex md:flex-col text-xxl p-space w-6/12">
               <div>
                 <h4 className="font-bold">¿Por qué Ramón Peña?</h4>
                 <p>
@@ -99,6 +101,8 @@ const About = () => {
           </div>
         </div>
         <img src={about2} alt="about" className="m-0" />
+        <News />
+        <Clients />
       </div>
     </>
   );
