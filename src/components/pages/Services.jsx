@@ -1,90 +1,60 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
-import services from "../../assets/services.png";
-import services1 from "../../assets/services1.png";
-import services2 from "../../assets/services2.png";
-import services3 from "../../assets/services3.png";
-import services4 from "../../assets/services4.png";
-import maintenance from "../../assets/maintenance.svg";
-import painting from "../../assets/painting.svg";
-import pencil from "../../assets/pencil.svg";
-import rocket from "../../assets/rocket.svg";
+import {
+  services1,
+  services2,
+  services3,
+  services4,
+  maintenance,
+  pencil,
+  painting,
+  rocket,
+  sections,
+} from "../../assets/dummy";
 import Clients from "../Clients";
+import Banner from "../Banner";
+import "../../App.css";
+import Button from "../Button";
 
 const Services = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white flex flex-col">
-        <img src={services} alt="imagen" className="mt-48" />
+      <div className="overflow-hidden bg-white flex flex-col ml-20">
+        <div className="absolute lg:mt-96 lg:ml-16 z-20">
+          <p className="text-xl text-defaultBlue">Servicios</p>
+          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
+            XX AÑOS DE EXPERIENCIA
+          </h3>
+          <p className="text-lg w-1/2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <Banner />
+        <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
+          <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
+            OPORTUNIDADES,
+          </p>
+          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-40">
+            NUESTROS SERVICIOS
+          </h3>
+        </div>
       </div>
       <div className="flex md:flex-col justify-around align-middle">
-        <div className="flex md:flex-row">
-          <img src={services1} alt="img" className="black-diag-top" />
-          <div className="black-diag-top-2 mt-20 mr-36 ml-10">
-            <h3 className="text-defaultBlue font-extrabold text-5xl">
-              REPARACIÓN DE EQUIPOS
-            </h3>
-            <img src={maintenance} alt="" width={120} />
-            <p className="text-2xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
-              <a href="#" className="text-2xl items-center m-2 space-y-68">
-                Ver mas →
-              </a>
-            </button>
+        {sections.map(({ id, title, img, conten, logo, clasN }) => (
+          <div className={clasN} accessKey={id}>
+            <img src={img} alt="img" className="w-1/2" />
+            <div className="mt-20 mx-20 z-10">
+              <div className="flex flex-row items-center justify-around">
+                <h3 className="text-defaultBlue font-extrabold text-5xl">
+                  {title}
+                </h3>
+                <img src={logo} alt="" width={100} className="m-10" />
+              </div>
+              <p className="text-2xl ">{conten}</p>
+              <Button />
+            </div>
           </div>
-        </div>
-        <div className="flex md:flex-row-reverse">
-          <img src={services2} alt="img" className="white-diag" />
-          <div className="white-diag-2 mt-20 ml-36 mr-10">
-            <img src={painting} alt="" width={120} />
-            <h3 className="text-defaultBlue font-extrabold text-5xl">
-              CORTE CONFORMADO SOLDADURA Y PINTURA
-            </h3>
-            <p className="text-2xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
-              <a href="#" className="text-2xl items-center m-2 space-y-68">
-                Ver mas →
-              </a>
-            </button>
-          </div>
-        </div>
-        <div className="flex md:flex-row">
-          <img src={services3} alt="img" />
-          <div className="mt-20 mr-36 ml-10">
-            <img src={pencil} width={100} alt="img" />
-            <h3 className="text-defaultBlue font-extrabold text-5xl">
-              REPARACIÓN DE EQUIPOS
-            </h3>
-            <p className="text-2xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
-              <a href="#" className="text-2xl items-center m-2 space-y-68">
-                Ver mas →
-              </a>
-            </button>
-          </div>
-        </div>
-        <div className="flex md:flex-row-reverse">
-          <img src={services4} alt="img" />
-          <div className="mt-40 ml-36 mr-10">
-            <img src={rocket} alt="img" width={100} />
-            <h3 className="text-defaultBlue font-extrabold text-5xl">
-              PROYECCIÓN Y DISEÑO
-            </h3>
-            <p className="text-2xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="border-spacing-2 border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
-              <a href="#" className="text-2xl items-center m-2 space-y-68">
-                Ver mas →
-              </a>
-            </button>
-          </div>
-        </div>
+        ))}
         <Clients />
       </div>
     </>

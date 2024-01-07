@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
-import banner from "../assets/banner.png";
+import brand from "../assets/Logos_Penna-Project/Brand_Logo.png";
+import navbar from "../assets/NavBar_Red.png";
 import { Link } from "react-scroll";
 import { FaTelegram, FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
@@ -36,7 +36,6 @@ const Navbar = () => {
     { link: "Quienes Somos", path: "about" },
     { link: "Nuestros Servicios", path: "services" },
     { link: "Producciones", path: "products" },
-    { link: "Clientes", path: "client" },
     { link: "Novedades", path: "brandnews" },
   ];
 
@@ -53,10 +52,14 @@ const Navbar = () => {
           <div>
             <div className="flex flex-row items-center justify-between shadow-lg">
               <a
-                href=""
+                href="/"
                 className="text-2x1 font-semibold flex items-center space-x-3"
               >
-                <img src={logo} alt="" className="inline-block items-center" />
+                <img
+                  src={brand}
+                  alt=""
+                  className="inline-block items-center ml-20"
+                />
               </a>
 
               <div className="flex items-center space-x-8 m-0">
@@ -83,19 +86,19 @@ const Navbar = () => {
                 </div>
                 <div className="lg:flex flex-col hidden text-xs">
                   <p>
-                    <MdOutlineLocalPhone className="h-6 w-6 text-defaultBlue" />
+                    <MdOutlineLocalPhone className="h-6 w-6 text-defaultBlue inline" />
                     TELÉFONO:
                   </p>
                   <p>+53 6598 7412 +53 7 524 89 65</p>
 
                   <p>
-                    <CiMail className="h-6 w-6 text-defaultBlue" />
+                    <CiMail className="h-6 w-6 text-defaultBlue inline" />
                     EMAIL:
                   </p>
                   <p>peñaempresaindustrial@gmail.com</p>
                 </div>
                 <div className="lg:flex hidden">
-                  <img src={banner} alt="triangulo rojo" className="w-16" />
+                  <img src={navbar} alt="triangulo rojo" className="w-full" />
                 </div>
               </div>
               <div className="lg:hidden flex flex-row-reverse gap-8">
@@ -116,11 +119,12 @@ const Navbar = () => {
                 {navItems.map(({ link, path }) => (
                   <Link
                     to={path}
-                    spy={true}
-                    smooth={true}
+                    spy
+                    smooth
                     offset={-100}
                     key={path}
                     className="block text-xxl text-defaultBlue hover:text-white hover:bg-defaultBlue first:font-medium"
+                    href={path}
                   >
                     {link}
                   </Link>
@@ -161,6 +165,7 @@ const Navbar = () => {
                 offset={-100}
                 key={path}
                 className="block text-xxl text-white hover:text-defaultGray hover:bg-defaultBlue first:font-medium"
+                href={path}
               >
                 {link}
               </Link>

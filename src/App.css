@@ -26,41 +26,22 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .black-diag-top {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top right, gray 50%, white 50%);
+
+.logo {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
-.black-diag-top-2 {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top right, white 100%,);
+.bg-vector {
+  background-image: url(/src/assets/Services_vector.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.white-diag {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to bottom left, white 50%, gray 50%);
+.bg-vector-2 {
+  background-image: url(/src/assets/Services_vector_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.white-diag-2 {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top left, white 25%, gray 25%);
-}
-
-.black-diag-bottom {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, gray 25%, white 25%);
-} */

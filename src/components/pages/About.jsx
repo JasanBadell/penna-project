@@ -1,106 +1,85 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
-import about from "../../assets/about.png";
-import about2 from "../../assets/about2.png";
 import News from "../News";
 import Clients from "../Clients";
+import { aboutColumn1, aboutColumn2, services1 } from "../../assets/dummy";
+import Banner from "../Banner";
 
 const About = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white flex flex-col">
-        <img src={about} alt="imagen" className="mt-48" />
+      <div className="overflow-hidden bg-white flex flex-col ml-20">
+        <div className="absolute lg:mt-96 lg:ml-16 z-20">
+          <p className="text-xl text-defaultBlue">Sobre Nosotros</p>
+          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
+            XX AÑOS DE EXPERIENCIA
+          </h3>
+          <p className="text-lg w-1/2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <Banner />
+        <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
+          <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
+            MÁS QUE UN COLECTIVO,
+          </p>
+          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-20">
+            UNA GRAN FAMILIA
+          </h3>
+        </div>
+      </div>
+      <div className="flex md:flex-col justify-around align-middle">
         <div className="mt-20 ml-20">
           <h2 className="font-bold text-2xl mr-60 ml-40">
             Líderes en la fabricación de remolques y semirremolques en Cuba.
           </h2>
           <div className="flex md:flex-row justify-between p-space mr-60 ml-40 mb-6">
             <div className="flex md:flex-col text-xxl p-space w-6/12">
-              <div>
-                <h4 className="font-bold">¿Quiénes somos?</h4>
-                <p>
-                  Durante más de una década, Peña Empresa Industrial ha
-                  garantizado la producción de equipos e implementos de
-                  transporte, el diseño y la recuperación de partes y piezas de
-                  repuesto destinados a la zafra azucarera, la agricultura, la
-                  construcción y la higiene comunal.
-                </p>
-                <p>
-                  La fabricación de una gama especializada de autotrenes,
-                  compuestos por remolques y semirremolques de distintas
-                  capacidades, constituye nuestra línea fundamental de
-                  producción.
-                </p>
-                <p>
-                  Peña Empresa Industrial está conformada por tres unidades
-                  empresariales de base y una mipyme estatal. Se distingue por
-                  un equipo de trabajo innovador, eficiente, con alto nivel de
-                  experiencia y comprometido, que apuesta por la calidad y
-                  sostenibilidad de sus producciones, hoy presentes en toda la
-                  geografía del país.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold">¿Cómo surge?</h4>
-                <p>
-                  Tras la fusión de la Empresa Constructora de Equipos Mecánicos
-                  (CEM) y la Empresa Industrial Guanabo en el 2012, emerge este
-                  actor económico en el mercado nacional bajo el nombre Ramón
-                  Peña.
-                </p>
-                <p>
-                  Más adelante, en el 2018, se suma a este grupo de aliados la
-                  Unidad Empresarial Básica Industria Mecánica Caribe (IMECA)
-                  con lo que se amplía y consolida la actividad metalúrgica y
-                  metalmecánica de esta rama industrial.{" "}
-                </p>
-                <p>
-                  Peña Empresa Industrial está integrada al Grupo Empresarial de
-                  la Industria Sidero Mecánica (GESIME), representado por el
-                  Ministerio de Industrias.{" "}
-                </p>
-                <p>
-                  En la actualidad, también la conforma la mipyme estatal
-                  SOLDARAP, el primer actor económico de esta forma de gestión y
-                  desarrollo empresarial constituido en GESIME.
-                </p>
-              </div>
+              {aboutColumn1.map(
+                ({ id, title, conten, conten2, conten3, conten4 }) => (
+                  <div accessKey={id}>
+                    <h4 className="font-bold">{title}</h4>
+                    <p>{conten}</p>
+                    <p>{conten2}</p>
+                    <p>{conten3}</p>
+                    <p>{conten4}</p>
+                  </div>
+                )
+              )}
             </div>
             <div className="flex md:flex-col text-xxl p-space w-6/12">
-              <div>
-                <h4 className="font-bold">¿Por qué Ramón Peña?</h4>
-                <p>
-                  El nombre de la empresa es elegido como homenaje a uno de los
-                  combatientes y mártires de Playa Girón. Se trata del joven
-                  Ramón Peña Díaz, oriundo de España y quien se unió a las
-                  milicias cubanas para luchar por la causa nacional.
+              {aboutColumn2.map(
+                ({ id, title, conten, conten2, conten3, conten4, conten5 }) => (
+                  <div accessKey={id}>
+                    <h4 className="font-bold">{title}</h4>
+                    <p>{conten}</p>
+                    <p>{conten2}</p>
+                    <p>{conten3}</p>
+                    <p>{conten4}</p>
+                    <p>{conten5}</p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex md:flex-row-reverse items-center bg-defaultBlue -mt-32 -mb-8">
+            <img src={services1} alt="img" className="w-1/2" />
+            <div className="mt-10 mx-20 ">
+              <div className="flex md:flex-col items-left justify-around gap-4">
+                <p className="text-2xl text-white">VANGUARDIA</p>
+                <h3 className="text-white font-extrabold text-5xl">
+                  XX AÑOS PRESENTES EN LA ESCENA NACIONAL
+                </h3>
+                <p className="text-2xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing.
                 </p>
-                <p>
-                  Con este representativo se han hecho todas las variaciones
-                  institucionales. Primero se identificó como Empresa Ramón
-                  Peña, luego, Empresa Constructora de Equipos Mecánicos Ramón
-                  Peña y más adelante, Empresa Industrial Ramón Peña.{" "}
-                </p>
-                <p>En la actualidad su nombre es Peña Empresa Industrial.</p>
-              </div>
-              <div>
-                <h4 className="font-bold">¿Nuestro propósito?</h4>
-                <p>
-                  Mantener el liderazgo en la producción de arrastres con máxima
-                  calidad y resistencia, así como satisfacer las demandas y
-                  necesidades del mercado, a tono con las perspectivas del país.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold">¿Qué nos prestigia?</h4>
-                <p>• Fabricaciones de probada calidad y durabilidad.</p>
-                <p>• Permite a Cuba la sustitución de importaciones.</p>
-                <p>• Tecnologías modernizadas.</p>
-                <p>• Alta capacidad de producción.</p>
               </div>
             </div>
           </div>
         </div>
-        <img src={about2} alt="about" className="m-0" />
+
         <News />
         <Clients />
       </div>

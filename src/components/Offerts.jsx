@@ -15,7 +15,7 @@ const Offerts = () => {
     },
     {
       logo: `${painting}`,
-      title: "CORTE CONFORMADO SOLDADURA Y PINTURA",
+      title: "CORTE, CONFORMADO, SOLDADURA Y PINTURA",
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       link: "",
     },
@@ -34,19 +34,21 @@ const Offerts = () => {
   ];
   return (
     <>
-      <div className="flex flex-col md:flex-row items-top justify-around gap-20 m-4">
+      <div className="flex flex-col md:flex-row items-start justify-around gap-4 m-20">
         {service.map(({ logo, title, description, link }) => (
           <Link
             to={link}
             spy={true}
             offset={-100}
             key={link}
-            className="w-1/4 text-center rounded-xl flex flex-col items-center justify-around"
+            className="w-1/4 text-left rounded-xl flex flex-col justify-around"
           >
-            <div className="mt-4">
-              <img src={logo} alt="" width={60} className="inline" />
-              <h3 className="text-defaultBlue font-bold text-lg">{title}</h3>
-              <p className="text-sm">{description}</p>
+            <div className="mt-4 flex flex-row items-start">
+              <img src={logo} alt="" width={60} className="inlin mr-1" />
+              <div className="flex flex-col">
+                <h3 className="text-defaultBlue font-semibold text-lg">{title}</h3>
+                <p className="text-sm mt-4">{description}</p>
+              </div>
             </div>
           </Link>
         ))}
