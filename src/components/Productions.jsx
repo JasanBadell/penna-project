@@ -2,9 +2,10 @@
 import React from "react";
 import { Card, Carousel } from "@material-tailwind/react";
 import { products, productions } from "../assets/dummy";
+import Button from "./Button";
+import Banner from "./Banner";
 
 const Productions = () => {
-  
   return (
     <>
       <div className="bg-defaultGray flex flex-col">
@@ -17,11 +18,9 @@ const Productions = () => {
               PRODUCCIONES
             </h3>
           </div>
-          <button className="border rounded-md m-4 mt-16 border-defaultBlue text-defaultBlue shadow-md hover:text-white hover:bg-defaultBlue transition-all duration-300">
-            <a href="/" className="m-8 text-2xl ">
-              VER MÁS →
-            </a>
-          </button>
+          <div className="mt-8">
+            <Button />
+          </div>
           <img src={productions} alt="" className="w-1/4" />
         </div>
         <h3 className="text-defaultBlue text-lg ml-24 mb-8 -mt-40">
@@ -31,13 +30,15 @@ const Productions = () => {
           <div className="grid grid-cols-4 mx-28">
             {products.map(({ img, title, description }) => (
               <div className="flex flex-row items-center justify-between">
-                <Card className="mx-8 mb-12 rounded-none">
+                <Card className="mx-8 mb-12 rounded-none shadow-2xl">
                   <div className="flex flex-col items-center justify-center hover:">
                     <div className="">
                       <img src={img} alt="image 1" />
                     </div>
                     <div className="m-5">
-                      <h3 className="text-base text-left font-semibold uppercase mb-2">{title}</h3>
+                      <h3 className="text-base text-left font-semibold uppercase mb-2">
+                        {title}
+                      </h3>
                       <p className="text-sm text-left">{description}</p>
                     </div>
                   </div>

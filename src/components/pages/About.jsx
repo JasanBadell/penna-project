@@ -18,7 +18,9 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <Banner />
+        <div className="mt-48">
+          <Banner />
+        </div>
         <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
             MÁS QUE UN COLECTIVO,

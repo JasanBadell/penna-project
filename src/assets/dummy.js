@@ -19,6 +19,15 @@ import news from "./newsLetter1.png";
 import brands from "./Brand_news_asset.png";
 import brandimg from "./brandnews_1.png";
 import brandimg1 from "./brandnews_2.png";
+import navbar from "./Client_Tag.png";
+import clients from "./ClientSection.png";
+import ecasa from "./Logos_Penna-Project/ecasa.png";
+import azcuba from "./azcuba.jpg";
+import minag from "./Logos_Penna-Project/minag.png";
+import sc from "./Logos_Penna-Project/comunales.png";
+import zdem from "./Logos_Penna-Project/zdem.png";
+import homevector from "./Home_vector.svg";
+import carruselimg from "./Carrusel_IMG.png";
 // Import Const
 export const products = [
   {
@@ -39,6 +48,45 @@ export const products = [
   {
     img: `${product}`,
     title: "Reparaciones",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+];
+
+export const array_products = [
+  {
+    img: `${product}`,
+    title: "Semirremolques",
+    category: "tradicionales",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    img: `${product}`,
+    title: "Aplicaciones",
+    category: "tradicionales",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    img: `${product}`,
+    title: "Equipos Agrícolas",
+    category: "tradicionales",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    img: `${product}`,
+    title: "Alquiler",
+    category: "otras",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    img: `${product}`,
+    title: "Reparaciones",
+    category: "tradicionales",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    img: `${product}`,
+    title: "Restauraciones",
+    category: "otras",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
   },
 ];
@@ -208,6 +256,46 @@ export const brandNews = [
   },
 ];
 
+export const client = [
+  {
+    id: "1",
+    logo: `${minag}`,
+    title: "MINAG",
+    description: "Producción y comercialización agropecuaria.",
+  },
+  {
+    id: "2",
+    logo: `${ecasa}`,
+    title: "ECASA",
+    description: "Empresa Cubana de Aeropuertos y Servicios Aeroportuarios.",
+  },
+  {
+    id: "3",
+    logo: `${sc}`,
+    title: "Servicios Comunales",
+    description:
+      "Destinada a la higiene ambiental, recogida de desechos y servicios necrológicos.",
+  },
+  {
+    id: "4",
+    logo: `${azcuba}`,
+    title: "AZCUBA",
+    description: "Grupo Azucarero, con más de 500 años de tradición y cultura.",
+  },
+  {
+    id: "5",
+    logo: `${zdem}`,
+    title: "ZDEM",
+    description:
+      "Zona Especial de Desarrollo Mariel, la primera de su tipo en Cuba.",
+  },
+];
+
+export const homecarrusel = [
+  { id: "1", img: `${service}` },
+  { id: "2", img: `${carruselimg}` },
+];
+
 export {
   productions,
   about,
@@ -228,4 +316,13 @@ export {
   brands,
   brandimg,
   brandimg1,
+  clients,
+  ecasa,
+  azcuba,
+  minag,
+  sc,
+  zdem,
+  navbar,
+  homevector,
+  carruselimg,
 };

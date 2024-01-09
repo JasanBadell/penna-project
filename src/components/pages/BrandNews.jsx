@@ -8,8 +8,12 @@ const BrandNews = () => {
     <>
       <div className="overflow-hidden bg-white mt-52 ml-20 ">
         <div className="text-4xl text-defaultBlue text-left">
-          <h2>LA MEJOR FORMA DE ESTAR,</h2>
-          <h2 className="font-extrabold text-5xl">NUESTRAS NOVEDADES</h2>
+          <p className="text-xl md:text-2xl font-extralight leading-snug">
+            LA MEJOR FORMA DE ESTAR,
+          </p>
+          <h3 className="text-3xl md:text-5xl font-extrabold lg:w-full leading-snug">
+            NUESTRAS NOVEDADES
+          </h3>
         </div>
         <div className="grid grid-cols-2 gap-2 -mb-32">
           {brandNews.map(({ img, title, subtitle, resume, path }) => (
@@ -51,7 +55,7 @@ const BrandNews = () => {
         </div>
       </div>
       <div className="text-defaultBlue mt-10 flex flex-col ml-96 w-1/2 absolute">
-        <p className="text-xl md:text-4xl font-extralight leading-snug items-end lg:ml-72">
+        <p className="text-xl md:text-2xl font-extralight leading-snug items-end lg:ml-72">
           CONÓCENOS,
         </p>
         <h3 className="text-3xl md:text-5xl font-extrabold leading-snug lg:ml-72">

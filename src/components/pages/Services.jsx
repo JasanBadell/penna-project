@@ -1,20 +1,10 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
-import {
-  services1,
-  services2,
-  services3,
-  services4,
-  maintenance,
-  pencil,
-  painting,
-  rocket,
-  sections,
-} from "../../assets/dummy";
+import { sections } from "../../assets/dummy";
 import Clients from "../Clients";
 import Banner from "../Banner";
-import "../../App.css";
 import Button from "../Button";
+import "../../App.css";
 
 const Services = () => {
   return (
@@ -29,7 +19,9 @@ const Services = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <Banner />
+        <div className="mt-48">
+          <Banner />
+        </div>
         <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
             OPORTUNIDADES,

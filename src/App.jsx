@@ -30,7 +30,7 @@ function App() {
       {currentPath === "/" && <Home />}
       {currentPath === "/about" && <About />}
       {currentPath === "/services" && <Services />}
-      {currentPath === "/product" && <Products />}
+      {currentPath === "/products" && <Products />}
       {currentPath === "/brandnews" && <BrandNews />}
       <Footer />
     </>

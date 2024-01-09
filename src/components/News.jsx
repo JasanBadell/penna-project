@@ -1,6 +1,7 @@
 import React from "react";
 import home from "../assets/newsLetter1.png";
 import home1 from "../assets/newsLetter.png";
+import Button from "./Button";
 
 const News = () => {
   return (
@@ -15,11 +16,7 @@ const News = () => {
               NOVEDADES
             </h3>
           </div>
-          <button className="border rounded-md m-4 border-defaultBlue text-defaultBlue shadow-md hover:text-white hover:bg-defaultBlue transition-all duration-300">
-            <a href="/" className="m-4 text-2xl">
-              Ver más →
-            </a>
-          </button>
+          <Button />
         </div>
         <div className="grid grid-cols-2 gap-5 w-100 mb-4 mx-20">
           <div className=" mt-20 flex md:flex-row text-xxl text-black first:font-medium items-center">
