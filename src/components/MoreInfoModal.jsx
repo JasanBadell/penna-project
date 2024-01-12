@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { products } from "../assets/dummy";
 
-const MoreInfoModal = ({ showModal, closeModal }) => {
+const MoreInfoModal = ({ idP, showModal, closeModal }) => {
   if (!showModal) return null;
 
   const handleModalClick = (e) => {
@@ -26,7 +27,22 @@ const MoreInfoModal = ({ showModal, closeModal }) => {
             >
               X
             </button>
-            Hola mundo
+            {products.map(({ id, category, subCategory, description }) => (
+              <div key={id}>
+                <p className="text-sm text-left mt-2">
+                  <strong>Categoría:</strong>
+                  {category}
+                </p>
+                <p className="text-sm text-left mb-2 text-defaultRed">
+                  <strong>Sub-categoría:</strong>
+                  {subCategory}
+                </p>
+                <p className="text-sm text-left">
+                  <strong>Descripción:</strong>
+                  {description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

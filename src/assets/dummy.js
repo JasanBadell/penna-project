@@ -472,26 +472,23 @@ export const certificated = [
   {
     logo: `${camaraComercio}`,
     name: "Cámara de Comercio de la república de Cuba",
-    description:
-      "Descargue la apk Transfermóvil. Aplicación ideal para realizar los pagos en línea.",
+    description: "",
   },
   {
     logo: `${registroComercial}`,
     name: "Registro Central Comercial",
-    description:
-      "Descargue APK Nauta. Ideal para conectarse de forma fácil y segura en puntos Wi-Fi.",
+    description: "",
   },
   {
     logo: `${propiedadIndustrial}`,
     name: "Oficina cubana de la propiedad industrial",
-    description:
-      "El sitio indicado para solicitar un dominio nat.cu y paquetes de hospedaje web.",
+    description: "",
   },
 ];
 
 export const navItems = [
   { link: "Acerca de nosotros", path: "about" },
-  { link: "Nuestros Servicios", path: "services" },
+  { link: "Servicios", path: "services" },
   { link: "Producciones", path: "products" },
   { link: "Noticias", path: "brandnews" },
 ];
@@ -511,6 +508,29 @@ export const clientopinion = [
     empName: "ZDEM",
     opinion:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, accusamus voluptatem iure molestiae quia consectetur labore autem voluptatibus nisi perspiciatis illo hic quasi ratione vitae! Ullam!",
+  },
+];
+
+export const slogan = [
+  {
+    opinion:
+      " Líderes en la fabricación de remolques y semirremolques en Cuba.",
+  },
+  {
+    opinion: " Con fabricaciones de probada calidad y durabilidad",
+  },
+  {
+    opinion: " Permitimos al país sustitución de importaciones",
+  },
+  {
+    opinion: " Disponemos de tecnologías modernizadas",
+  },
+  {
+    opinion:
+      " Con alta capacidad de producción: Más de dos mil al año, entre producciones complejas y sencillas",
+  },
+  {
+    opinion: " En nuestro colectivo: Innovación, Experiencia y Compromiso",
   },
 ];
 

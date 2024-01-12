@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git to main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:JasanBadell/penna-project.github.io.git to main:gh-pages
+# git push -f git@github.com:JasanBadell/penna-project.git to main:gh-pages
 
 cd -

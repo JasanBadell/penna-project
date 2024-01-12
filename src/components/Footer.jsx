@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row mx-4 lg:mx-10 mt-20 gap-8">
           <div className="text-white space-y-1 -mt-8">
             <h4 className="text-4xl">CONTACTO</h4>
-            <p className="text-sm">COMUNICATE CON NOSOTROS</p>
+            <p className="text-sm">COMUNÍCATE CON NOSOTROS</p>
             <button className="border rounded hover:bg-white transition-all hover:text-defaultBlue hover:border-defaultBlue ease-out duration-300">
               <a
                 className="text-sm items-center m-2 "
@@ -62,15 +62,31 @@ const Footer = () => {
             />
           </div>
           <div className="text-white text-2xl space-y-1">
-            <h4 className="text-sm">ADDRESS</h4>
+            <h4 className="text-sm">DIRECCIÓN</h4>
+            <p className="text-xs text-gray-300 border-b">
+              Peña Empresa Industrial y UEB CEM
+            </p>
             <p className="text-xs text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vía Blanca No. 4860, entre el Puente del Río Martín Pérez y la
+              Rotonda de Guanabacoa, Reparto Vía Blanca, Municipio Guanabacoa.
+            </p>
+            <p className="text-xs text-gray-300 border-b pt-2">
+              UEB Industrial Guanabo y Mipyme SOLDARAP
+            </p>
+            <p className="text-xs text-gray-300">
+              Vía Blanca Calle 428, Peñas Altas, Guanabo, Municipio Habana del
+              Este.
+            </p>
+            <p className="text-xs text-gray-300 border-b pt-2">UEB IMECA</p>
+            <p className="text-xs text-gray-300">
+              Calle 82 # 6901 entre Finca y Avenidad 71, Municipio Güira de
+              Melena, Provincia Artemisa.
             </p>
           </div>
           <div className="text-white text-2xl space-y-1">
-            <h4 className="text-sm">PHONE AND EMAIL</h4>
-            <p className="text-xs text-gray-300">+53 6598 7412</p>
-            <p className="text-xs text-gray-300">+53 7 524 89 65</p>
+            <h4 className="text-sm">TELÉFONOS Y CORREO</h4>
+            <p className="text-xs text-gray-300">77974777</p>
+            <p className="text-xs text-gray-300">77977913</p>
             <p className="text-xs text-gray-300">
               peñaempresaindustrial@gmail.com
             </p>

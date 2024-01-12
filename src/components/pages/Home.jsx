@@ -5,21 +5,23 @@ import Clients from "../Clients";
 import News from "../News";
 import Offerts from "../Offerts";
 import Productions from "../Productions";
-import { homevector, homecarrusel } from "../../assets/dummy";
+import { homevector, homecarrusel, slogan } from "../../assets/dummy";
 
 const Home = () => {
   return (
     <>
       <div className="pt-26 lg:pt-28 mb-4">
-        <div className=" lg:px-14 max-w-screen-2xl mx-auto flex flex-col lg:flex-row ">
-          <div className="lg:absolute mt-20 mx-4 lg:ml-36 z-20 ">
+        <div className=" lg:px-14 max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-start">
+          <div className="lg:absolute mt-20 w-1/3 mx-4 lg:ml-36 z-20 ">
             <p className="text-xl text-defaultBlue mt-28">Bievenidos</p>
             <h3 className="text-5xl text-defaultBlue font-extrabold lg:w-1/2 mb-4">
               A NUESTRA EMPRESA
             </h3>
-            <p className="text-lg lg:w-1/2 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <Carousel loop autoplay>
+              {slogan.map(({ opinion }) => (
+                <p className="text-lg lg:w-1/2 mb-4">{opinion}</p>
+              ))}
+            </Carousel>
           </div>
           <div className="flex flex-col lg:flex-row  lg:mt-28">
             <div className="w-screen lg:w-2/4 z-10">

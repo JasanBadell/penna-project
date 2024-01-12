@@ -9,13 +9,13 @@ const Clients = () => {
         <div className="flex flex-row mt-8 items-center ">
           <div className="mt-4 mx-4 lg:mx-20 ">
             <p className="text-xl md:text-xl font-semibold text-white leading-snug">
-              Nuevas oportunidades
+              Oportunidades
             </p>
             <h3 className="text-3xl lg:text-5xl font-extrabold text-white md:w-full leading-snug">
-              CONOCE A NUESTROS SOCIOS
+              EN EL ESCENARIO DE NEGOCIOS
             </h3>
             <p className="text-2xl text-white w-full mr-4 my-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Suplir las necesidades de nuestros clientes con una visión responsable y eficiente nos mantiene en la mira y a la vanguardia en el panorama nacional.
             </p>
           </div>
           <img src={clients} alt="img" className="lg:w-2/4 lg:mr-12 w-0" />
@@ -25,7 +25,7 @@ const Clients = () => {
         <div className=" flex flex-row justify-between lg:ml-20">
           <div className="mt-12 mx-4">
             <p className="text-xl md:text-2xl font-extralight text-defaultBlue leading-snug">
-              DENTRO Y FUERA DE FRONTERA
+             A LO LARGO Y ANCHO DEL PAÍS
             </p>
             <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue md:w-full leading-snug">
               CLIENTES

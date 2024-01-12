@@ -27,7 +27,7 @@ const ProductGrid = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (id) => {
     setIsVisible(true);
   };
 
@@ -83,6 +83,7 @@ const ProductGrid = () => {
                   <MoreInfoModal
                     showModal={isVisible}
                     closeModal={handleCloseModal}
+                    idP={id}
                   />
                 </>
               ))}

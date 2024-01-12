@@ -13,7 +13,7 @@ const BrandNews = () => {
             LA MEJOR FORMA DE ESTAR,
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold lg:w-full leading-snug">
-            NUESTRAS NOVEDADES
+            NOTICIAS
           </h3>
         </div>
         <div className="grid grid-cols-2 gap-2 -mb-32">
@@ -44,10 +44,12 @@ const BrandNews = () => {
             VANGUARDIA
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold md:w-full leading-snug mb-4">
-            XX AÑOS PRESENTES EN LA ESCENA NACIONAL
+            PRESENTES EN LA ESCENA NACIONAL
           </h3>
           <p className="md:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
+            En el año alcanzamos un surtido de más de 45 tipos de equipos, entre
+            sencillos y complejos. Hemos cubierto el 83% de la demanda nacional
+            en remolques, semirremolques y aplicaciones.
           </p>
         </div>
       </div>

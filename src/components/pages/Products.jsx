@@ -58,7 +58,7 @@ const Products = () => {
         </div>
         <div className="mx-20 my-20">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
-            ESCUCHA A NUESTROS
+          ASÍ NOS VALORAN!
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug">
             CLIENTES
