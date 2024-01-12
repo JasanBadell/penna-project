@@ -34,17 +34,17 @@ const Offerts = () => {
   ];
   return (
     <>
-      <div className="flex flex-col md:flex-row items-start justify-around gap-4 m-20">
+      <div className="lg:flex lg:flex-row grid grid-cols-1 sm:grid-cols-2 items-center lg:items-start justify-around gap-4 m-4 lg:m-20">
         {service.map(({ logo, title, description, link }) => (
           <Link
             to={link}
             spy={true}
             offset={-100}
             key={link}
-            className="w-1/4 text-left rounded-xl flex flex-col justify-around"
+            className="lg:w-1/4 text-left rounded-xl flex flex-col justify-around"
           >
             <div className="mt-4 flex flex-row items-start">
-              <img src={logo} alt="" width={60} className="inlin mr-1" />
+              <img src={logo} alt="" width={60} className="mr-auto" />
               <div className="flex flex-col">
                 <h3 className="text-defaultBlue font-semibold text-lg">{title}</h3>
                 <p className="text-sm mt-4">{description}</p>

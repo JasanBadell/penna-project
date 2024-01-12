@@ -1,42 +1,38 @@
-import React, { useState } from "react";
-import { Box, Tab, TabPanel, TabsHeader } from "@material-tailwind/react";
-import { TabsContext } from "@material-tailwind/react/components/Tabs/TabsContext";
+import { products } from "../assets/dummy";
+import { Card } from "@material-tailwind/react";
 
 const Tabs = () => {
-  const [value, setValue] = useState("1");
-  const handleChange = (newValue) => {
-    setValue(newValue);
-  };
+  const itemToShow = products.slice(0, 4);
+
   return (
-    <Box>
-      <TabsContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabsHeader aria-label="Productions" onChange={handleChange}>
-            <Tab aria-label="Tradicionales" value={1} />
-            <Tab aria-label="Nuevos Desarrollos" value={2} />
-            <Tab aria-label="Otros" value={3} />
-          </TabsHeader>
-        </Box>
-        <TabPanel value={1}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          mollitia animi libero omnis ullam ab, quae hic rerum, qui debitis
-          officiis voluptate exercitationem at sapiente velit modi explicabo
-          temporibus excepturi?
-        </TabPanel>
-        <TabPanel value={2}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptates laborum nobis explicabo odit, mollitia non blanditiis
-          doloribus officia minima tempora sint quasi! Adipisci aliquam
-          molestiae, reprehenderit suscipit tenetur officiis.
-        </TabPanel>
-        <TabPanel value={3}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          molestias modi, id officiis, exercitationem fugit tempora rerum
-          veritatis assumenda consectetur consequuntur fuga doloremque odio quia
-          ea. Rerum amet nostrum eos!
-        </TabPanel>
-      </TabsContext>
-    </Box>
+    <>
+      <div className="flex justify-center items-start lg:py-8 m-4 lg:mx-20">
+        <div className="flex  lg:flex-col gap-y-2 lg:w-full">
+          <div className=" lg:flex hidden lg:flex-row  p-2 rounded-xl lg:w-auto">
+            {itemToShow.map((item) => (
+              <Card
+                className="mx-8 mb-12 rounded-none shadow-2xl"
+                key={item.id}
+              >
+                <div className="flex flex-col">
+                  <img src={item.img} alt="" />
+                  <div className="m-5">
+                    <h3 className="text-base text-left font-semibold uppercase">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-left mt-2">{item.category}</p>
+                    <p className="text-sm text-left mb-2 text-defaultRed">
+                      {item.subCategory}
+                    </p>
+                    <p className="text-sm text-left">{item.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

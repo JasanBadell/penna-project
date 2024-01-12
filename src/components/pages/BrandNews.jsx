@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Clients from "../Clients";
 import { brandNews, brands, brandimg, brandimg1 } from "../../assets/dummy";
 
@@ -16,24 +17,20 @@ const BrandNews = () => {
           </h3>
         </div>
         <div className="grid grid-cols-2 gap-2 -mb-32">
-          {brandNews.map(({ img, title, subtitle, resume, path }) => (
-            <Link
-              to={path}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              key={path}
-              className="mt-10 mr-10 flex md:flex-row items-center"
-            >
-              <div className="w-2/5">
-                <img src={img} alt="img" className="w-auto" />
-              </div>
-              <div className="w-4/5 mx-4">
-                <h3 className="font-bold text-xl">{title}</h3>
-                <p className="text-sm">{subtitle}</p>
-                <p className="mt-4">{resume}</p>
-              </div>
-            </Link>
+          {brandNews.map(({ title, subtitle, path }) => (
+            <div className="w-1/2 m-4">
+              <h3 className="font-bold text-xl">{title}</h3>
+              <p className="text-sm">{subtitle}</p>
+              <button className="my-4 border border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
+                <Link
+                  to={path}
+                  target="_blank"
+                  className="text-xl items-center m-2 space-y-68"
+                >
+                  Ver noticia
+                </Link>
+              </button>
+            </div>
           ))}
         </div>
         <div className="flex flex-row-reverse items-end">

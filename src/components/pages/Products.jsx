@@ -1,37 +1,26 @@
 /* eslint-disable react/jsx-key */
-import React from "react";
+import React, { useState } from "react";
 import Clients from "../Clients";
 import Button from "../Button";
-import {
-  productions,
-  array_products,
-  vector,
-  carruselimg,
-} from "../../assets/dummy";
-import { Card, Carousel } from "@material-tailwind/react";
+import ProductSection from "../ProductSection";
+import { productions, carruselimg, clientopinion } from "../../assets/dummy";
+import { Carousel } from "@material-tailwind/react";
 import "../../App.css";
+import InfoModal from "../InfoModal";
 
 const Products = () => {
-  const clientopinion = [
-    {
-      empName: "MINAG",
-      opinion:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, illo hic quasi ratione vitae! Ullam!",
-    },
-    {
-      empName: "ECASA",
-      opinion:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, accusamus voluptatem iure molestiae quia consectetur labore autem voluptatibus nisi perspiciatis illo hic quasi ratione vitae! Ullam!",
-    },
-    {
-      empName: "ZDEM",
-      opinion:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, accusamus voluptatem iure molestiae quia consectetur labore autem voluptatibus nisi perspiciatis illo hic quasi ratione vitae! Ullam!",
-    },
-  ];
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalVisible(false);
+  };
   return (
     <>
-      <div className="lg:mt-48">
+      <div className="lg:mt-36">
         <div className="flex flex-row items-center justify-between">
           <div className="mx-20">
             <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
@@ -41,34 +30,16 @@ const Products = () => {
               PRODUCCIONES
             </h3>
           </div>
-          <Button />
+          <Button onClick={handleOpenModal} />
           <div className="w-2/12">
             <img src={productions} alt="" className="mr-0" />
           </div>
         </div>
-        <div className="grid grid-cols-4 mx-28">
-          {array_products.map(({ img, title, description, category }) => (
-            <div className="flex flex-row items-center justify-between">
-              <Card className="mx-8 mb-12 rounded-none shadow-2xl">
-                <div className="flex flex-col">
-                  <img src={img} alt="" />
-                  <div className="m-5">
-                    <h3 className="text-base text-left font-semibold uppercase">
-                      {title}
-                    </h3>
-                    <p className="mb-2 text-xs uppercase text-defaultRed">
-                      {category}
-                    </p>
-                    <p className="text-sm text-left">{description}</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          ))}
-        </div>
+        <InfoModal isVisible={isModalVisible} onClose={handleCloseModal} />
+        <ProductSection />
         <div className="flex flex-row-reverse mb-20">
           <div className="w-1/3">
-            <Carousel className="mt-16 -ml-44 bg-vector-3"  autoplay>
+            <Carousel className="mt-16 -ml-44 bg-vector-3" autoplay>
               {clientopinion.map(({ empName, opinion }) => (
                 <div className="flex flex-col mt-20 mx-20 z-10 absolute m-4">
                   <p className=" mb-4 text-xl">{opinion}</p>
