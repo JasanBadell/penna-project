@@ -1,6 +1,6 @@
 // Import IMG
-import about from "./about.png";
-import about2 from "./about2.png";
+import about from "./About.png";
+import about2 from "./About2.png";
 import product from "../assets/product1.png";
 import productions from "./Productions_IMG.png";
 import service from "./Service_IMG.png";
