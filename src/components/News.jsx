@@ -20,7 +20,7 @@ const News = () => {
           <Button to="/brandnews" />
         </div>
         <div className="mx-4 mb-4 lg:mx-20">
-          <div className=" mt-4 lg:mt-20 flex flex-col lg:flex-row text-xxl first:font-medium items-center lg:items-center">
+          <div className=" mt-4 lg:mt-20 flex flex-col lg:flex-row text-xxl first:font-medium items-start lg:items-start justify-evenly">
             {brandNews.slice(0, 4).map(({ title, subtitle, path }) => (
               <div className="m-4">
                 <h3 className="font-bold text-xl">{title}</h3>

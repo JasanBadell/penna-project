@@ -25,7 +25,7 @@ const InfoModal = ({ isVisible, onClose }) => {
           X
         </button>
         <div className="bg-white text-black p-2 rounded-md">
-          <p>
+          <p className="p-10 text-lg">
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.
             En el año alcanzamos un surtido de más de 45 tipos de equipos, desde

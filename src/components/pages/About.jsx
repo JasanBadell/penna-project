@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <div className="overflow-hidden bg-white flex flex-col ml-20">
-        <div className="absolute lg:mt-96 lg:ml-16 z-20">
+        <div className="absolute lg:mt-80 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Sobre Nosotros</p>
           <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
             XX AÑOS DE EXPERIENCIA
@@ -18,7 +18,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div className="mt-48">
+        <div className="pt-40">
           <Banner />
         </div>
         <div className="flex  flex-row lg:flex-col place-items-center lg:ml-20 -mt-8 mb-8">

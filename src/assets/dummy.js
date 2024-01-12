@@ -39,6 +39,7 @@ import { TfiMenu } from "react-icons/tfi";
 
 export const products = [
   {
+    id: "1",
     img: `${product}`,
     title: "Transporte de caña",
     category: "REMOLQUES",
@@ -46,6 +47,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "2",
     img: `${product}`,
     title: "Transporte de carga general",
     category: "REMOLQUES",
@@ -53,6 +55,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "3",
     img: `${product}`,
     title: "Transporte de desechos sólidos",
     category: "REMOLQUES",
@@ -60,6 +63,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "4",
     img: `${product}`,
     title: "Cisterna para transportes líquidos",
     category: "REMOLQUES",
@@ -67,6 +71,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "5",
     img: `${product}`,
     title: "Transporte de productos agrícolas",
     category: "REMOLQUES",
@@ -74,6 +79,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "6",
     img: `${product}`,
     title: "Semicompactador para desechos sólidos",
     category: "REMOLQUES",
@@ -81,6 +87,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "7",
     img: `${product}`,
     title: "Carretilla Portaequipaje",
     category: "REMOLQUES",
@@ -88,6 +95,7 @@ export const products = [
     description: "ENTRE 2 Y 20 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "8",
     img: `${product}`,
     title: "Transporte de carga general",
     category: "SEMI-REMOLQUES",
@@ -95,6 +103,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "9",
     img: `${product}`,
     title: "Transporte de sólidos a granel",
     category: "SEMI-REMOLQUES",
@@ -102,6 +111,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "10",
     img: `${product}`,
     title: "Transporte de sólidos pulverizados",
     category: "SEMI-REMOLQUES",
@@ -109,6 +119,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "11",
     img: `${product}`,
     title: "Cisternas para el transporte de líquidos",
     category: "SEMI-REMOLQUES",
@@ -116,6 +127,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "12",
     img: `${product}`,
     title: "Transporte de ganado",
     category: "SEMI-REMOLQUES",
@@ -123,6 +135,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "13",
     img: `${product}`,
     title: "Transporte de vehículos automotores",
     category: "SEMI-REMOLQUES",
@@ -130,6 +143,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "14",
     img: `${product}`,
     title: "Transporte de elementos pre-fabricados de hormigón",
     category: "SEMI-REMOLQUES",
@@ -137,6 +151,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "15",
     img: `${product}`,
     title: "Transporte de personas hasta 60 pasajeros sentados",
     category: "SEMI-REMOLQUES",
@@ -144,6 +159,7 @@ export const products = [
     description: "DE 2.5 Y 5.4 TONELADAS Y ENTRE 2500 Y 25000 LITROS",
   },
   {
+    id: "16",
     img: `${product}`,
     title: "Cajas AMPIROLL para desechos sólidos",
     category: "CONTENEDORES",
@@ -151,6 +167,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "17",
     img: `${product}`,
     title: "Plataformas sobre camión para carga general",
     category: "CONTENEDORES",
@@ -158,6 +175,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "18",
     img: `${product}`,
     title: "Cajas con barandas",
     category: "CONTENEDORES",
@@ -165,6 +183,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "19",
     img: `${product}`,
     title: "Cisternas para el transporte de líquidos",
     category: "CONTENEDORES",
@@ -172,6 +191,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "20",
     img: `${product}`,
     title: "Cajas cerradas para el transporte de semi-sólidos",
     category: "CONTENEDORES",
@@ -179,6 +199,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "21",
     img: `${product}`,
     title: "Cajas compactadoras para desechos sólidos",
     category: "CONTENEDORES",
@@ -186,6 +207,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "22",
     img: `${product}`,
     title: "Jaulas para cilindros de gases",
     category: "CONTENEDORES",
@@ -193,6 +215,7 @@ export const products = [
     description: "HASTA 20 TONELADAS PARA APLICAR SOBRE VEHÍCULOS",
   },
   {
+    id: "23",
     img: `${product}`,
     title: "Hormigoneras portátiles",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
@@ -200,6 +223,7 @@ export const products = [
     description: "",
   },
   {
+    id: "24",
     img: `${product}`,
     title: "Carretillas barrenadoras",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
@@ -207,6 +231,7 @@ export const products = [
     description: "",
   },
   {
+    id: "25",
     img: `${product}`,
     title: "Palas para cargadores frontales",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
@@ -214,6 +239,7 @@ export const products = [
     description: "",
   },
   {
+    id: "26",
     img: `${product}`,
     title: "Instalaciones para molido de biofertilizantes",
     category: "EQUIPOS AGRÍCOLAS",
@@ -221,6 +247,7 @@ export const products = [
     description: "",
   },
   {
+    id: "27",
     img: `${product}`,
     title: "Máquinas forrajeras",
     category: "EQUIPOS AGRÍCOLAS",
@@ -228,6 +255,7 @@ export const products = [
     description: "",
   },
   {
+    id: "28",
     img: `${product}`,
     title: "Máquinas ensiladoras",
     category: "EQUIPOS AGRÍCOLAS",
@@ -235,6 +263,7 @@ export const products = [
     description: "",
   },
   {
+    id: "29",
     img: `${product}`,
     title: "Multiarados",
     category: "EQUIPOS AGRÍCOLAS",
@@ -242,6 +271,7 @@ export const products = [
     description: "",
   },
   {
+    id: "30",
     img: `${product}`,
     title: "Máquinas surcadora-fertilizadora",
     category: "EQUIPOS AGRÍCOLAS",
@@ -249,6 +279,7 @@ export const products = [
     description: "",
   },
   {
+    id: "31",
     img: `${product}`,
     title: "Limpiadora de playas",
     category: "OTROS EQUIPOS",
@@ -351,43 +382,36 @@ export const sections = [
 
 export const brandNews = [
   {
-    
     title: "Empresa Industrial Ramón Peña",
     subtitle: "Eficiencia y calidad demostrada",
     path: "https://www.cubaplusmagazine.com/es/negocios/empresa-industrial-ramon-pe%C3%B1a-eficiencia-calidad.html",
   },
   {
-   
     title: "Empresa Industrial Ramón Peña",
     subtitle: "Eficiencia avalada por la experiencia",
     path: "https://www.cubaplusmagazine.com/es/cuba-industria/empresa-industrial-ramon-pe%C3%B1a-eficiencia-experiencia.html",
   },
   {
-   
     title: "Avances en la sustitución",
     subtitle: "La importación y la exportación",
     path: "https://www.tribuna.cu/capitalinas/2019-12-17/avances-en-la-sustitucion-de-importacion-y-la-exportacion",
   },
   {
-   
     title: "Incrementa cooperación con la industria cubana",
     subtitle: "Empresa Industrial Ramón Peña",
     path: "https://www.opciones.cu/ferias-y-eventos/2016-06-23/incrementa-cooperacion-con-la-industria-cubana",
   },
   {
-   
     title: "¡Pensar en Grande!",
     subtitle: "",
     path: "https://www.trabajadores.cu/20141005/pensar-en-grande-2/",
   },
   {
-    
     title: "Industria sideromecánica cubana se moderniza",
     subtitle: "",
     path: "https://www.adelante.cu/index.php/es/noticias/noticias-de-cuba/25375-industria-sideromecanica-cubana-se-moderniza",
   },
   {
-   
     title: "Tras los pasos de la industria cubana",
     subtitle: "",
     path: "https://www.excelenciascuba.com/noticia/tras-los-pasos-de-la-industria-cubana",

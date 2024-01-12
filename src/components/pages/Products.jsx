@@ -30,12 +30,14 @@ const Products = () => {
               PRODUCCIONES
             </h3>
           </div>
-          <Button onClick={handleOpenModal} />
+          <div onClick={handleOpenModal}>
+            <Button />
+          </div>
           <div className="w-2/12">
             <img src={productions} alt="" className="mr-0" />
           </div>
         </div>
-        <InfoModal isVisible={isModalVisible} onClose={handleCloseModal} />
+        <InfoModal isVisible={isModalVisible} onClose={handleCloseModal}/>
         <ProductSection />
         <div className="flex flex-row-reverse mb-20">
           <div className="w-1/3">

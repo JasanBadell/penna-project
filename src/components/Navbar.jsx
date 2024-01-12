@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 right-0 bg-white ${
+      className={`w-full fixed top-0 left-0 right-0 bg-white border-b-0 ${
         isSticky ? "sticky border-b bg-white duration-300" : ""
       }`}
     >
@@ -82,8 +82,8 @@ const Navbar = () => {
               </p>
               <p>peñaempresaindustrial@gmail.com</p>
             </div>
-            <div className="hidden lg:flex">
-              <img src={navbarImage} alt="triangulo rojo" className="w-full" />
+            <div className="hidden lg:flex lg:justify-end">
+              <img src={navbarImage} alt="triangulo rojo" className="w-3/4" />
             </div>
           </div>
           <div className="lg:hidden flex">
@@ -99,7 +99,11 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className="md:flex hidden items-center justify-end">
+        <div
+          className={`md:flex hidden items-center justify-end ${
+            isSticky ? "sticky top-0 bg-white" : ""
+          }`}
+        >
           <ul className="lg:flex space-x-12 hidden p-5 z-20">
             {navItems.map(({ link, path }) => (
               <Link
