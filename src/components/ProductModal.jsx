@@ -19,13 +19,13 @@ const ProductModal = ({ isVisible, onClose }) => {
       onClick={handleCloseClick}
     >
       <div className="w-[600px] flex flex-col m-4" onClick={handleModalClick}>
-        <button
-          className="text-white text-xl place-self-end"
-          onClick={handleCloseClick}
-        >
-          X
-        </button>
-        <div className="bg-white text-black p-2 rounded-md">
+        <div className="bg-defaultGray text-black p-2 rounded-md flex flex-col">
+          <button
+            className="text-defaultRed text-xl place-self-end"
+            onClick={handleCloseClick}
+          >
+            X
+          </button>
           <ContactForm />
         </div>
       </div>

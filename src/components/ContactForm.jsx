@@ -76,8 +76,8 @@ const Formulario = () => {
   return (
     <>
       <div>
-        <h2 className="text-black">
-          ¿En qué podemos ayudarte, necesita de nuestras prestaciones?
+        <h2 className="text-xl md:text-2xl font-bold text-defaultBlue leading-snug mx-4">
+          ¿En qué podemos ayudarle, necesita de nuestras prestaciones?
         </h2>
       </div>
       <form onSubmit={handleSubmit} className="py-6 px-6 rounded-xl max-w-xl">

@@ -10,7 +10,7 @@ import { homevector, homecarrusel } from "../../assets/dummy";
 const Home = () => {
   return (
     <>
-      <div className="pt-26 lg:pt-44 mb-4">
+      <div className="pt-26 lg:pt-28 mb-4">
         <div className=" lg:px-14 max-w-screen-2xl mx-auto flex flex-col lg:flex-row ">
           <div className="lg:absolute mt-20 mx-4 lg:ml-36 z-20 ">
             <p className="text-xl text-defaultBlue mt-28">Bievenidos</p>
