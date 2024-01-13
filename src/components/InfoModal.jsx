@@ -18,14 +18,14 @@ const InfoModal = ({ isVisible, onClose }) => {
       onClick={handleCloseClick}
     >
       <div className="w-[600px] flex flex-col m-4" onClick={handleModalClick}>
+        <div className="bg-defaultGray text-black p-2 rounded-md flex flex-col">
         <button
-          className="text-white text-xl place-self-end"
+          className="text-defaultRed text-xl place-self-end"
           onClick={handleCloseClick}
         >
           X
         </button>
-        <div className="bg-white text-black p-2 rounded-md">
-          <p className="p-10 text-lg">
+          <p className="p-8 text-lg">
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.
             En el año alcanzamos un surtido de más de 45 tipos de equipos, desde

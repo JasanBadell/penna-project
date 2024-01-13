@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -13,6 +14,7 @@ import brandLogo from "../assets/Logos_Penna-Project/Brand_Logo.png";
 import navbarImage from "../assets/NavBar_Red.png";
 import Search from "./Search";
 import { navItems } from "../assets/dummy";
+import SubscribeModal from "./SubscribeModal";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +35,16 @@ const Navbar = () => {
     };
   }, []);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsVisible(false);
+  };
+
   return (
     <header
       className={`w-full fixed top-0 left-0 right-0 bg-white border-b-0 ${
@@ -41,7 +53,7 @@ const Navbar = () => {
     >
       <nav>
         <div className="flex items-center justify-between shadow-lg">
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/penna-project/" className="flex items-center space-x-3">
             <img
               src={brandLogo}
               alt="Brand Logo"
@@ -50,10 +62,17 @@ const Navbar = () => {
           </Link>
           <div className="flex items-center space-x-8">
             <div className="hidden lg:flex items-center space-x-12">
-              <button className="bg-white text-defaultBlue border-2 border-defaultBlue py-2 px-4 transition-all duration-300 rounded-lg hover:bg-defaultBlue hover:text-white">
+              <button
+                className="bg-white text-defaultBlue border-2 border-defaultBlue py-2 px-4 transition-all duration-300 rounded-lg hover:bg-defaultBlue hover:text-white"
+                onClick={handleOpenModal}
+              >
                 SUBSCRIBIRSE
               </button>
             </div>
+            {/* <SubscribeModal
+                show={isVisible}
+                close={handleCloseModal}
+              /> */}
             <div>
               <p className="hidden lg:flex items-center text-defaultBlue font-bold">
                 CONTÁCTENOS
@@ -75,7 +94,7 @@ const Navbar = () => {
                 <MdOutlineLocalPhone className="h-6 w-6 text-defaultBlue inline" />
                 TELÉFONO:
               </p>
-              <p>+53 6598 7412 +53 7 524 89 65</p>
+              <p>+53 7 797 47 77 y +53 7 797 79 13</p>
               <p>
                 <CiMail className="h-6 w-6 text-defaultBlue inline" />
                 EMAIL:
@@ -100,19 +119,21 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`md:flex hidden items-center justify-end ${
+          className={`md:flex hidden items-strech justify-end ${
             isSticky ? "sticky top-0 bg-white" : ""
           }`}
         >
-          <ul className="lg:flex space-x-12 hidden p-5 z-20">
+          <ul className="lg:flex lg:items-strech lg:justify-between hidden z-20 ">
             {navItems.map(({ link, path }) => (
-              <Link
-                to={path}
-                key={path}
-                className="block text-xxl text-defaultBlue hover:text-white hover:bg-defaultBlue first:font-medium"
-              >
-                {link}
-              </Link>
+              <button className="hover:bg-defaultBlue transition-all duration-300 ease-in">
+                <Link
+                  to={path}
+                  key={path}
+                  className="block text-xxl text-defaultBlue mx-10  hover:text-white transition-all duration-300 ease-in first:font-medium"
+                >
+                  {link}
+                </Link>
+              </button>
             ))}
           </ul>
           <Search />

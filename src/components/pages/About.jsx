@@ -14,7 +14,7 @@ const About = () => {
           <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
             POLO PRODUTIVO INDUSTRIAL
           </h3>
-          <p className="text-lg w-1/2">
+          <p className="text-lg lg:w-1/3">
             Nuestro equipo de trabajo lo conforman tres unidades empresariales y
             una mipyme
           </p>

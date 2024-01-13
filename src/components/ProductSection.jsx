@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from "react";
-import { Card, Modal } from "@material-tailwind/react";
+import { Card } from "@material-tailwind/react";
 import { products } from "../assets/dummy";
 import MoreInfoModal from "./MoreInfoModal";
 
