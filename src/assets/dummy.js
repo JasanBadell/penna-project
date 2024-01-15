@@ -40,12 +40,40 @@ import imgCarrusel_3 from "./Carrusel/img_3.jpg";
 import imgCarrusel_4 from "./Carrusel/img_4.jpg";
 import imgCarrusel_5 from "./Carrusel/img_5.jpg";
 import imgCarrusel_6 from "./Carrusel/img_6.jpg";
+import rc from "./Productos/Remolque_Cannero.jpg";
+import cg from "./Productos/Carga_General.jpg";
+import ds from "./Productos/Desechos_Solidos.jpg";
+import c from "./Productos/Cisterna.jpg";
+import pa from "./Productos/Remolque_1.jpg";
+import cp from "./Productos/Carretilla.jpg";
+import sr from "./Productos/Semi_Remolque.jpg";
+import ra from "./Productos/Remolque_Autobasculante.jpg";
+import sp from "./Productos/producto_img_13.jpg";
+import rg from "./Productos/Remolque_Ganadero.jpg";
+import e from "./Productos/Escalotina.jpg";
+import hh from "./Productos/Hormigonera_Hidraulica.jpg";
+import pn from "./Productos/producto_img_9.jpg";
+import cc from "./Productos/Caja_Camion.jpg";
+import cA from "./Productos/Caja_Ampirroll.jpg";
+import rb from "./Productos/Remolque_Basculante.jpg";
+import cCS from "./Productos/Remolque.jpg";
+import eQC from "./Productos/Equipo_Construccion_2.jpg";
+import jcg from "./Productos/producto_img_21.jpg";
+import hp from "./Productos/Remolque_Olimpico.jpg";
+import cb from "./Productos/producto_img_11.jpg";
+import pcf from "./Productos/Pala_Tractor.jpg";
+import imbf from "./Productos/Equipo_Construccion_1.jpg";
+import mfrr from "./Productos/Estructura_Remolque.jpg";
+import men from "./Productos/producto_img_21.jpg";
+import m from "./Productos/Contenedor_Basura.jpg";
+import z from "./Productos/Caja_Remolque.jpg";
+
 // Import Const
 
 export const products = [
   {
     id: "1",
-    img: `${product}`,
+    img: `${rc}`,
     title: "Transporte de caña",
     category: "REMOLQUES",
     subCategory: "Fijo, Bascular",
@@ -53,7 +81,7 @@ export const products = [
   },
   {
     id: "2",
-    img: `${product}`,
+    img: `${cg}`,
     title: "Transporte de carga general",
     category: "REMOLQUES",
     subCategory: "Fijo, Basculante",
@@ -61,7 +89,7 @@ export const products = [
   },
   {
     id: "3",
-    img: `${product}`,
+    img: `${ds}`,
     title: "Transporte de desechos sólidos",
     category: "REMOLQUES",
     subCategory: "Fijo, Basculante",
@@ -69,7 +97,7 @@ export const products = [
   },
   {
     id: "4",
-    img: `${product}`,
+    img: `${c}`,
     title: "Cisterna para transportes líquidos",
     category: "REMOLQUES",
     subCategory: "Fijo",
@@ -77,7 +105,7 @@ export const products = [
   },
   {
     id: "5",
-    img: `${product}`,
+    img: `${pa}`,
     title: "Transporte de productos agrícolas",
     category: "REMOLQUES",
     subCategory: "Fijo, Basculante",
@@ -85,7 +113,7 @@ export const products = [
   },
   {
     id: "6",
-    img: `${product}`,
+    img: `${ds}`,
     title: "Semicompactador para desechos sólidos",
     category: "REMOLQUES",
     subCategory: "Basculante",
@@ -93,7 +121,7 @@ export const products = [
   },
   {
     id: "7",
-    img: `${product}`,
+    img: `${cp}`,
     title: "Carretilla Portaequipaje",
     category: "REMOLQUES",
     subCategory: "",
@@ -101,7 +129,7 @@ export const products = [
   },
   {
     id: "8",
-    img: `${product}`,
+    img: `${sr}`,
     title: "Transporte de carga general",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -109,7 +137,7 @@ export const products = [
   },
   {
     id: "9",
-    img: `${product}`,
+    img: `${ra}`,
     title: "Transporte de sólidos a granel",
     category: "SEMI-REMOLQUES",
     subCategory: "Fijo, Basculante",
@@ -117,7 +145,7 @@ export const products = [
   },
   {
     id: "10",
-    img: `${product}`,
+    img: `${sp}`,
     title: "Transporte de sólidos pulverizados",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -125,7 +153,7 @@ export const products = [
   },
   {
     id: "11",
-    img: `${product}`,
+    img: `${c}`,
     title: "Cisternas para el transporte de líquidos",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -133,7 +161,7 @@ export const products = [
   },
   {
     id: "12",
-    img: `${product}`,
+    img: `${rg}`,
     title: "Transporte de ganado",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -141,7 +169,7 @@ export const products = [
   },
   {
     id: "13",
-    img: `${product}`,
+    img: `${e}`,
     title: "Transporte de vehículos automotores",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -149,7 +177,7 @@ export const products = [
   },
   {
     id: "14",
-    img: `${product}`,
+    img: `${hh}`,
     title: "Transporte de elementos pre-fabricados de hormigón",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -157,7 +185,7 @@ export const products = [
   },
   {
     id: "15",
-    img: `${product}`,
+    img: `${cc}`,
     title: "Transporte de personas hasta 60 pasajeros sentados",
     category: "SEMI-REMOLQUES",
     subCategory: "",
@@ -165,7 +193,7 @@ export const products = [
   },
   {
     id: "16",
-    img: `${product}`,
+    img: `${cA}`,
     title: "Cajas AMPIROLL para desechos sólidos",
     category: "CONTENEDORES",
     subCategory: "",
@@ -173,7 +201,7 @@ export const products = [
   },
   {
     id: "17",
-    img: `${product}`,
+    img: `${cc}`,
     title: "Plataformas sobre camión para carga general",
     category: "CONTENEDORES",
     subCategory: "Con barandas, Sin barandas",
@@ -181,7 +209,7 @@ export const products = [
   },
   {
     id: "18",
-    img: `${product}`,
+    img: `${rb}`,
     title: "Cajas con barandas",
     category: "CONTENEDORES",
     subCategory: "Fija, Basculante",
@@ -189,7 +217,7 @@ export const products = [
   },
   {
     id: "19",
-    img: `${product}`,
+    img: `${c}`,
     title: "Cisternas para el transporte de líquidos",
     category: "CONTENEDORES",
     subCategory: "",
@@ -197,7 +225,7 @@ export const products = [
   },
   {
     id: "20",
-    img: `${product}`,
+    img: `${cCS}`,
     title: "Cajas cerradas para el transporte de semi-sólidos",
     category: "CONTENEDORES",
     subCategory: "",
@@ -205,7 +233,7 @@ export const products = [
   },
   {
     id: "21",
-    img: `${product}`,
+    img: `${eQC}`,
     title: "Cajas compactadoras para desechos sólidos",
     category: "CONTENEDORES",
     subCategory: "",
@@ -213,7 +241,7 @@ export const products = [
   },
   {
     id: "22",
-    img: `${product}`,
+    img: `${jcg}`,
     title: "Jaulas para cilindros de gases",
     category: "CONTENEDORES",
     subCategory: "",
@@ -221,7 +249,7 @@ export const products = [
   },
   {
     id: "23",
-    img: `${product}`,
+    img: `${hp}`,
     title: "Hormigoneras portátiles",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
     subCategory: "",
@@ -229,7 +257,7 @@ export const products = [
   },
   {
     id: "24",
-    img: `${product}`,
+    img: `${cb}`,
     title: "Carretillas barrenadoras",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
     subCategory: "",
@@ -237,7 +265,7 @@ export const products = [
   },
   {
     id: "25",
-    img: `${product}`,
+    img: `${pcf}`,
     title: "Palas para cargadores frontales",
     category: "EQUIPOS PARA LA CONSTRUCCIÓN",
     subCategory: "",
@@ -245,7 +273,7 @@ export const products = [
   },
   {
     id: "26",
-    img: `${product}`,
+    img: `${imbf}`,
     title: "Instalaciones para molido de biofertilizantes",
     category: "EQUIPOS AGRÍCOLAS",
     subCategory: "",
@@ -253,7 +281,7 @@ export const products = [
   },
   {
     id: "27",
-    img: `${product}`,
+    img: `${mfrr}`,
     title: "Máquinas forrajeras",
     category: "EQUIPOS AGRÍCOLAS",
     subCategory: "",
@@ -261,7 +289,7 @@ export const products = [
   },
   {
     id: "28",
-    img: `${product}`,
+    img: `${men}`,
     title: "Máquinas ensiladoras",
     category: "EQUIPOS AGRÍCOLAS",
     subCategory: "",
@@ -269,7 +297,7 @@ export const products = [
   },
   {
     id: "29",
-    img: `${product}`,
+    img: `${m}`,
     title: "Multiarados",
     category: "EQUIPOS AGRÍCOLAS",
     subCategory: "",
@@ -277,7 +305,7 @@ export const products = [
   },
   {
     id: "30",
-    img: `${product}`,
+    img: `${z}`,
     title: "Máquinas surcadora-fertilizadora",
     category: "EQUIPOS AGRÍCOLAS",
     subCategory: "",
@@ -285,7 +313,7 @@ export const products = [
   },
   {
     id: "31",
-    img: `${product}`,
+    img: `${pn}`,
     title: "Limpiadora de playas",
     category: "OTROS EQUIPOS",
     subCategory: "",

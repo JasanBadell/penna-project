@@ -15,7 +15,7 @@ const Tabs = () => {
                 key={item.id}
               >
                 <div className="flex flex-col">
-                  <img src={item.img} alt="" />
+                  <img src={item.img} alt="" className="w-screen" />
                   <div className="m-5">
                     <h3 className="text-base text-left font-semibold uppercase">
                       {item.title}

@@ -62,12 +62,12 @@ const Navbar = () => {
           </Link>
           <div className="flex items-center space-x-8">
             <div className="hidden lg:flex items-center space-x-12">
-              <button
+              {/* <button
                 className="bg-white text-defaultBlue border-2 border-defaultBlue py-2 px-4 transition-all duration-300 rounded-lg hover:bg-defaultBlue hover:text-white"
                 onClick={handleOpen}
               >
                 SUBSCRIBIRSE
-              </button>
+              </button> */}
             </div>
 
             <div>
@@ -75,10 +75,7 @@ const Navbar = () => {
                 CONTÁCTENOS
               </p>
               <div className="hidden lg:flex flex-row items-center justify-center my-2 gap-3">
-                <Link to="/">
-                  <FaTelegram className="h-6 w-6 text-defaultBlue" />
-                </Link>
-                <Link to="/">
+                <Link to="https://www.faceboock.com/SIME.CU">
                   <FaFacebook className="h-6 w-6 text-defaultBlue" />
                 </Link>
                 <Link to="https://twitter.com/EIRP2017">
