@@ -17,11 +17,14 @@ function App() {
 
         <Routes>
           <Route path="/penna-project/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/brandnews" element={<BrandNews />} />
-          <Route path="/products/:id" component={<ProductSection />} />
+          <Route path="/penna-project/about" element={<About />} />
+          <Route path="/penna-project/products" element={<Products />} />
+          <Route path="/penna-project/services" element={<Services />} />
+          <Route path="/penna-project/brandnews" element={<BrandNews />} />
+          <Route
+            path="/penna-project/products/:id"
+            component={<ProductSection />}
+          />
         </Routes>
 
         <Footer />

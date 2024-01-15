@@ -1,7 +1,6 @@
 // Import IMG
 import about from "./about.png";
 import about2 from "./about2.png";
-import product from "../assets/product1.png";
 import productions from "./Productions_IMG.png";
 import service from "./Service_IMG.png";
 import services1 from "./Services_1.png";
@@ -543,10 +542,10 @@ export const certificated = [
 ];
 
 export const navItems = [
-  { link: "Acerca de nosotros", path: "about" },
-  { link: "Servicios", path: "services" },
-  { link: "Producciones", path: "products" },
-  { link: "Noticias", path: "brandnews" },
+  { link: "Acerca de nosotros", path: "/penna-project/about" },
+  { link: "Servicios", path: "/penna-project/services" },
+  { link: "Producciones", path: "/penna-project/products" },
+  { link: "Noticias", path: "/penna-project/brandnews" },
 ];
 
 export const clientopinion = [
@@ -602,7 +601,6 @@ export {
   maintenance,
   pencil,
   painting,
-  product,
   rocket,
   vector,
   s_vector,
@@ -622,6 +620,7 @@ export {
   camaraComercio,
   registroComercial,
   propiedadIndustrial,
+  imgCarrusel_1,
   FaTelegram,
   FaFacebook,
   FaSquareXTwitter,

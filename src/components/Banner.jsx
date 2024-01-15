@@ -1,5 +1,5 @@
 import React from "react";
-import { vector, service } from "../assets/dummy";
+import { vector, imgCarrusel_1 } from "../assets/dummy";
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
           <img src={vector} alt="imagen" className="mt-16" />
         </div>
         <div className="w-2/3 -ml-10">
-          <img src={service} alt="" className="" />
+          <img src={imgCarrusel_1} alt="" className="" />
         </div>
       </div>
     </>

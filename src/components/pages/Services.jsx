@@ -3,7 +3,6 @@ import React from "react";
 import { sections } from "../../assets/dummy";
 import Clients from "../Clients";
 import Banner from "../Banner";
-import Button from "../Button";
 import "../../App.css";
 
 const Services = () => {
