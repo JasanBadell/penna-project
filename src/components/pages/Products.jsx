@@ -30,18 +30,35 @@ const Products = () => {
               PRODUCCIONES
             </h3>
           </div>
-          <div onClick={handleOpenModal}>
-            <Button />
-          </div>
-          <div className="w-2/12">
+          <div className="w-1/5">
             <img src={productions} alt="" className="mr-0" />
           </div>
         </div>
-        <InfoModal isVisible={isModalVisible} onClose={handleCloseModal}/>
+        <div className="mx-60 my-10 gap-4 grid grid-cols-2">
+          <p>
+            Nuestra línea de producciones se realiza con alto nivel de
+            integración tecnológica y suficiente experiencia del capital humano.
+          </p>
+          <p>
+            En el año alcanzamos un surtido de más de 45 tipos de equipos, desde
+            los más sencillos hasta los más complejos.
+          </p>
+          <p>
+            A partir de un proceso inversionista en el 2020, dos de nuestras
+            industrias modernizaron su infraestructura tecnológica, permitiendo
+            un incremento en las producciones, superior a los dos mil equipos de
+            complejidad media, anualmente.
+          </p>
+          <p>
+            En la década de 1980 a 1990 la industria produjo como promedio anual
+            mil 700 equipos y se cubrió el 83% de la demanda nacional en
+            remolques, semirremolques y aplicaciones.
+          </p>
+        </div>
         <ProductSection />
         <div className="flex flex-row-reverse mb-20">
           <div className="w-1/3">
-            <Carousel className="mt-16 -ml-44 bg-vector-3" autoplay>
+            <Carousel className="mt-16 -ml-44 bg-vector-3" autoplay loop>
               {clientopinion.map(({ empName, opinion }) => (
                 <div className="flex flex-col mt-20 mx-20 z-10 absolute m-4">
                   <p className=" mb-4 text-xl">{opinion}</p>
@@ -58,7 +75,7 @@ const Products = () => {
         </div>
         <div className="mx-20 my-20">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
-          ASÍ NOS VALORAN!
+            ASÍ NOS VALORAN!
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug">
             CLIENTES

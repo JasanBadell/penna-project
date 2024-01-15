@@ -17,10 +17,12 @@ const BrandNews = () => {
           </h3>
         </div>
         <div className="grid grid-cols-2 gap-2 -mb-32">
-          {brandNews.map(({ title, subtitle, path }) => (
+          {brandNews.map(({ port_img, title, autor, fountain, path }) => (
             <div className="w-1/2 m-4">
+              <img src={port_img} alt="" />
               <h3 className="font-bold text-xl">{title}</h3>
-              <p className="text-sm">{subtitle}</p>
+              <p className="text-sm">Autor: {autor}</p>
+              <p className="text-sm">Fuente: {fountain}</p>
               <button className="my-4 border border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
                 <Link
                   to={path}

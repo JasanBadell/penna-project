@@ -37,17 +37,17 @@ const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleOpenModal = () => {
-    setIsVisible(true);
+  const handleOpen = () => {
+    setIsVisible(false);
   };
 
-  const handleCloseModal = () => {
-    setIsVisible(false);
+  const handleClose = () => {
+    setIsVisible(true);
   };
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 right-0 bg-white border-b-0 ${
+      className={`w-full fixed top-0 left-0 right-0 bg-white border-b-0 z-30 ${
         isSticky ? "sticky border-b bg-white duration-300" : ""
       }`}
     >
@@ -57,36 +57,33 @@ const Navbar = () => {
             <img
               src={brandLogo}
               alt="Brand Logo"
-              className="inline-block lg:mx-20 m-4"
+              className="lg:inline-block w-auto my-4 mx-4 lg:mx-20"
             />
           </Link>
           <div className="flex items-center space-x-8">
             <div className="hidden lg:flex items-center space-x-12">
               <button
                 className="bg-white text-defaultBlue border-2 border-defaultBlue py-2 px-4 transition-all duration-300 rounded-lg hover:bg-defaultBlue hover:text-white"
-                onClick={handleOpenModal}
+                onClick={handleOpen}
               >
                 SUBSCRIBIRSE
               </button>
             </div>
-            {/* <SubscribeModal
-                show={isVisible}
-                close={handleCloseModal}
-              /> */}
+
             <div>
-              <p className="hidden lg:flex items-center text-defaultBlue font-bold">
+              <p className="hidden lg:flex items-center justify-center text-defaultBlue font-bold">
                 CONTÁCTENOS
               </p>
-              <div className="hidden lg:flex my-6 gap-3">
-                <a href="">
+              <div className="hidden lg:flex flex-row items-center justify-center my-2 gap-3">
+                <Link to="/">
                   <FaTelegram className="h-6 w-6 text-defaultBlue" />
-                </a>
-                <a href="">
+                </Link>
+                <Link to="/">
                   <FaFacebook className="h-6 w-6 text-defaultBlue" />
-                </a>
-                <a href="">
+                </Link>
+                <Link to="https://twitter.com/EIRP2017">
                   <FaSquareXTwitter className="h-6 w-6 text-defaultBlue" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="hidden lg:flex flex-col text-xs">
@@ -102,7 +99,7 @@ const Navbar = () => {
               <p>peñaempresaindustrial@gmail.com</p>
             </div>
             <div className="hidden lg:flex lg:justify-end">
-              <img src={navbarImage} alt="triangulo rojo" className="w-3/4" />
+              <img src={navbarImage} alt="triangulo rojo" className="w-8/12" />
             </div>
           </div>
           <div className="lg:hidden flex">
@@ -125,18 +122,18 @@ const Navbar = () => {
         >
           <ul className="lg:flex lg:items-strech lg:justify-between hidden z-20 ">
             {navItems.map(({ link, path }) => (
-              <button className="hover:bg-defaultBlue transition-all duration-300 ease-in">
+              <button className="hover:bg-defaultBlue text-defaultBlue hover:text-white transition-all duration-300 ease-in">
                 <Link
                   to={path}
                   key={path}
-                  className="block text-xxl text-defaultBlue mx-10  hover:text-white transition-all duration-300 ease-in first:font-medium"
+                  className="block text-xxl  mx-10 first:font-medium"
                 >
                   {link}
                 </Link>
               </button>
             ))}
+            <Search />
           </ul>
-          <Search />
         </div>
         <div
           className={`lg:hidden px-4 mt-20 text-center py-8 bg-defaultBlue m-2 ${
@@ -153,6 +150,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+        {/* <SubscribeModal show={isVisible} close={handleClose} /> */}
       </nav>
     </header>
   );

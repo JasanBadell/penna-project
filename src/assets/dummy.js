@@ -15,7 +15,6 @@ import rocket from "./rocket.svg";
 import vector from "./Vector.svg";
 import s_vector from "./Services_vector.svg";
 import s_vector1 from "./Services_vector_1.svg";
-import news from "./newsLetter1.png";
 import brands from "./Brand_news_asset.png";
 import brandimg from "./brandnews_1.png";
 import brandimg1 from "./brandnews_2.png";
@@ -35,6 +34,12 @@ import { FaTelegram, FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineLocalPhone, MdOutlineClose } from "react-icons/md";
 import { TfiMenu } from "react-icons/tfi";
+import imgCarrusel_1 from "./Carrusel/img_1.jpg";
+import imgCarrusel_2 from "./Carrusel/img_2.jpg";
+import imgCarrusel_3 from "./Carrusel/img_3.jpg";
+import imgCarrusel_4 from "./Carrusel/img_4.jpg";
+import imgCarrusel_5 from "./Carrusel/img_5.jpg";
+import imgCarrusel_6 from "./Carrusel/img_6.jpg";
 // Import Const
 
 export const products = [
@@ -382,48 +387,67 @@ export const sections = [
 
 export const brandNews = [
   {
-    title: "Empresa Industrial Ramón Peña",
-    subtitle: "Eficiencia y calidad demostrada",
+    title: "Empresa Industrial Ramón Peña: Eficiencia y calidad demostrada",
+    port_img:
+      "https://www.cubaplusmagazine.com/img/articulos/carr/22-gesime-ramon-pena-efficiency-p.jpg",
+    autor: "GESIME",
+    fountain: "Cuba Plus Magazine",
     path: "https://www.cubaplusmagazine.com/es/negocios/empresa-industrial-ramon-pe%C3%B1a-eficiencia-calidad.html",
   },
   {
-    title: "Empresa Industrial Ramón Peña",
-    subtitle: "Eficiencia avalada por la experiencia",
+    title:
+      "Empresa Industrial Ramón Peña, eficiencia avalada por la experiencia",
+    port_img:
+      "https://www.cubaplusmagazine.com/img/articulos/carr/13-empresa-ramon-pena-p.jpg",
+    autor: "GESIME",
+    fountain: "Cuba Plus Magazine",
     path: "https://www.cubaplusmagazine.com/es/cuba-industria/empresa-industrial-ramon-pe%C3%B1a-eficiencia-experiencia.html",
   },
   {
-    title: "Avances en la sustitución",
-    subtitle: "La importación y la exportación",
+    title: "Avances en la sustitución de importación y la exportación",
+    port_img: "https://www.tribuna.cu/file/img/2019/12/medium/f0009657.jpg",
+    autor: "Nayaren Rodríguez Socarrás",
+    fountain: "Tribuna de La Habana",
     path: "https://www.tribuna.cu/capitalinas/2019-12-17/avances-en-la-sustitucion-de-importacion-y-la-exportacion",
   },
   {
     title: "Incrementa cooperación con la industria cubana",
-    subtitle: "Empresa Industrial Ramón Peña",
+    port_img:
+      "https://www.opciones.cu/thumbs/425x/crc/images/medias/2016/06/ferruz-industrial-group.jpg",
+    autor: "Ledys Camacho Casado",
+    fountain: "Opciones",
     path: "https://www.opciones.cu/ferias-y-eventos/2016-06-23/incrementa-cooperacion-con-la-industria-cubana",
   },
   {
     title: "¡Pensar en Grande!",
-    subtitle: "",
+    port_img:
+      "https://www.trabajadores.cu/wp-content/uploads/2014/10/ABT-pabexpo-16.x10671.jpg",
+    autor: "Redacción Nacional",
+    fountain: "Periódico Trabajadores",
     path: "https://www.trabajadores.cu/20141005/pensar-en-grande-2/",
   },
   {
     title: "Industria sideromecánica cubana se moderniza",
-    subtitle: "",
+    port_img:
+      "https://www.adelante.cu/images/2022/abril/13/jpeix/antillana/antillana-de-acero.jpg",
+    autor: "Redacción ACN",
+    fountain: "Periódico Adelante",
     path: "https://www.adelante.cu/index.php/es/noticias/noticias-de-cuba/25375-industria-sideromecanica-cubana-se-moderniza",
   },
   {
     title: "Tras los pasos de la industria cubana",
-    subtitle: "",
+    port_img:
+      "https://www.excelenciascuba.com/sites/default/files/sites/default/files/cuba/imagenes_noticias/roylan.jpg",
+    autor: "alina",
+    fountain: "Excelencias Cuba",
     path: "https://www.excelenciascuba.com/noticia/tras-los-pasos-de-la-industria-cubana",
   },
   {
-    title: "Grupo Empresarial de la Industria Sidero Mecánica",
-    subtitle: "Desarrollo con soluciones propias (+ Video)",
-    path: "https://www.adelante.cu/index.php/es/noticias/noticias-de-cuba/25375-industria-sideromecanica-cubana-se-moderniza",
-  },
-  {
     title: "IMECA sigue produciendo",
-    subtitle: "",
+    port_img:
+      "https://artemisadiario.cu/wp-content/uploads/2020/01/1-A-IMECA-la-distingue-la-destreza-de-su-gente-600x375.jpg",
+    autor: "Myrla Pizarro de la Uz",
+    fountain: "artemisadiario",
     path: "https://artemisadiario.cu/2020/01/imeca-sigue-produciendo/",
   },
 ];
@@ -464,8 +488,12 @@ export const client = [
 ];
 
 export const homecarrusel = [
-  { id: "1", img: `${service}` },
-  { id: "2", img: `${carruselimg}` },
+  { id: "1", img: `${imgCarrusel_1}` },
+  { id: "2", img: `${imgCarrusel_2}` },
+  { id: "3", img: `${imgCarrusel_3}` },
+  { id: "4", img: `${imgCarrusel_4}` },
+  { id: "5", img: `${imgCarrusel_5}` },
+  { id: "6", img: `${imgCarrusel_6}` },
 ];
 
 export const certificated = [
@@ -497,17 +525,17 @@ export const clientopinion = [
   {
     empName: "MINAG",
     opinion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, illo hic quasi ratione vitae! Ullam!",
+      "Inmejorable alianza de trabajo. Aportar soluciones técnicas en la confección y reparación de piezas de repuesto en vehículos para el crecimiento agrícola es un mérito digno de reconocer.",
   },
   {
     empName: "ECASA",
     opinion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, accusamus voluptatem iure molestiae quia consectetur labore autem voluptatibus nisi perspiciatis illo hic quasi ratione vitae! Ullam!",
+      "Excelente servicio y atención al cliente. Incuestionable calidad, terminación y resistencia en los equipos del tipo remolques. Siempre Peña nos ofrece seguridad.",
   },
   {
     empName: "ZDEM",
     opinion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa sit ipsum saepe, accusamus voluptatem iure molestiae quia consectetur labore autem voluptatibus nisi perspiciatis illo hic quasi ratione vitae! Ullam!",
+      "La experiencia de este colectivo siempre se muestra en su quehacer cotidiano. El resultado de sus producciones varias responde, en buena medida, a las necesidades de sectores estratégicos en el país.",
   },
 ];
 
@@ -523,7 +551,7 @@ export const slogan = [
     opinion: " Permitimos al país sustitución de importaciones",
   },
   {
-    opinion: " Disponemos de tecnologías modernizadas",
+    opinion: " Disponemos de tecnologías modernas",
   },
   {
     opinion:

@@ -14,29 +14,70 @@ const InfoModal = ({ isVisible, onClose }) => {
 
   return (
     <div
-      className="z-20 fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-end"
+      className="z-30 fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
       onClick={handleCloseClick}
     >
-      <div className="w-[600px] flex flex-col m-4" onClick={handleModalClick}>
-        <div className="bg-defaultGray text-black p-2 rounded-md flex flex-col">
-        <button
-          className="text-defaultRed text-xl place-self-end"
-          onClick={handleCloseClick}
-        >
-          X
-        </button>
-          <p className="p-8 text-lg">
-            Nuestra línea de producciones se realiza con alto nivel de
-            integración tecnológica y suficiente experiencia del capital humano.
-            En el año alcanzamos un surtido de más de 45 tipos de equipos, desde
-            los más sencillos hasta los más complejos. A partir de un proceso
-            inversionista en el 2020, dos de nuestras industrias modernizaron su
-            infraestructura tecnológica, permitiendo un incremento en las
-            producciones, superior a los dos mil equipos de complejidad media,
-            anualmente. En la década de 1980 a 1990 la industria produjo como
-            promedio anual mil 700 equipos y se cubrió el 83% de la demanda
-            nacional en remolques, semirremolques y aplicaciones.
-          </p>
+      <div
+        className="w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] max-h-[80%] overflow-y-auto flex flex-col m-4"
+        onClick={handleModalClick}
+      >
+        <div className="bg-defaultGray text-black p-4 rounded-md flex flex-col">
+          <button
+            className="text-defaultRed text-xl place-self-end"
+            onClick={handleCloseClick}
+          >
+            X
+          </button>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
+            <div>
+              <p className="text-md font-bold text-defaultBlue">
+                Certificaciones Código REEUP:
+              </p>
+              <p>
+                Registro Estatal de Empresas, Unidades Presupuestadas y demás
+                entidades estatales; el de cooperativas; y el de entidades no
+                estatales.
+              </p>
+            </div>
+            <div>
+              <p className="text-md font-bold text-defaultBlue">
+                Registro Central Comercial:
+              </p>
+              <p>
+                El Registro Central Comercial es una entidad adscrita al
+                Ministerio del Comercio Interior y emite la Autorización
+                Comercial y el Certificado Comercial para operación en divisas.
+              </p>
+            </div>
+            <div>
+              <p className="text-md font-bold text-defaultBlue">
+                Cámara de Comercio de la República de Cuba:
+              </p>
+              <p>
+                La Cámara de Comercio de la República de Cuba es una institución
+                de derecho internacional público, en la que se agrupan las
+                empresas cubanas productoras, comercializadoras, exportadoras,
+                importadoras y de servicios.
+              </p>
+            </div>
+            <div>
+              <p className="text-md font-bold text-defaultBlue">ONN:</p>
+              <p>
+                Oficina Nacional de Normalización. Es el principal órgano de
+                inspección y supervisión estatal de la calidad en Cuba.
+              </p>
+            </div>
+            <div>
+              <p className="text-md font-bold text-defaultBlue">OCCPI:</p>
+              <p>
+                Oficina Cubana de la Propiedad Industrial. Confiere el registro
+                de los derechos de Propiedad Industrial en la República de Cuba.
+                Contribuye al desarrollo de la ciencia, tecnología e innovación,
+                de la inversión nacional y extranjera, y de la industria y el
+                comercio.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

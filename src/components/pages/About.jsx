@@ -9,17 +9,17 @@ const About = () => {
   return (
     <>
       <div className="overflow-hidden bg-white flex flex-col ml-20">
-        <div className="absolute lg:mt-80 lg:ml-16 z-20">
+        <div className="absolute lg:mt-72 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Conoce a Peña</p>
           <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
-            POLO PRODUTIVO INDUSTRIAL
+            POLO PRODUCTIVO INDUSTRIAL
           </h3>
           <p className="text-lg lg:w-1/3">
             Nuestro equipo de trabajo lo conforman tres unidades empresariales y
             una mipyme
           </p>
         </div>
-        <div className="pt-40">
+        <div className="lg:pt-36">
           <Banner />
         </div>
         <div className="flex  flex-row lg:flex-col place-items-center lg:ml-20 -mt-8 mb-8">

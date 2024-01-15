@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <>
       <div className="overflow-hidden bg-white flex flex-col ml-20">
-        <div className="absolute lg:mt-80 lg:ml-16 z-20">
+        <div className="absolute lg:mt-72 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Servicios</p>
           <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
             XX AÑOS DE EXPERIENCIA
@@ -19,7 +19,7 @@ const Services = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div className="pt-40">
+        <div className="pt-36">
           <Banner />
         </div>
         <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
@@ -31,19 +31,40 @@ const Services = () => {
           </h3>
         </div>
       </div>
-      <div className="flex md:flex-col justify-around align-middle">
-        {sections.map(({ id, title, img, conten, logo, clasN }) => (
+      <div className="lg:mx-60 mx-4 lg:my-10 gap-4 flex flex-col lg:grid lg:grid-cols-2">
+        <p>
+          Nuestros clientes pueden beneficiarse de un catálogo de prestaciones
+          que incluyen procesos tecnológicos y mecánicos de mantenimiento,
+          reparación, corte, soldadura, conformado, pailería y pintura,
+          aplicaciones sobre chasis, sustitución de accesorios e instalaciones
+          eléctricas.
+        </p>
+        <p>
+          <strong>Ofrecemos</strong>: Producción y comercialización de
+          autotrenes compuestos por remolques o semirremolques, camionetas o
+          camiones con carrocerías utilitarias, así como recambios, partes,
+          piezas y accesorios.
+        </p>
+        <p>
+          Fabricación de engranes y piezas de repuesto mecanizadas para uso
+          automotor e industrial. Diseño, mantenimiento y reparación de
+          estructuras metálicas. Tratamiento térmico, corte y conformado de
+          metales, granallado de superficies metálicas. Montaje, instalación,
+          puesta en marcha, mantenimiento y reparación de las producciones.
+          Ensamble y soldadura manual o mediante automatización mecánica.
+        </p>
+      </div>
+      <div className="flex flex-col justify-around align-middle">
+        {sections.map(({ id, title, img, logo, clasN }) => (
           <div className={clasN} accessKey={id}>
-            <img src={img} alt="img" className="w-1/2" />
-            <div className="mt-20 mx-20 z-10">
+            <img src={img} alt="img" className="lg:w-1/2 w-2/5" />
+            <div className="mt-20 lg:mx-20 z-10">
               <div className="flex flex-row items-center justify-around">
-                <h3 className="text-defaultBlue font-extrabold text-5xl">
+                <h3 className="text-defaultBlue font-extrabold text-2xl lg:text-5xl">
                   {title}
                 </h3>
                 <img src={logo} alt="" width={100} className="m-10" />
               </div>
-              <p className="text-2xl ">{conten}</p>
-              <Button />
             </div>
           </div>
         ))}

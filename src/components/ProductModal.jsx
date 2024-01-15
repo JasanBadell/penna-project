@@ -15,7 +15,7 @@ const ProductModal = ({ isVisible, onClose }) => {
 
   return (
     <div
-      className="z-20 fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-end"
+      className="z-30 fixed w-screen inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center mt-0"
       onClick={handleCloseClick}
     >
       <div className="w-[600px] flex flex-col m-4" onClick={handleModalClick}>

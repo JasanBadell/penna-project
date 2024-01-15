@@ -16,7 +16,7 @@ const MoreInfoModal = ({ idP, showModal, closeModal }) => {
   return (
     <>
       <div
-        className="z-20 fixed inset-0 bg-opacity-5 flex justify-center items-center"
+        className="z-30 fixed inset-0 bg-opacity-5 flex justify-center items-center"
         onClick={handleCloseClick}
       >
         <div className="w-[600px] flex flex-col m-4" onClick={handleModalClick}>

@@ -10,40 +10,47 @@ import { homevector, homecarrusel, slogan } from "../../assets/dummy";
 const Home = () => {
   return (
     <>
-      <div className="pt-26 lg:pt-28 mb-4">
-        <div className=" lg:px-14 max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-start">
-          <div className="lg:absolute mt-20 w-1/3 mx-4 lg:ml-36 z-20 ">
-            <p className="text-xl text-defaultBlue mt-28">Bievenidos</p>
-            <h3 className="text-5xl text-defaultBlue font-extrabold lg:w-1/2 mb-4">
+      <div className="pt-16 lg:pt-20 mb-4">
+        <div className="sm:px-8 md:px-12 lg:px-20 xl:px-24 max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-start">
+          <div className="lg:absolute mt-72 w-full lg:w-1/3 mx-4 lg:ml-16 z-20">
+            <p className="text-xl text-defaultBlue mt-8 lg:mt-0">Bienvenidos</p>
+            <h3 className="text-3xl lg:text-5xl text-defaultBlue font-extrabold lg:w-1/2 mb-4">
               A NUESTRA EMPRESA
             </h3>
-            <Carousel loop autoplay>
-              {slogan.map(({ opinion }) => (
-                <p className="text-lg lg:w-1/2 mb-4">{opinion}</p>
-              ))}
-            </Carousel>
           </div>
-          <div className="flex flex-col lg:flex-row  lg:mt-28">
-            <div className="w-screen lg:w-2/4 z-10">
-              <img src={homevector} alt="imagen" className="lg:ml-20 " />
+          <div className="flex flex-col lg:flex-row lg:mt-20 w-full overflow-hidden">
+            <div className="w-full lg:w-2/5 z-10">
+              <img src={homevector} alt="imagen" className="mx-auto lg:mt-16" />
             </div>
-            <div className="lg:w-11/12 -mt-16 lg:-ml-10">
+            <div className="w-full lg:w-3/4 lg:-ml-20 mt-8 lg:mt-0">
               <Carousel className="h-auto w-full bg-white" loop autoplay>
                 {homecarrusel.map(({ id, img }) => (
-                  <div className="flex flex-col lg:flex-row-reverse">
-                    <div accessKey={id}>
-                      <img src={img} alt="image 1" />
-                    </div>
+                  <div key={id} className="flex items-center justify-center">
+                    <img src={img} alt={img} className="carrusel" />
                   </div>
                 ))}
               </Carousel>
             </div>
           </div>
         </div>
-        <Offerts />
-        <Productions />
-        <News />
-        <Clients />
+        <div className="flex flex-col items-center mt-16 md:mt-20 mx-4 md:mx-8 lg:mx-16 xl:mx-20">
+          <Carousel loop autoplay className="w-1/2 lg:ml-80 lg:-mt-40 text-center">
+            {slogan.map(({ opinion }) => (
+              <p
+                key={opinion}
+                className="text-xl md:text-3xl font-extralight text-defaultBlue leading-snug"
+              >
+                {opinion}
+              </p>
+            ))}
+          </Carousel>
+        </div>
+        <div className="mx-auto">
+          <Offerts />
+          <Productions />
+          <News />
+          <Clients />
+        </div>
       </div>
     </>
   );
