@@ -12,10 +12,11 @@ const Services = () => {
         <div className="absolute lg:mt-72 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Servicios</p>
           <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
-            XX AÑOS DE EXPERIENCIA
+            POLO PRODUCTIVO INDUSTRIAL
           </h3>
-          <p className="text-lg w-1/2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="text-lg w-1/3">
+            Nuestro equipo de trabajo lo conforman tres unidades empresariales y
+            una mipyme
           </p>
         </div>
         <div className="pt-36">
@@ -23,7 +24,7 @@ const Services = () => {
         </div>
         <div className="flex flex-col place-items-center ml-20 -mt-8 mb-8">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
-            OPORTUNIDADES,
+            OPORTUNIDADES
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-40">
             NUESTROS SERVICIOS
@@ -31,27 +32,41 @@ const Services = () => {
         </div>
       </div>
       <div className="lg:mx-60 mx-4 lg:my-10 gap-4 flex flex-col lg:grid lg:grid-cols-2">
-        <p>
-          Nuestros clientes pueden beneficiarse de un catálogo de prestaciones
-          que incluyen procesos tecnológicos y mecánicos de mantenimiento,
-          reparación, corte, soldadura, conformado, pailería y pintura,
-          aplicaciones sobre chasis, sustitución de accesorios e instalaciones
-          eléctricas.
-        </p>
-        <p>
-          <strong>Ofrecemos</strong>: Producción y comercialización de
-          autotrenes compuestos por remolques o semirremolques, camionetas o
-          camiones con carrocerías utilitarias, así como recambios, partes,
-          piezas y accesorios.
-        </p>
-        <p>
-          Fabricación de engranes y piezas de repuesto mecanizadas para uso
-          automotor e industrial. Diseño, mantenimiento y reparación de
-          estructuras metálicas. Tratamiento térmico, corte y conformado de
-          metales, granallado de superficies metálicas. Montaje, instalación,
-          puesta en marcha, mantenimiento y reparación de las producciones.
-          Ensamble y soldadura manual o mediante automatización mecánica.
-        </p>
+        <div className="grid gap-4 ">
+          <p>
+            Nuestros clientes pueden beneficiarse de un catálogo de prestaciones
+            que incluyen procesos tecnológicos y mecánicos de mantenimiento,
+            reparación, corte, soldadura, conformado, pailería y pintura,
+            aplicaciones sobre chasis, sustitución de accesorios e instalaciones
+            eléctricas.
+          </p>
+          <p>
+            <strong>Ofrecemos</strong>:
+          </p>
+          <p>
+            - Producción y comercialización de autotrenes compuestos por
+            remolques o semirremolques, camionetas o camiones con carrocerías
+            utilitarias, así como recambios, partes, piezas y accesorios.
+          </p>
+        </div>
+        <div>
+          <p>
+            - Fabricación de engranes y piezas de repuesto mecanizadas para uso
+            automotor e industrial.
+          </p>
+          <p>- Diseño, mantenimiento y reparación de estructuras metálicas. </p>
+          <p>
+            - Tratamiento térmico, corte y conformado de metales, granallado de
+            superficies metálicas.
+          </p>
+          <p>
+            - Montaje, instalación, puesta en marcha, mantenimiento y reparación
+            de las producciones.
+          </p>
+          <p>
+            - Ensamble y soldadura manual o mediante automatización mecánica.
+          </p>
+        </div>
       </div>
       <div className="flex flex-col justify-around align-middle">
         {sections.map(({ id, title, img, logo, clasN }) => (

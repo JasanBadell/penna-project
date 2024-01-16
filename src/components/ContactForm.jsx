@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Resend } from "resend";
+
+const resend = new Resend("re_Ahy2iTnc_DRJ6dWHF9rxUFdd48JACawtM");
 
 const Formulario = () => {
   const [nombre, setNombre] = useState("");
@@ -54,13 +57,13 @@ const Formulario = () => {
 
     if (esFormularioValido) {
       // Aquí puedes agregar la lógica para enviar el formulario por correo electrónico
-      const contenidoCorreo = `Nombre: ${nombre}\nEmpresa: ${empresa}\nCorreo: ${correo}\nTeléfono: ${telefono}\nComentario: ${comentario}`;
-      window.open(
-        `mailto:jasanbadelldev@gmail.com?subject=Formulario de contacto&body=${encodeURIComponent(
-          contenidoCorreo
-        )}`
-      );
-
+      resend.emails.send({
+        from: `${correo}`,
+        to: ["jasanbadelldev@gmail.com"],
+        subject: "Formulario de contacto",
+        html: `<p>${comentario}</p>`,
+      });
+      console.log(resend.emails.send);
       // Limpiar los campos del formulario después de enviarlo
       setNombre("");
       setEmpresa("");
@@ -80,7 +83,11 @@ const Formulario = () => {
           ¿En qué podemos ayudarle, necesita de nuestras prestaciones?
         </h2>
       </div>
-      <form onSubmit={handleSubmit} className="py-6 px-6 rounded-xl max-w-xl">
+      <form
+        id="correos"
+        onSubmit={handleSubmit}
+        className="py-6 px-6 rounded-xl max-w-xl"
+      >
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
             <label

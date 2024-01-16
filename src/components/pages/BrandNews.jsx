@@ -1,10 +1,21 @@
 /* eslint-disable react/jsx-key */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Clients from "../Clients";
 import { brandNews, brands, brandimg, brandimg1 } from "../../assets/dummy";
+import Button from "../Button";
+import InstalsModal from "./InstalsModal";
 
 const BrandNews = () => {
+  const [showCertifications, setShowCertifications] = useState(false);
+
+  const handleShowCertifications = () => {
+    setShowCertifications(true);
+  };
+
+  const handleCloseCertifications = () => {
+    setShowCertifications(false);
+  };
+
   return (
     <>
       <div className="overflow-hidden bg-white mt-52 ml-20 ">
@@ -27,7 +38,7 @@ const BrandNews = () => {
                 <Link
                   to={path}
                   target="_blank"
-                  className="text-xl items-center m-2 space-y-68"
+                  className="text-sm items-center m-2 space-y-68"
                 >
                   Ver noticia
                 </Link>
@@ -55,16 +66,24 @@ const BrandNews = () => {
           </p>
         </div>
       </div>
-      <div className="text-defaultBlue mt-10 flex flex-col ml-96 w-1/2 absolute">
-        <p className="text-xl md:text-2xl font-extralight leading-snug items-end lg:ml-72">
-          CONÓCENOS,
-        </p>
-        <h3 className="text-3xl md:text-5xl font-extrabold leading-snug lg:ml-72">
-          VISITA NUESTRAS INSTALACIONES
-        </h3>
+      <div className="flex flex-row">
+        <div className="text-defaultBlue mt-10 flex flex-col items-start mx-20">
+          <p className="text-xl md:text-2xl font-extralight leading-snug ">
+            CONÓCENOS,
+          </p>
+          <h3 className="text-3xl md:text-5xl font-extrabold leading-snug">
+            VISITA NUESTRAS INSTALACIONES
+          </h3>
+          <div onClick={handleShowCertifications}>
+            <Button />
+          </div>
+          <InstalsModal
+            isVisible={showCertifications}
+            onClose={handleCloseCertifications}
+          />
+        </div>
+        <img src={brandimg1} alt="img" className="w-1/2" />
       </div>
-      <img src={brandimg1} alt="img" className="-mt-36" />
-      <Clients />
     </>
   );
 };

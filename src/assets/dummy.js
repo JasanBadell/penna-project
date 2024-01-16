@@ -371,7 +371,7 @@ export const aboutColumn2 = [
     title: "¿Qué nos prestigia?",
     conten: "• Fabricaciones de probada calidad y durabilidad.",
     conten2: "• Permite a Cuba la sustitución de importaciones.",
-    conten3: "• Tecnologías modernizadas.",
+    conten3: "• Tecnologías modernas.",
     conten4: "• Alta capacidad de producción.",
     conten5: "",
   },
@@ -414,7 +414,7 @@ export const sections = [
 
 export const brandNews = [
   {
-    title: "Empresa Industrial Ramón Peña: Eficiencia y calidad demostrada",
+    title: "Eficiencia y calidad demostrada",
     port_img:
       "https://www.cubaplusmagazine.com/img/articulos/carr/22-gesime-ramon-pena-efficiency-p.jpg",
     autor: "GESIME",
@@ -582,10 +582,11 @@ export const slogan = [
   },
   {
     opinion:
-      " Con alta capacidad de producción: Más de dos mil al año, entre producciones complejas y sencillas",
+      " Con alta capacidad de producción: más de dos mil al año, entre producciones complejas y sencillas",
   },
   {
-    opinion: " En nuestro colectivo: Innovación, Experiencia y Compromiso",
+    opinion:
+      " Nuestro colectivo distingue por su experiencia, compromiso y capacidad innovadora.",
   },
 ];
 

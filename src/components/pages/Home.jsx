@@ -34,7 +34,12 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-16 md:mt-20 mx-4 md:mx-8 lg:mx-16 xl:mx-20">
-          <Carousel loop autoplay className="w-1/2 lg:ml-80 lg:-mt-40 text-center">
+          <Carousel
+            loop
+            autoplay
+            navigation={false}
+            className="w-1/2 lg:ml-80 lg:-mt-40 text-center"
+          >
             {slogan.map(({ opinion }) => (
               <p
                 key={opinion}

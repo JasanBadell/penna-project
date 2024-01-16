@@ -26,7 +26,7 @@ const SubscribeModal = (show, close) => {
             </button>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };

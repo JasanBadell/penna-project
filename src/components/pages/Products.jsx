@@ -1,23 +1,12 @@
 /* eslint-disable react/jsx-key */
-import React, { useState } from "react";
+import React from "react";
 import Clients from "../Clients";
-import Button from "../Button";
 import ProductSection from "../ProductSection";
 import { productions, carruselimg, clientopinion } from "../../assets/dummy";
 import { Carousel } from "@material-tailwind/react";
 import "../../App.css";
-import InfoModal from "../InfoModal";
 
 const Products = () => {
-  const [isModalVisible, setModalVisible] = useState(false);
-
-  const handleOpenModal = () => {
-    setModalVisible(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalVisible(false);
-  };
   return (
     <>
       <div className="lg:mt-36">
@@ -58,10 +47,15 @@ const Products = () => {
         <ProductSection />
         <div className="flex flex-row-reverse mb-20">
           <div className="w-1/3">
-            <Carousel className="mt-16 -ml-44 bg-vector-3" autoplay loop>
+            <Carousel
+              className="mt-16 -ml-44 bg-vector-3"
+              autoplay
+              autoplayDelay={9000}
+              loop
+            >
               {clientopinion.map(({ empName, opinion }) => (
                 <div className="flex flex-col mt-20 mx-20 z-10 absolute m-4">
-                  <p className=" mb-4 text-xl">{opinion}</p>
+                  <q className=" mb-4 text-xl">{opinion}</q>
                   <p className="text-right text-sm text-blue-gray-300 font-extrabold">
                     {empName}
                   </p>

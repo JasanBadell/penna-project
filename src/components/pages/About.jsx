@@ -23,11 +23,11 @@ const About = () => {
           <Banner />
         </div>
         <div className="flex  flex-row lg:flex-col place-items-center lg:ml-20 -mt-8 mb-8">
-          <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
-            EN NUESTRO EQUIPO:
+          <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug uppercase">
+            Líderes en la fabricación de
           </p>
-          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-20">
-            INNOVACIÓN, EXPERIENCIA Y COMPROMISO
+          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-20 uppercase">
+            remolques y semirremolques en Cuba
           </h3>
         </div>
       </div>
