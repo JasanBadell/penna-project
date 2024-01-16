@@ -11,7 +11,7 @@ const Services = () => {
       <div className="overflow-hidden bg-white flex flex-col ml-20">
         <div className="absolute lg:mt-72 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Servicios</p>
-          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/2 mb-4">
+          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/4 mb-4">
             POLO PRODUCTIVO INDUSTRIAL
           </h3>
           <p className="text-lg w-1/3">

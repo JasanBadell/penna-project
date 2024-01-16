@@ -34,43 +34,47 @@ const Formulario = () => {
   const validarFormulario = () => {
     const errores = {};
 
-    // Validación de correo electrónico
     const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!correoRegex.test(correo)) {
       errores.correo = "Ingrese un correo electrónico válido";
     }
 
-    // Validación de teléfono (solo dígitos y mínimo 7 caracteres)
     const telefonoRegex = /^\d{7,}$/;
     if (!telefonoRegex.test(telefono)) {
       errores.telefono = "Ingrese un número de teléfono válido";
     }
 
-    // Devuelve true si no hay errores, y false si hay errores
     return Object.keys(errores).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const esFormularioValido = validarFormulario();
 
     if (esFormularioValido) {
-      // Aquí puedes agregar la lógica para enviar el formulario por correo electrónico
-      resend.emails.send({
-        from: `${correo}`,
-        to: ["jasanbadelldev@gmail.com"],
-        subject: "Formulario de contacto",
-        html: `<p>${comentario}</p>`,
-      });
-      console.log(resend.emails.send);
-      // Limpiar los campos del formulario después de enviarlo
-      setNombre("");
-      setEmpresa("");
-      setCorreo("");
-      setTelefono("");
-      setComentario("");
-      setErrores({});
+      try {
+        const { data, error } = await resend.emails.send({
+          from: `${correo}`,
+          to: ["jasanbadelldev@gmail.com"],
+          subject: "Formulario de contacto",
+          html: `<p>${comentario}</p>`,
+        });
+
+        if (error) {
+          console.error({ error });
+        } else {
+          console.log({ data });
+          setNombre("");
+          setEmpresa("");
+          setCorreo("");
+          setTelefono("");
+          setComentario("");
+          setErrores({});
+        }
+      } catch (error) {
+        console.error("Error al enviar el formulario:", error);
+      }
     } else {
       setErrores(errores);
     }

@@ -1,12 +1,8 @@
 /* eslint-disable react/jsx-key */
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaTelegram,
-  FaFacebook,
-  FaSquareXTwitter,
-  FaBars,
-} from "react-icons/fa6";
+import { FaFacebook, FaSquareXTwitter, FaBars } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineLocalPhone, MdOutlineClose } from "react-icons/md";
 
@@ -14,11 +10,15 @@ import brandLogo from "../assets/Logos_Penna-Project/Brand_Logo.png";
 import navbarImage from "../assets/NavBar_Red.png";
 import Search from "./Search";
 import { navItems } from "../assets/dummy";
-import SubscribeModal from "./SubscribeModal";
+
+import Suscription from "./Suscription";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const navbarRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,19 +35,31 @@ const Navbar = () => {
     };
   }, []);
 
-  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        handleCloseForm();
+      }
+    };
 
-  const handleOpen = () => {
-    setIsVisible(true);
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const handleOpenForm = () => {
+    setIsVisible(!isVisible);
   };
 
-  const handleClose = () => {
-    setIsVisible(false);
+  const handleCloseForm = () => {
+    setIsVisible(isVisible);
   };
 
   return (
     <>
       <header
+        ref={navbarRef}
         className={`w-full fixed top-0 left-0 right-0 bg-white border-b-0 z-30 ${
           isSticky ? "sticky border-b bg-white duration-300" : ""
         }`}
@@ -65,7 +77,7 @@ const Navbar = () => {
               <div className="hidden lg:flex items-center space-x-12">
                 <button
                   className="bg-white text-defaultBlue border-2 border-defaultBlue py-2 px-4 transition-all duration-300 rounded-lg hover:bg-defaultBlue hover:text-white"
-                  onClick={handleOpen}
+                  onClick={handleOpenForm}
                 >
                   SUSCRIBIRSE
                 </button>
@@ -154,7 +166,10 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      {/* <SubscribeModal show={isVisible} close={handleClose} /> */}
+
+      <div>
+        <Suscription show={isVisible} close={handleCloseForm} />
+      </div>
     </>
   );
 };

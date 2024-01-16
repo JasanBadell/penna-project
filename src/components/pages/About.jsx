@@ -11,7 +11,7 @@ const About = () => {
       <div className="overflow-hidden bg-white flex flex-col ml-20">
         <div className="absolute lg:mt-72 lg:ml-16 z-20">
           <p className="text-xl text-defaultBlue">Conoce a Peña</p>
-          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/3 mb-4">
+          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/4 mb-4">
             POLO PRODUCTIVO INDUSTRIAL
           </h3>
           <p className="text-lg lg:w-1/3">
@@ -32,10 +32,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col justify-around align-middle">
-        <div className="mt-20 mx-4 lg:ml-20">
-          <h2 className="font-bold text-2xl lg:mr-60 lg:ml-40">
-            Líderes en la fabricación de remolques y semirremolques en Cuba
-          </h2>
+        <div className="mt-4 mx-4 lg:ml-20">
           <div className="flex flex-col lg:flex-row lg:justify-between py-4 lg:p-space lg:mr-60 lg:ml-40 mb-6">
             <div className="flex flex-col text-xxl lg:p-space mx-2 w-full lg:w-6/12">
               {aboutColumn1.map(

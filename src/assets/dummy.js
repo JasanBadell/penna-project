@@ -465,7 +465,7 @@ export const brandNews = [
     title: "Tras los pasos de la industria cubana",
     port_img:
       "https://www.excelenciascuba.com/sites/default/files/sites/default/files/cuba/imagenes_noticias/roylan.jpg",
-    autor: "alina",
+    autor: "Alina",
     fountain: "Excelencias Cuba",
     path: "https://www.excelenciascuba.com/noticia/tras-los-pasos-de-la-industria-cubana",
   },
@@ -474,7 +474,7 @@ export const brandNews = [
     port_img:
       "https://artemisadiario.cu/wp-content/uploads/2020/01/1-A-IMECA-la-distingue-la-destreza-de-su-gente-600x375.jpg",
     autor: "Myrla Pizarro de la Uz",
-    fountain: "artemisadiario",
+    fountain: "Diario El Artemiseño",
     path: "https://artemisadiario.cu/2020/01/imeca-sigue-produciendo/",
   },
 ];
