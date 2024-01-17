@@ -46,8 +46,8 @@ const ProductGrid = () => {
                     onMouseEnter={() => handleMouseEnter(id)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <div className="flex flex-col">
-                      <img src={img} alt="" />
+                    <div className="flex flex-col ">
+                      <img src={img} alt="" className="w-full block" />
                       <div className="m-5">
                         <h3 className="text-base text-left font-semibold uppercase">
                           {title}

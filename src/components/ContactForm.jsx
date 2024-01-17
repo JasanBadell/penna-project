@@ -1,85 +1,8 @@
-import React, { useState } from "react";
-import { Resend } from "resend";
-
-const resend = new Resend("re_Ahy2iTnc_DRJ6dWHF9rxUFdd48JACawtM");
+import React from "react";
+import { parsePath } from "react-router-dom";
 
 const Formulario = () => {
-  const [nombre, setNombre] = useState("");
-  const [empresa, setEmpresa] = useState("");
-  const [correo, setCorreo] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [comentario, setComentario] = useState("");
-  const [errores, setErrores] = useState({});
-
-  const handleNombreChange = (e) => {
-    setNombre(e.target.value);
-  };
-
-  const handleEmpresaChange = (e) => {
-    setEmpresa(e.target.value);
-  };
-
-  const handleCorreoChange = (e) => {
-    setCorreo(e.target.value);
-  };
-
-  const handleTelefonoChange = (e) => {
-    setTelefono(e.target.value);
-  };
-
-  const handleComentarioChange = (e) => {
-    setComentario(e.target.value);
-  };
-
-  const validarFormulario = () => {
-    const errores = {};
-
-    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!correoRegex.test(correo)) {
-      errores.correo = "Ingrese un correo electrónico válido";
-    }
-
-    const telefonoRegex = /^\d{7,}$/;
-    if (!telefonoRegex.test(telefono)) {
-      errores.telefono = "Ingrese un número de teléfono válido";
-    }
-
-    return Object.keys(errores).length === 0;
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const esFormularioValido = validarFormulario();
-
-    if (esFormularioValido) {
-      try {
-        const { data, error } = await resend.emails.send({
-          from: `${correo}`,
-          to: ["jasanbadelldev@gmail.com"],
-          subject: "Formulario de contacto",
-          html: `<p>${comentario}</p>`,
-        });
-
-        if (error) {
-          console.error({ error });
-        } else {
-          console.log({ data });
-          setNombre("");
-          setEmpresa("");
-          setCorreo("");
-          setTelefono("");
-          setComentario("");
-          setErrores({});
-        }
-      } catch (error) {
-        console.error("Error al enviar el formulario:", error);
-      }
-    } else {
-      setErrores(errores);
-    }
-  };
-
+  const home = parsePath("/penna-project/");
   return (
     <>
       <div>
@@ -88,8 +11,8 @@ const Formulario = () => {
         </h2>
       </div>
       <form
-        id="correos"
-        onSubmit={handleSubmit}
+        action="https://formsubmit.co/c86893cdf7ab7889803213d0726c3ebe"
+        method="POST"
         className="py-6 px-6 rounded-xl max-w-xl"
       >
         <div className="grid grid-cols-2 gap-4">
@@ -103,8 +26,7 @@ const Formulario = () => {
             <input
               type="text"
               id="nombre"
-              value={nombre}
-              onChange={handleNombreChange}
+              name="nombre"
               required
               className="w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
@@ -119,8 +41,7 @@ const Formulario = () => {
             <input
               type="text"
               id="empresa"
-              value={empresa}
-              onChange={handleEmpresaChange}
+              name="empresa"
               required
               className="w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
@@ -138,16 +59,10 @@ const Formulario = () => {
             <input
               type="email"
               id="correo"
-              value={correo}
-              onChange={handleCorreoChange}
+              name="correo"
               required
-              className={`w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 ${
-                errores.correo ? "border-red-500" : ""
-              }`}
+              className="w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
-            {errores.correo && (
-              <p className="text-red-500 text-sm">{errores.correo}</p>
-            )}
           </div>
           <div className="mb-4">
             <label
@@ -159,16 +74,10 @@ const Formulario = () => {
             <input
               type="tel"
               id="telefono"
-              value={telefono}
-              onChange={handleTelefonoChange}
+              name="telefono"
               required
-              className={`w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 ${
-                errores.telefono ? "border-red-500" : ""
-              }`}
+              className="w-full px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
-            {errores.telefono && (
-              <p className="text-red-500 text-sm">{errores.telefono}</p>
-            )}
           </div>
         </div>
         <div className="mb-2">
@@ -180,8 +89,7 @@ const Formulario = () => {
           </label>
           <textarea
             id="comentario"
-            value={comentario}
-            onChange={handleComentarioChange}
+            name="comentario"
             required
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           ></textarea>
@@ -194,6 +102,20 @@ const Formulario = () => {
             Enviar
           </button>
         </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://jasanbadell.github.io/penna-project/"
+        />
+        <input type="hidden" name="_subject" value="Formulario de contacto!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Gracias por contactarnos, es muy valioso para nosotros saber de usted"
+        />
+        <input type="hidden" name="_template" value="box" />
+        
       </form>
     </>
   );

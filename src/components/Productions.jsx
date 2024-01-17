@@ -19,13 +19,13 @@ const Productions = () => {
             </h3>
           </div>
           <div className="lg:mt-8">
-            <Button to="/products" />
+            <Button to="/penna-project/products" />
           </div>
           <img src={productions} alt="" className="lg:w-1/4 hidden" />
         </div>
         <Tabs />
         <Carousel className="flex h-auto w-full lg:hidden" loop autoplay>
-          {products.map(({ img, title, description }) => (
+          {products.slice(0, 8).map(({ img, title, description }) => (
             <div className="grid grid-cols-1">
               <div className="flex flex-row items-center justify-between">
                 <Card className="mx-8 mb-12 rounded-none shadow-2xl">

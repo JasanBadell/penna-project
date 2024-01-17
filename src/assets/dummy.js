@@ -422,8 +422,7 @@ export const brandNews = [
     path: "https://www.cubaplusmagazine.com/es/negocios/empresa-industrial-ramon-pe%C3%B1a-eficiencia-calidad.html",
   },
   {
-    title:
-      "Avalados por la experiencia",
+    title: "Avalados por la experiencia",
     port_img:
       "https://www.cubaplusmagazine.com/img/articulos/carr/13-empresa-ramon-pena-p.jpg",
     autor: "GESIME",

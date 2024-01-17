@@ -59,7 +59,9 @@ const Footer = () => {
       </div>
       <div className="flex flex-col-reverse lg:flex-row bg-defaultBlue items-center justify-between">
         <div className="w-full lg:w-1/5">
-          <h3 className="mt-8 mx-4 lg:mx-20 text-white text-5xl">CONTACTO</h3>
+          <h3 className="mt-8 mx-4 lg:mx-20 hidden lg:block text-white text-5xl">
+            CONTACTO
+          </h3>
           <img src={footer} alt="footer" className="m-0 w-auto items-start" />
         </div>
         <div className="flex flex-col lg:flex-row mx-4 lg:mx-10 mt-20 gap-8">
@@ -114,6 +116,9 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <h3 className="mt-8 mx-2 -mb-10 text-white lg:hidden text-5xl">
+          CONTACTO
+        </h3>
       </div>
       <ProductModal isVisible={isModalVisible} onClose={handleCloseModal} />
     </>

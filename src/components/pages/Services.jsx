@@ -10,14 +10,14 @@ const Services = () => {
   return (
     <>
       <div className="overflow-hidden bg-white flex flex-col lg:ml-20">
-        <div className="lg:absolute lg:bg-transparent bg-vector-1 lg:mt-64 mt-10 w-screen lg:w-1/3 lg:mx-4 ml-0 z-20">
-          <p className="text-2xl lg:text-xl mx-8 lg:ml-20 text-defaultBlue mt-16 lg:mt-10">
+        <div className="lg:absolute lg:bg-transparent bg-vector-1 lg:mt-60 mt-10 w-screen lg:w-1/3 lg:mx-4 ml-0 z-20">
+          <p className="text-2xl lg:text-xl mx-8 lg:ml-16 text-defaultBlue mt-16 lg:mt-10">
             Servicios
           </p>
-          <h3 className="text-4xl text-defaultBlue mx-8 lg:ml-20 font-extrabold lg:w-1/2 ">
+          <h3 className="text-4xl text-defaultBlue mx-8 lg:ml-16 font-extrabold lg:w-1/2 ">
             POLO PRODUCTIVO INDUSTRIAL
           </h3>
-          <p className="text-sm ml-8 lg:ml-20 lg:text-lg w-1/2 lg:w-1/2 mb-12">
+          <p className="text-sm ml-8 lg:ml-16 lg:text-lg w-1/2 lg:w-1/2 mb-12">
             Nuestro equipo de trabajo lo conforman tres unidades empresariales y
             una mipyme
           </p>

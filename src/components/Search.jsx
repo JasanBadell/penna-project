@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { products } from "../assets/dummy";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import MoreInfoProduct from "./MoreInfoProduct";
 
 const Search = () => {
   const [activeSearch, setActiveSearch] = useState([]);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleSearch = (e) => {
     const searchTerm = e.target.value.toLowerCase();
@@ -28,8 +31,14 @@ const Search = () => {
     setSearchOpen(true);
   };
 
-  const handleCloseSearch = () => {
+  const handleSelectProduct = (productId) => {
+    setSelectedProduct(productId);
     setSearchOpen(false);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProduct(null);
+    setShowModal(false);
   };
 
   return (
@@ -52,8 +61,8 @@ const Search = () => {
               {activeSearch.map((product) => (
                 <Link
                   key={product.id}
-                  to={`/products/${product.id}`}
-                  onClick={handleCloseSearch}
+                  to={product.path}
+                  onClick={() => handleSelectProduct(product.id)}
                   className="p-4 border-b hover:bg-gray-300"
                 >
                   <div>
@@ -65,6 +74,24 @@ const Search = () => {
           )}
         </div>
       </form>
+      {selectedProduct && (
+        <div
+          className="z-30 fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
+          onClick={handleCloseModal}
+        >
+          <div className="w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] max-h-[80%] overflow-y-auto flex flex-col m-4">
+            <div className="bg-defaultGray text-black p-4 rounded-md flex flex-col">
+              <button
+                className="text-defaultRed text-xl place-self-end"
+                onClick={handleCloseModal}
+              >
+                X
+              </button>
+              <MoreInfoProduct productId={selectedProduct} />
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
