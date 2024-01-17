@@ -54,12 +54,12 @@ const SuscribeForm = () => {
             placeholder="Correo electrónico"
             value={email}
             onChange={handleEmailChange}
-            className="px-4 py-2 border border-gray-300 rounded-l-md mb-2 sm:mb-0 sm:mr-2 focus:outline-none focus:ring-2 focus:ring-defaultBlue focus:border-transparent"
+            className="px-4 py-2 border border-gray-300 rounded-md mb-2 sm:mb-0 sm:mr-2 focus:outline-none focus:ring-2 focus:ring-defaultBlue focus:border-transparent"
           />
 
           <button
             type="submit"
-            className="px-4 py-2 bg-defaultBlue text-white rounded-r-md focus:outline-none"
+            className="px-4 py-2 bg-defaultBlue text-white rounded-md focus:outline-none"
           >
             Suscribirse
           </button>

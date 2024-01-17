@@ -68,7 +68,6 @@ import m from "./Productos/Contenedor_Basura.jpg";
 import z from "./Productos/Caja_Remolque.jpg";
 
 // Import Const
-
 export const products = [
   {
     id: "1",
@@ -384,7 +383,7 @@ export const sections = [
     img: `${services1}`,
     conten: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     logo: `${maintenance}`,
-    clasN: "flex md:flex-row items-center",
+    clasN: "flex flex-col lg:flex-row items-center",
   },
   {
     id: "2",
@@ -392,7 +391,7 @@ export const sections = [
     img: `${services2}`,
     conten: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     logo: `${painting}`,
-    clasN: "flex md:flex-row-reverse items-center bg-vector -mt-24",
+    clasN: "flex flex-col lg:flex-row-reverse items-center bg-vector -mt-24",
   },
   {
     id: "3",
@@ -400,7 +399,7 @@ export const sections = [
     img: `${services3}`,
     conten: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     logo: `${rocket}`,
-    clasN: "flex md:flex-row items-center",
+    clasN: "flex flex-col lg:flex-row items-center",
   },
   {
     id: "4",
@@ -408,7 +407,8 @@ export const sections = [
     img: `${services4}`,
     conten: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     logo: `${pencil}`,
-    clasN: "flex md:flex-row-reverse items-center bg-vector-2 -mt-32 -mb-8",
+    clasN:
+      "flex flex-col lg:flex-row-reverse items-center bg-vector-2 -mt-32 -mb-8",
   },
 ];
 

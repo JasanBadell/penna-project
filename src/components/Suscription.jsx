@@ -18,20 +18,22 @@ const Subscription = ({ show, close }) => {
   return (
     <>
       <div
-        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30"
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30 "
         onClick={handleCloseClick}
       >
         <div
-          className="w-full sm:w-1/3 bg-gray-200 p-4 rounded-md relative"
+          className="w-full sm:w-2/5 bg-gray-200 p-4 rounded-md relative"
           onClick={handleModalClick}
         >
           <button
-            className="text-red-600 text-xl absolute top-2 right-2"
+            className="text-defaultRed text-xl absolute top-2 right-2"
             onClick={handleCloseClick}
           >
             X
           </button>
-          <SuscribeForm />
+          <div className="flex items-center justify-center">
+            <SuscribeForm />
+          </div>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <>
       <div className="flex flex-col items-start justify-center bg-defaultBlue">
-        <div className="flex flex-row mt-8 items-center ">
+        <div className="flex flex-col lg:flex-row mt-8 items-center ">
           <div className="mt-4 mx-4 lg:mx-20 ">
             <p className="text-xl md:text-xl font-semibold text-white leading-snug">
               Oportunidades
@@ -20,7 +20,7 @@ const Clients = () => {
               nacional.
             </p>
           </div>
-          <img src={clients} alt="img" className="lg:w-2/4 lg:mr-4 w-0 lg:-mb-20 z-10" />
+          <img src={clients} alt="img" className="lg:w-2/4 lg:mr-4 w-screen -mb-10 lg:-mb-20 z-10" />
         </div>
       </div>
       <div className="flex flex-col justify-center gap-8">
@@ -33,7 +33,7 @@ const Clients = () => {
               CLIENTES
             </h3>
           </div>
-          <img src={navbar} alt="" className="w-1/3 lg:w-1/12" />
+          <img src={navbar} alt="" className="w-0 lg:w-1/12" />
         </div>
         <div className="mt-1 mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl  sm:gap-x-10 lg:mx-40 lg:max-w-none lg:grid-cols-5 mb-10">
           {client.map(({ id, logo, title, description }) => (

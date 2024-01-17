@@ -9,21 +9,21 @@ import "../../App.css";
 const Products = () => {
   return (
     <>
-      <div className="lg:mt-36">
+      <div className="mt-36">
         <div className="flex flex-row items-center justify-between">
-          <div className="mx-20">
-            <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
+          <div className="lg:mx-20">
+            <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-0 text-defaultBlue leading-snug uppercase">
               NUESTRAS
             </p>
-            <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug">
+            <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue lg:mx-0 leading-snug mx-8 uppercase">
               PRODUCCIONES
             </h3>
           </div>
           <div className="w-1/5">
-            <img src={productions} alt="" className="mr-0" />
+            <img src={productions} alt="" className="mr-0 lg:w-auto w-0" />
           </div>
         </div>
-        <div className="mx-60 my-10 gap-4 grid grid-cols-2">
+        <div className=" mx-8 lg:mx-60 my-10 gap-2 lg:gap-4 lg:grid lg:grid-cols-2">
           <p>
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.

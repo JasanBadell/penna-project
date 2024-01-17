@@ -47,3 +47,10 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  .bg-vector-1 {
+    background-image: url(/src/assets/Services_vector.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

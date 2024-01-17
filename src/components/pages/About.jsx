@@ -8,25 +8,27 @@ import Banner from "../Banner";
 const About = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white flex flex-col ml-20">
-        <div className="absolute lg:mt-72 lg:ml-16 z-20">
-          <p className="text-xl text-defaultBlue">Conoce a Peña</p>
-          <h3 className="text-5xl text-defaultBlue font-extrabold w-1/4 mb-4">
+      <div className="overflow-hidden bg-white flex flex-col ml-0 lg:ml-20">
+        <div className="lg:absolute lg:bg-transparent bg-vector-1 lg:mt-64 mt-10 w-screen lg:w-1/3 lg:mx-4 ml-0 z-20">
+          <p className="text-2xl lg:text-xl mx-8 lg:ml-20 text-defaultBlue mt-16 lg:mt-10">
+            Conoce a Peña
+          </p>
+          <h3 className="text-4xl text-defaultBlue mx-8 lg:ml-20 font-extrabold lg:w-1/2 ">
             POLO PRODUCTIVO INDUSTRIAL
           </h3>
-          <p className="text-lg lg:w-1/3">
+          <p className="text-sm ml-8 lg:ml-20 lg:text-lg w-4/6 lg:w-1/2 mb-12">
             Nuestro equipo de trabajo lo conforman tres unidades empresariales y
             una mipyme
           </p>
         </div>
-        <div className="lg:pt-36">
+        <div className=" pt-0 lg:pt-36">
           <Banner />
         </div>
-        <div className="flex  flex-row lg:flex-col place-items-center lg:ml-20 -mt-8 mb-8">
-          <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug uppercase">
+        <div className="flex  flex-col place-items-start lg:ml-96 mt-10 lg:-mt-8 mb-8">
+          <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-20 text-defaultBlue leading-snug uppercase">
             Líderes en la fabricación de
           </p>
-          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug ml-20 uppercase">
+          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug mx-8 lg:ml-20 uppercase">
             remolques y semirremolques en Cuba
           </h3>
         </div>

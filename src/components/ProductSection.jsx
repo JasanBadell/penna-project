@@ -32,10 +32,10 @@ const ProductGrid = () => {
             key={category}
             className="flex flex-col items-start justify-between"
           >
-            <div className="text-1xl md:text-2xl font-extralight text-defaultBlue leading-snug">
-              <h3 className="uppercase my-4">{category}</h3>
+            <div className="text-2xl font-extralight text-defaultBlue leading-snug">
+              <h3 className="uppercase my-4 mx-8">{category}</h3>
             </div>
-            <div className="grid grid-cols-4">
+            <div className="lg:grid lg:grid-cols-4 flex flex-col mx-8">
               {products.map(({ id, img, title, subCategory, description }) => (
                 <>
                   <Card
