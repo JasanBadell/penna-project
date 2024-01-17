@@ -423,7 +423,7 @@ export const brandNews = [
   },
   {
     title:
-      "Empresa Industrial Ramón Peña, eficiencia avalada por la experiencia",
+      "Avalados por la experiencia",
     port_img:
       "https://www.cubaplusmagazine.com/img/articulos/carr/13-empresa-ramon-pena-p.jpg",
     autor: "GESIME",

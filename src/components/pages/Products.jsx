@@ -23,39 +23,45 @@ const Products = () => {
             <img src={productions} alt="" className="mr-0 lg:w-auto w-0" />
           </div>
         </div>
-        <div className=" mx-8 lg:mx-60 my-10 gap-2 lg:gap-4 lg:grid lg:grid-cols-2">
-          <p>
+        <div className="mx-8 lg:mx-60 my-10 gap-4 lg:grid lg:grid-cols-2">
+          <p className="mt-4">
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.
           </p>
-          <p>
+          <p className="mt-4">
             En el año alcanzamos un surtido de más de 45 tipos de equipos, desde
             los más sencillos hasta los más complejos.
           </p>
-          <p>
+          <p className="mt-4">
             A partir de un proceso inversionista en el 2020, dos de nuestras
             industrias modernizaron su infraestructura tecnológica, permitiendo
             un incremento en las producciones, superior a los dos mil equipos de
             complejidad media, anualmente.
           </p>
-          <p>
+          <p className="mt-4">
             En la década de 1980 a 1990 la industria produjo como promedio anual
             mil 700 equipos y se cubrió el 83% de la demanda nacional en
             remolques, semirremolques y aplicaciones.
           </p>
         </div>
         <ProductSection />
-        <div className="flex flex-row-reverse mb-20">
-          <div className="w-1/3">
+        <div className="flex flex-col lg:flex-row mb-64 lg:mb-20">
+          <div className="w-full lg:w-2/3">
+            <img src={carruselimg} alt="" className="" />
+          </div>
+          <div className="lg:w-1/3 w-screen">
             <Carousel
-              className="mt-16 -ml-44 bg-vector-3"
+              className="mt-2 lg:mt-16 ml-0 lg:-ml-44 bg-vector-3 overflow-x-visible lg:overflow-x-hidden"
               autoplay
               autoplayDelay={9000}
               loop
+              prevArrow={false}
+              nextArrow={false}
+              navigation={false}
             >
               {clientopinion.map(({ empName, opinion }) => (
-                <div className="flex flex-col mt-20 mx-20 z-10 absolute m-4">
-                  <q className=" mb-4 text-xl">{opinion}</q>
+                <div className="flex flex-col lg:mt-20 lg:mx-20 z-10 absolute m-4">
+                  <q className="mb-4 text-base lg:text-xl">{opinion}</q>
                   <p className="text-right text-sm text-blue-gray-300 font-extrabold">
                     {empName}
                   </p>
@@ -63,11 +69,8 @@ const Products = () => {
               ))}
             </Carousel>
           </div>
-          <div className="w-2/3">
-            <img src={carruselimg} alt="" className="" />
-          </div>
         </div>
-        <div className="mx-20 my-20">
+        <div className="mx-8 lg:mx-20 my-10 lg:my-20">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
             ASÍ NOS VALORAN!
           </p>

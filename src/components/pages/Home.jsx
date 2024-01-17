@@ -58,7 +58,7 @@ const Home = () => {
             {slogan.map(({ opinion }) => (
               <p
                 key={opinion}
-                className="text-xl md:text-3xl font-extralight text-defaultBlue leading-snug"
+                className="text-xl md:text-3xl font-bold lg:font-extralight text-defaultBlue leading-snug"
               >
                 {opinion}
               </p>

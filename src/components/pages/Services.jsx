@@ -36,7 +36,7 @@ const Services = () => {
       </div>
       <div className="lg:mx-60 mx-4 lg:my-10 gap-4 flex flex-col lg:grid lg:grid-cols-2">
         <div className="grid gap-4 ">
-          <p>
+          <p className="my-4">
             Nuestros clientes pueden beneficiarse de un catálogo de prestaciones
             que incluyen procesos tecnológicos y mecánicos de mantenimiento,
             reparación, corte, soldadura, conformado, pailería y pintura,
@@ -46,27 +46,29 @@ const Services = () => {
           <p>
             <strong>Ofrecemos</strong>:
           </p>
-          <p>
+          <p className="my-4">
             - Producción y comercialización de autotrenes compuestos por
             remolques o semirremolques, camionetas o camiones con carrocerías
             utilitarias, así como recambios, partes, piezas y accesorios.
           </p>
         </div>
         <div>
-          <p>
+          <p className="my-4">
             - Fabricación de engranes y piezas de repuesto mecanizadas para uso
             automotor e industrial.
           </p>
-          <p>- Diseño, mantenimiento y reparación de estructuras metálicas. </p>
-          <p>
+          <p className="my-4">
+            - Diseño, mantenimiento y reparación de estructuras metálicas.{" "}
+          </p>
+          <p className="my-4">
             - Tratamiento térmico, corte y conformado de metales, granallado de
             superficies metálicas.
           </p>
-          <p>
+          <p className="my-4">
             - Montaje, instalación, puesta en marcha, mantenimiento y reparación
             de las producciones.
           </p>
-          <p>
+          <p className="my-4">
             - Ensamble y soldadura manual o mediante automatización mecánica.
           </p>
         </div>

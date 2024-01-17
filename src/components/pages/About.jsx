@@ -41,10 +41,10 @@ const About = () => {
                 ({ id, title, conten, conten2, conten3, conten4 }) => (
                   <div accessKey={id}>
                     <h4 className="font-bold my-4">{title}</h4>
-                    <p className="my-2">{conten}</p>
-                    <p className="my-2">{conten2}</p>
-                    <p className="my-2">{conten3}</p>
-                    <p className="my-2">{conten4}</p>
+                    <p className="my-4">{conten}</p>
+                    <p className="my-4">{conten2}</p>
+                    <p className="my-4">{conten3}</p>
+                    <p className="my-4">{conten4}</p>
                   </div>
                 )
               )}
@@ -54,11 +54,11 @@ const About = () => {
                 ({ id, title, conten, conten2, conten3, conten4, conten5 }) => (
                   <div accessKey={id}>
                     <h4 className="font-bold my-4">{title}</h4>
-                    <p className="my-2">{conten}</p>
-                    <p className="my-2">{conten2}</p>
-                    <p className="my-2">{conten3}</p>
-                    <p className="my-2">{conten4}</p>
-                    <p className="my-2">{conten5}</p>
+                    <p className="my-4">{conten}</p>
+                    <p className="my-4">{conten2}</p>
+                    <p className="my-4">{conten3}</p>
+                    <p className="my-4">{conten4}</p>
+                    <p className="my-4">{conten5}</p>
                   </div>
                 )
               )}
