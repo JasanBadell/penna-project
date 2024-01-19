@@ -30,7 +30,7 @@ const BrandNews = () => {
         <div className="lg:grid lg:grid-cols-2 lg:gap-2 mx-8 lg:-mb-32">
           {brandNews.map(({ port_img, title, autor, fountain, path }) => (
             <div className="w-full lg:w-1/2 m-4">
-              <img src={port_img} alt="" className="w-screen" />
+              <img src={port_img} alt=""/>
               <h3 className="font-bold text-xl">{title}</h3>
               <p className="text-sm">Autor: {autor}</p>
               <p className="text-sm">Fuente: {fountain}</p>

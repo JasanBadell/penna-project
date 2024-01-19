@@ -66,6 +66,14 @@ import mfrr from "./Productos/Estructura_Remolque.jpg";
 import men from "./Productos/producto_img_21.jpg";
 import m from "./Productos/Contenedor_Basura.jpg";
 import z from "./Productos/Caja_Remolque.jpg";
+import news1 from "./BrandNews/img_01.jpg";
+import news2 from "./BrandNews/img_02.jpg";
+import news3 from "./BrandNews/img_03.jpg";
+import news4 from "./BrandNews/img_04.jpg";
+import news5 from "./BrandNews/img_05.jpg";
+import news6 from "./BrandNews/img_06.jpg";
+import news7 from "./BrandNews/img_07.jpg";
+import news8 from "./BrandNews/img_08.jpg";
 
 // Import Const
 export const products = [
@@ -415,63 +423,56 @@ export const sections = [
 export const brandNews = [
   {
     title: "Eficiencia y calidad demostrada",
-    port_img:
-      "https://www.cubaplusmagazine.com/img/articulos/carr/22-gesime-ramon-pena-efficiency-p.jpg",
+    port_img:  news1 ,
     autor: "GESIME",
     fountain: "Cuba Plus Magazine",
     path: "https://www.cubaplusmagazine.com/es/negocios/empresa-industrial-ramon-pe%C3%B1a-eficiencia-calidad.html",
   },
   {
     title: "Avalados por la experiencia",
-    port_img:
-      "https://www.cubaplusmagazine.com/img/articulos/carr/13-empresa-ramon-pena-p.jpg",
+    port_img:  news2 ,
     autor: "GESIME",
     fountain: "Cuba Plus Magazine",
     path: "https://www.cubaplusmagazine.com/es/cuba-industria/empresa-industrial-ramon-pe%C3%B1a-eficiencia-experiencia.html",
   },
   {
     title: "Avances en la sustitución de importación y la exportación",
-    port_img: "https://www.tribuna.cu/file/img/2019/12/medium/f0009657.jpg",
+    port_img:  news3 ,
     autor: "Nayaren Rodríguez Socarrás",
     fountain: "Tribuna de La Habana",
     path: "https://www.tribuna.cu/capitalinas/2019-12-17/avances-en-la-sustitucion-de-importacion-y-la-exportacion",
   },
   {
     title: "Incrementa cooperación con la industria cubana",
-    port_img:
-      "https://www.opciones.cu/thumbs/425x/crc/images/medias/2016/06/ferruz-industrial-group.jpg",
+    port_img:  news4 ,
     autor: "Ledys Camacho Casado",
     fountain: "Opciones",
     path: "https://www.opciones.cu/ferias-y-eventos/2016-06-23/incrementa-cooperacion-con-la-industria-cubana",
   },
   {
     title: "¡Pensar en Grande!",
-    port_img:
-      "https://www.trabajadores.cu/wp-content/uploads/2014/10/ABT-pabexpo-16.x10671.jpg",
+    port_img:  news5 ,
     autor: "Redacción Nacional",
     fountain: "Periódico Trabajadores",
     path: "https://www.trabajadores.cu/20141005/pensar-en-grande-2/",
   },
   {
     title: "Industria sideromecánica cubana se moderniza",
-    port_img:
-      "https://www.adelante.cu/images/2022/abril/13/jpeix/antillana/antillana-de-acero.jpg",
+    port_img: news6 ,
     autor: "Redacción ACN",
     fountain: "Periódico Adelante",
     path: "https://www.adelante.cu/index.php/es/noticias/noticias-de-cuba/25375-industria-sideromecanica-cubana-se-moderniza",
   },
   {
     title: "Tras los pasos de la industria cubana",
-    port_img:
-      "https://www.excelenciascuba.com/sites/default/files/sites/default/files/cuba/imagenes_noticias/roylan.jpg",
+    port_img:  news7 ,
     autor: "Alina",
     fountain: "Excelencias Cuba",
     path: "https://www.excelenciascuba.com/noticia/tras-los-pasos-de-la-industria-cubana",
   },
   {
     title: "IMECA sigue produciendo",
-    port_img:
-      "https://artemisadiario.cu/wp-content/uploads/2020/01/1-A-IMECA-la-distingue-la-destreza-de-su-gente-600x375.jpg",
+    port_img:  news8 ,
     autor: "Myrla Pizarro de la Uz",
     fountain: "Diario El Artemiseño",
     path: "https://artemisadiario.cu/2020/01/imeca-sigue-produciendo/",
@@ -567,8 +568,7 @@ export const clientopinion = [
 
 export const slogan = [
   {
-    opinion:
-      " Líderes en la fabricación de remolques y semirremolques en Cuba.",
+    opinion: " Líderes en la fabricación de remolques y semirremolques en Cuba",
   },
   {
     opinion: " Con fabricaciones de probada calidad y durabilidad",
@@ -585,7 +585,7 @@ export const slogan = [
   },
   {
     opinion:
-      " Nuestro colectivo distingue por su experiencia, compromiso y capacidad innovadora.",
+      " Nuestro colectivo distingue por su experiencia, compromiso y capacidad innovadora",
   },
 ];
 

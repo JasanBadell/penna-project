@@ -43,13 +43,12 @@ const Offerts = () => {
             key={link}
             className="lg:w-1/4 text-left rounded-xl flex flex-col justify-around"
           >
-            <div className="mt-4 flex flex-col lg:flex-row items-center lg:items-start content-center">
+            <div className="mt-4 flex flex-col lg:flex-row items-center justify-start lg:items-start content-center">
               <img src={logo} alt="" width={60} className="mx-2" />
-              <div className="flex flex-col text-center">
-                <h3 className="text-defaultBlue  font-semibold text-lg">
+              <div className="flex flex-col text-start">
+                <h3 className="text-defaultBlue  font-semibold text-lg lg:w-5/6">
                   {title}
                 </h3>
-                <p className="text-sm mt-4">{description}</p>
               </div>
             </div>
           </Link>
