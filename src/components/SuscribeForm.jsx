@@ -13,6 +13,7 @@ const SuscribeForm = () => {
             <input
               type="email"
               name="email"
+              required
               placeholder="Correo electrónico"
               className="px-4 py-2 border border-gray-300 rounded-md lg:mb-2 sm:mb-0 sm:mr-2 focus:outline-none focus:ring-2 focus:ring-defaultBlue focus:border-transparent"
             />
@@ -32,7 +33,11 @@ const SuscribeForm = () => {
             value="Gracias por suscribirte al boletin de noticias de la Empresa Industrial Ramón Peña. Espera noticias pronto!"
           />
           <input type="hidden" name="_template" value="box" />
-          <input type="hidden" name="_next" value={`http://localhost:5173`} />
+          <input
+            type="hidden"
+            name="_next"
+            value={`https://jasanbadell.github.io/penna-project/`}
+          />
         </div>
       </form>
     </>

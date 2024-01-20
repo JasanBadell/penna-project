@@ -1,8 +1,7 @@
-import React from "react";
-import { parsePath } from "react-router-dom";
+import React, { useState } from "react";
 
-const Formulario = () => {
-  const home = parsePath("/penna-project/");
+const ContactForm = () => {
+
   return (
     <>
       <div>
@@ -47,7 +46,6 @@ const Formulario = () => {
             />
           </div>
         </div>
-
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
             <label
@@ -101,24 +99,22 @@ const Formulario = () => {
           >
             Enviar
           </button>
+          <input
+            type="hidden"
+            name="_next"
+            value={`https://jasanbadell.github.io/penna-project`}
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Formulario de contacto!"
+          />
+          <input type="hidden" name="_template" value="box" />
         </div>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://jasanbadell.github.io/penna-project/"
-        />
-        <input type="hidden" name="_subject" value="Formulario de contacto!" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="Gracias por contactarnos, es muy valioso para nosotros saber de usted"
-        />
-        <input type="hidden" name="_template" value="box" />
-        
       </form>
     </>
   );
 };
 
-export default Formulario;
+export default ContactForm;

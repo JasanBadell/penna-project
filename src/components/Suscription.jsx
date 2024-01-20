@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SuscribeForm from "./SuscribeForm";
 import Brand_Logo from "../assets/Logos_Penna-Project/Brand_Logo.png";
 import Email_Check from "../assets/Email_Check.png";
 
 const Subscription = ({ show, close }) => {
   const [emailSent, setEmailSent] = useState(false);
+  const modalRef = useRef(null);
 
   const handleCloseClick = () => {
     setEmailSent(false);
@@ -22,6 +23,19 @@ const Subscription = ({ show, close }) => {
         handleCloseClick();
       }, 3000);
     }
+  }, [emailSent]);
+
+  const handleOutsideClick = (e) => {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      handleCloseClick();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
   }, []);
 
   if (!show) {
@@ -33,11 +47,11 @@ const Subscription = ({ show, close }) => {
       <>
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30"
-          onClick={handleCloseClick}
+          onClick={handleOutsideClick}
         >
           <div
+            ref={modalRef}
             className="w-full sm:w-2/5 bg-gray-200 p-4 rounded-md relative"
-            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="text-defaultRed text-xl absolute top-2 right-2"
@@ -64,12 +78,12 @@ const Subscription = ({ show, close }) => {
   return (
     <>
       <div
-        className=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30"
-        onClick={handleCloseClick}
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30"
+        onClick={handleOutsideClick}
       >
         <div
+          ref={modalRef}
           className="lg:w-1/2 w-5/6 bg-gray-200 p-4 rounded-md relative"
-          onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col text-center items-center justify-center">
             <h3 className="text-defaultBlue text-lg lg:text-2xl font-bold mt-4 lg:w-1/2">
