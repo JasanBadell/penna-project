@@ -96,10 +96,10 @@ const Footer = () => {
             </p>
             <p className="text-sm text pt-2">VISÍTANOS EN:</p>
             <div className="flex flex-row gap-2">
-              <Link to="https://www.faceboock.com/SIME.CU">
+              <Link to="">
                 <FaFacebook />
               </Link>
-              <Link to="https://twitter.com/EIRP2017">
+              <Link to="">
                 <FaSquareXTwitter />
               </Link>
             </div>

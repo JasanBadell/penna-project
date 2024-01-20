@@ -10,13 +10,67 @@ import brandLogo from "../assets/Logos_Penna-Project/Brand_Logo.png";
 import navbarImage from "../assets/NavBar_Red.png";
 import Search from "./Search";
 import { navItems } from "../assets/dummy";
-
 import Suscription from "./Suscription";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleClick = (event) => {
+      if (isMenuOpen) {
+        handleOutsideClick(event);
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [isMenuOpen]);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const navbarRef = useRef(null);
 
@@ -35,19 +89,6 @@ const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        handleCloseForm();
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
   const handleOpenForm = () => {
     setIsVisible(!isVisible);
   };
@@ -55,6 +96,21 @@ const Navbar = () => {
   const handleCloseForm = () => {
     setIsVisible(isVisible);
   };
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const isScrollingUp = prevScrollPos > currentScrollPos;
+    setIsSticky(currentScrollPos > 0 && isScrollingUp);
+    setPrevScrollPos(currentScrollPos);
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -88,10 +144,10 @@ const Navbar = () => {
                   CONTÁCTENOS
                 </p>
                 <div className="hidden lg:flex flex-row items-center justify-center my-2 gap-3">
-                  <Link to="https://www.faceboock.com/SIME.CU">
+                  <Link to="">
                     <FaFacebook className="h-6 w-6 text-defaultBlue" />
                   </Link>
-                  <Link to="https://twitter.com/EIRP2017">
+                  <Link to="">
                     <FaSquareXTwitter className="h-6 w-6 text-defaultBlue" />
                   </Link>
                 </div>
@@ -151,7 +207,7 @@ const Navbar = () => {
           </div>
           <div
             className={`lg:hidden px-4 mt-20 text-center py-8 bg-defaultBlue m-2 ${
-              isMenuOpen ? "block fixed top-5 right-0 left-0 " : "hidden"
+              isMenuOpen ? "block fixed top-5 right-0 left-0" : "hidden"
             }`}
           >
             {navItems.map(({ link, path }) => (
@@ -159,6 +215,7 @@ const Navbar = () => {
                 to={path}
                 key={path}
                 className="block text-2xl text-white hover:text-defaultGray hover:bg-defaultBlue first:font-medium"
+                onClick={handleLinkClick}
               >
                 {link}
               </Link>

@@ -26,7 +26,7 @@ const Home = () => {
             <div className="w-screen lg:w-2/5 z-10 ">
               <img
                 src={homevector}
-                alt="imagen"
+                alt="Vector gris"
                 className="mx-2 lg:mt-16 lg:w-auto w-0"
               />
             </div>
@@ -39,7 +39,7 @@ const Home = () => {
               >
                 {homecarrusel.map(({ id, img }) => (
                   <div key={id} className="flex items-center justify-center">
-                    <img src={img} alt={img} className="carrusel" />
+                    <img src={img} alt="Imagen de Carrusel" className="carrusel" />
                   </div>
                 ))}
               </Carousel>

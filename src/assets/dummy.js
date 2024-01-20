@@ -1,8 +1,6 @@
 // Import IMG
-import about from "./about.png";
-import about2 from "./about2.png";
+
 import productions from "./Productions_IMG.png";
-import service from "./Service_IMG.png";
 import services1 from "./Services_1.png";
 import services2 from "./Services_2.png";
 import services3 from "./Services_3.png";
@@ -20,7 +18,7 @@ import brandimg1 from "./brandnews_2.png";
 import navbar from "./Client_Tag.png";
 import clients from "./ClientSection.png";
 import ecasa from "./Logos_Penna-Project/ecasa.png";
-import azcuba from "./azcuba.jpg";
+import azcuba from "./Logos_Penna-Project/azcuba.jpg";
 import minag from "./Logos_Penna-Project/minag.png";
 import sc from "./Logos_Penna-Project/comunales.png";
 import zdem from "./Logos_Penna-Project/zdem.png";
@@ -423,56 +421,56 @@ export const sections = [
 export const brandNews = [
   {
     title: "Eficiencia y calidad demostrada",
-    port_img:  news1 ,
+    port_img: news1,
     autor: "GESIME",
     fountain: "Cuba Plus Magazine",
     path: "https://www.cubaplusmagazine.com/es/negocios/empresa-industrial-ramon-pe%C3%B1a-eficiencia-calidad.html",
   },
   {
-    title: "Avalados por la experiencia",
-    port_img:  news2 ,
-    autor: "GESIME",
-    fountain: "Cuba Plus Magazine",
-    path: "https://www.cubaplusmagazine.com/es/cuba-industria/empresa-industrial-ramon-pe%C3%B1a-eficiencia-experiencia.html",
-  },
-  {
-    title: "Avances en la sustitución de importación y la exportación",
-    port_img:  news3 ,
-    autor: "Nayaren Rodríguez Socarrás",
-    fountain: "Tribuna de La Habana",
-    path: "https://www.tribuna.cu/capitalinas/2019-12-17/avances-en-la-sustitucion-de-importacion-y-la-exportacion",
-  },
-  {
     title: "Incrementa cooperación con la industria cubana",
-    port_img:  news4 ,
+    port_img: news4,
     autor: "Ledys Camacho Casado",
     fountain: "Opciones",
     path: "https://www.opciones.cu/ferias-y-eventos/2016-06-23/incrementa-cooperacion-con-la-industria-cubana",
   },
   {
+    title: "Avances en la sustitución de importación y la exportación",
+    port_img: news3,
+    autor: "Nayaren Rodríguez Socarrás",
+    fountain: "Tribuna de La Habana",
+    path: "https://www.tribuna.cu/capitalinas/2019-12-17/avances-en-la-sustitucion-de-importacion-y-la-exportacion",
+  },
+  {
+    title: "Avalados por la experiencia",
+    port_img: news2,
+    autor: "GESIME",
+    fountain: "Cuba Plus Magazine",
+    path: "https://www.cubaplusmagazine.com/es/cuba-industria/empresa-industrial-ramon-pe%C3%B1a-eficiencia-experiencia.html",
+  },
+  {
     title: "¡Pensar en Grande!",
-    port_img:  news5 ,
+    port_img: news5,
     autor: "Redacción Nacional",
     fountain: "Periódico Trabajadores",
     path: "https://www.trabajadores.cu/20141005/pensar-en-grande-2/",
   },
   {
     title: "Industria sideromecánica cubana se moderniza",
-    port_img: news6 ,
+    port_img: news6,
     autor: "Redacción ACN",
     fountain: "Periódico Adelante",
     path: "https://www.adelante.cu/index.php/es/noticias/noticias-de-cuba/25375-industria-sideromecanica-cubana-se-moderniza",
   },
   {
     title: "Tras los pasos de la industria cubana",
-    port_img:  news7 ,
+    port_img: news7,
     autor: "Alina",
     fountain: "Excelencias Cuba",
     path: "https://www.excelenciascuba.com/noticia/tras-los-pasos-de-la-industria-cubana",
   },
   {
     title: "IMECA sigue produciendo",
-    port_img:  news8 ,
+    port_img: news8,
     autor: "Myrla Pizarro de la Uz",
     fountain: "Diario El Artemiseño",
     path: "https://artemisadiario.cu/2020/01/imeca-sigue-produciendo/",
@@ -589,19 +587,39 @@ export const slogan = [
   },
 ];
 
+export const empresa = [
+  {
+    id: "1",
+    title: "Unidad Empresarial de Base Constructora de Equipos Mecánicos:",
+    content:
+      "Con más de seis décadas de experiencias posee un perfil de trabajo especializado en la producción de remolques, semirremolques, camas de volteo, camas plataformas, y otras producciones similares.",
+  },
+  {
+    id: "2",
+    title: "Unidad Empresarial de Base Industrial Guanabo:",
+    content:
+      "Fue creada en 1967 y está dirigida a la fabricación de equipos e implementos agrícolas, engranes, remolques y semirremolques, aplicaciones sobre camión y equipos de transporte de personal.",
+  },
+  {
+    id: "3",
+    title: "Unidad Empresarial de Base Industria Mecánica Caribe IMECA:",
+    content:
+      "Surgió en 1953 y se especializa en producciones de carretas cañeras, silo cosechadoras, hormigoneras portátiles y sobre camión, cargadores frontales y otros equipos para la cosecha, fertilización y fumigación en la agricultura.",
+  },
+  {
+    id: "4",
+    title: "MIPYME SOLDARAP:",
+    content:
+      "Es la primera micro, pequeña y mediana empresa estatal constituida en el Grupo Empresarial de la Industria Sideromecánica (GESIME). Brinda servicios de fabricación, reparación y modernización de equipos de soldar, tanto, máquinas automáticas, semiautomáticas como convencionales, de cualquier tipo, fabricante y modelo.",
+  },
+];
+
 export {
   productions,
-  about,
-  about2,
-  service,
   services1,
   services2,
   services3,
   services4,
-  maintenance,
-  pencil,
-  painting,
-  rocket,
   vector,
   s_vector,
   s_vector1,
@@ -609,10 +627,6 @@ export {
   brandimg,
   brandimg1,
   clients,
-  ecasa,
-  azcuba,
-  minag,
-  sc,
   zdem,
   navbar,
   homevector,

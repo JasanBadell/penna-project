@@ -1,12 +1,12 @@
 import React from "react";
 
-const SuscribeForm = (onEmailSent) => {
+const SuscribeForm = () => {
   return (
     <>
       <form
         action="https://formsubmit.co/c86893cdf7ab7889803213d0726c3ebe"
         method="POST"
-        className="my-8 flex flex-col "
+        className="my-4 lg:my-8 flex flex-col "
       >
         <div className="flex flex-col items-center text-center ">
           <div className="flex flex-col gap-4 items-center">
@@ -14,7 +14,7 @@ const SuscribeForm = (onEmailSent) => {
               type="email"
               name="email"
               placeholder="Correo electrónico"
-              className="px-4 py-2 border border-gray-300 rounded-md mb-2 sm:mb-0 sm:mr-2 focus:outline-none focus:ring-2 focus:ring-defaultBlue focus:border-transparent"
+              className="px-4 py-2 border border-gray-300 rounded-md lg:mb-2 sm:mb-0 sm:mr-2 focus:outline-none focus:ring-2 focus:ring-defaultBlue focus:border-transparent"
             />
 
             <button

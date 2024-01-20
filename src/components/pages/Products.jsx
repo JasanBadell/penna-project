@@ -45,7 +45,7 @@ const Products = () => {
           </p>
         </div>
         <ProductSection />
-        <div className="flex flex-col lg:hidden mb-64 lg:mb-20">
+        <div className="flex flex-col lg:hidden lg:mb-20">
           <div className="w-full lg:w-2/3">
             <img src={carruselimg} alt="" className="w-full" />
           </div>
@@ -68,20 +68,15 @@ const Products = () => {
           </div>
         </div>
         <div className="lg:flex hidden lg:flex-row mb-64 lg:mb-20">
-          {" "}
           <div className="w-full lg:w-2/3">
-            {" "}
-            <img src={carruselimg} alt="" className="" />{" "}
-          </div>{" "}
+            <img src={carruselimg} alt="" className="" />
+          </div>
           <div className="lg:w-1/3 w-screen">
-            {" "}
             <Carousel
               className="mt-2 lg:mt-16 ml-0 lg:-ml-44 bg-vector-3 overflow-x-hidden"
               autoplay
-              autoplayDelay={9000}
+              autoplayDelay={15000}
               loop
-              prevArrow={false}
-              nextArrow={false}
               navigation={false}
             >
               {clientopinion.map(({ empName, opinion }) => (
@@ -96,7 +91,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="mx-8 lg:mx-20 my-10 lg:my-20">
+        <div className="mx-8 lg:mx-20 mb-8 lg:my-20">
           <p className="text-1xl md:text-3xl font-extralight text-defaultBlue leading-snug">
             ASÍ NOS VALORAN!
           </p>

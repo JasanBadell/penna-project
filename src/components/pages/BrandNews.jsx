@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { brandNews, brands, brandimg, brandimg1 } from "../../assets/dummy";
 import Button from "../Button";
-import InstalsModal from "./InstalsModal";
+import InstalsModal from "../InstalsModal";
 
 const BrandNews = () => {
   const [showCertifications, setShowCertifications] = useState(false);
@@ -30,7 +30,7 @@ const BrandNews = () => {
         <div className="lg:grid lg:grid-cols-2 lg:gap-2 mx-8 lg:-mb-32">
           {brandNews.map(({ port_img, title, autor, fountain, path }) => (
             <div className="w-full lg:w-1/2 m-4">
-              <img src={port_img} alt=""/>
+              <img src={port_img} alt={title} />
               <h3 className="font-bold text-xl">{title}</h3>
               <p className="text-sm">Autor: {autor}</p>
               <p className="text-sm">Fuente: {fountain}</p>
@@ -64,7 +64,11 @@ const BrandNews = () => {
             en remolques, semirremolques y aplicaciones.
           </p>
         </div>
-        <img src={brandimg} alt="img" className="w-full lg:w-1/2" />
+        <img
+          src={brandimg}
+          alt="Imagen de remolque rojo"
+          className="w-full lg:w-1/2"
+        />
       </div>
       <div className="flex flex-col lg:flex-row">
         <div className="text-defaultBlue mt-10 flex flex-col items-start mx-8 lg:mx-20">
@@ -82,7 +86,14 @@ const BrandNews = () => {
             onClose={handleCloseCertifications}
           />
         </div>
-        <img src={brandimg1} alt="img" className="w-full lg:w-1/2" />
+        <div>
+          
+        </div>
+        <img
+          src={brandimg1}
+          alt="Imagen de un ranchon"
+          className="w-full lg:w-1/2"
+        />
       </div>
     </>
   );

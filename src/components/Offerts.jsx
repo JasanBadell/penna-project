@@ -34,19 +34,19 @@ const Offerts = () => {
   ];
   return (
     <>
-      <div className="lg:flex lg:flex-row grid grid-cols-2 sm:grid-cols-2 items-center lg:items-start justify-around gap-4 m-4 lg:m-20">
-        {service.map(({ logo, title, description, link }) => (
+      <div className="lg:flex lg:flex-row grid grid-cols-2 sm:grid-cols-2 items-start justify-start gap-4 m-4 lg:m-20">
+        {service.map(({ logo, title, link }) => (
           <Link
             to={link}
             spy={true}
             offset={-100}
             key={link}
-            className="lg:w-1/4 text-left rounded-xl flex flex-col justify-around"
+            className="lg:w-1/4 text-center lg:text-start rounded-xl flex flex-col justify-around"
           >
             <div className="mt-4 flex flex-col lg:flex-row items-center justify-start lg:items-start content-center">
               <img src={logo} alt="" width={60} className="mx-2" />
-              <div className="flex flex-col text-start">
-                <h3 className="text-defaultBlue  font-semibold text-lg lg:w-5/6">
+              <div className="flex flex-col text-center lg:text-start items-start lg:justify-start">
+                <h3 className="text-defaultBlue  font-semibold text-sm lg:text-lg lg:w-5/6">
                   {title}
                 </h3>
               </div>
