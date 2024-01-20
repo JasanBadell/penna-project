@@ -54,3 +54,9 @@ body {
     background-size: cover;
   }
 }
+
+.bg-suscribe {
+  background-image: url(/src/assets/BrandNews/img_06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

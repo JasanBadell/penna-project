@@ -81,31 +81,27 @@ const Subscription = ({ show, close }) => {
         className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur-sm z-30"
         onClick={handleOutsideClick}
       >
-        <div
-          ref={modalRef}
-          className="lg:w-1/2 w-5/6 bg-gray-200 p-4 rounded-md relative"
-        >
-          <div className="flex flex-col text-center items-center justify-center">
-            <h3 className="text-defaultBlue text-lg lg:text-2xl font-bold mt-4 lg:w-1/2">
-              ¡Bienvenido a Peña Empresa Industrial!
-            </h3>
-            <p className="text-xs lg:text-sm m-4">
-              Ya tienes un adelanto de quienes somos y cuáles son nuestros
-              horizontes. Si has llegado hasta aquí es porque no quieres perder
-              la pista de todo lo que acontece en nuestro entorno industrial.
-            </p>
-            <h2 className="text-defaultBlue text-lg lg:text-2xl font-extrabold">
-              ¡Suscríbete ya a nuestra agenda informativa!
-            </h2>
-            <SuscribeForm onEmailSent={handleEmailSent} />
-            <p className="text-xs lg:text-lg font-medium w-full lg:w-1/3">
-              Gracias por confiar y estar más cerca.
-            </p>
-            <img
-              src={Brand_Logo}
-              alt=""
-              className=" my-2 lg:my-4 w-1/3 lg:w-1/3"
-            />
+        <div className="bg-suscribe rounded-md flex justify-center w-2/4 items-center">
+          <div ref={modalRef} className="m-8 w-1/2 bg-gray-200 p-4 relative">
+            <div className="flex flex-col text-center items-center justify-center">
+              <h3 className="text-defaultBlue text-lg lg:text-xl font-bold mt-4">
+                ¡Bienvenido a Peña Empresa Industrial!
+              </h3>
+              <p className="text-xs lg:text-sm m-4 ">
+                Ya tienes un adelanto de quienes somos y cuáles son nuestros
+                horizontes. Si has llegado hasta aquí es porque no quieres
+                perder la pista de todo lo que acontece en nuestro entorno
+                industrial.
+              </p>
+              <h2 className="text-defaultBlue text-lg lg:text-xl font-extrabold">
+                ¡Suscríbete ya a nuestra agenda informativa!
+              </h2>
+              <SuscribeForm onEmailSent={handleEmailSent} />
+              <p className="text-xs lg:text-sm font-medium w-1/2">
+                Gracias por confiar y estar más cerca.
+              </p>
+              <img src={Brand_Logo} className=" my-2 w-1/3 lg:w-1/2"/>
+            </div>
           </div>
         </div>
       </div>

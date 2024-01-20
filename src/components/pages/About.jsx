@@ -67,8 +67,8 @@ const About = () => {
         </div>
         <div>
           <div className="hidden lg:w-full lg:flex md:flex-row-reverse items-center bg-defaultBlue -mb-8">
-            <img src={services1} alt="img" className="lg:w-1/2" />
-            <div className="mt-10 mx-4 lg:mx-20 ">
+            <img src={services1} alt="img" className="lg:w-2/3 lg:my-0" />
+            <div className="mt-10 mx-4 lg:mx-20">
               <div className="flex md:flex-col items-left justify-around gap-4">
                 <p className="text-2xl text-white">VANGUARDIA</p>
                 <h3 className="text-white font-extrabold text-5xl">

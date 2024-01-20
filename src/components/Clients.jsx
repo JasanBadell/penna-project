@@ -20,7 +20,7 @@ const Clients = () => {
               nacional.
             </p>
           </div>
-          <img src={clients} alt="img" className="lg:w-2/4 lg:mr-4 w-screen -mb-10 lg:-mb-20 z-10" />
+          <img src={clients} alt="img" className="lg:w-1/2 lg:mr-4 w-screen -mb-10 lg:-mb-20 z-10" />
         </div>
       </div>
       <div className="flex flex-col justify-center gap-8">
