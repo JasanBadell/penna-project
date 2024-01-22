@@ -39,7 +39,11 @@ const Home = () => {
               >
                 {homecarrusel.map(({ id, img }) => (
                   <div key={id} className="flex items-center justify-center">
-                    <img src={img} alt="Imagen de Carrusel" className="carrusel" />
+                    <img
+                      src={img}
+                      alt="Imagen de Carrusel"
+                      className="carrusel"
+                    />
                   </div>
                 ))}
               </Carousel>
@@ -53,7 +57,7 @@ const Home = () => {
             navigation={false}
             prevArrow={false}
             nextArrow={false}
-            className="w-1/3 lg:ml-80 lg:-mt-40 text-center"
+            className="w-1/2 lg:ml-96 lg:-mt-40 text-center"
           >
             {slogan.map(({ opinion }) => (
               <p

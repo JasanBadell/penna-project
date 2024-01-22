@@ -41,16 +41,15 @@ function BrandNew() {
         alt="Imagen de la noticia"
         className="w-full"
       />
-      <div className="flex  flex-col lg:flex-row place-items-start mx-32 my-8 text-defaultRed">
-        <p className="mx-4">Autor: {noticia.autor}</p>
-        <p className="mx-4">Fuente: {noticia.fountain}</p>
+      <div className="flex  flex-col lg:flex-row place-items-start lg:justify-between mx-8 lg:mx-32 my-4 lg:my-8 text-defaultRed">
+        <p className="lg:mx-4">Autor: {noticia.autor}</p>
+        <p className="lg:mx-4">Fuente: {noticia.fountain}</p>
       </div>
       <div>
-        <h3 className="text-4xl text-defaultBlue mx-8 lg:mx-20 font-extrabold ">
+        <h3 className="text-2xl lg:text-4xl text-defaultBlue mx-8 lg:mx-20 font-extrabold ">
           {noticia.description}
         </h3>
-
-        <div>
+        <div className="mx-8">
           <div>
             <p className="flex flex-col lg:flex-row lg:justify-between py-4 lg:p-space lg:mr-60 lg:ml-40 mb-2">
               {noticia.content1}

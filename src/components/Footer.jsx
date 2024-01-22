@@ -125,7 +125,7 @@ const Footer = () => {
           CONTACTO
         </h3>
         <div className="lg:flex lg:flex-col hidden justify-end lg:absolute lg:self-end lg:ml-96">
-          <h3 className="text-white lg:ml-32 lg:mt-8 mb-4 text-sm">
+          <h3 className="text-white lg:ml-32 lg:mt-10 lg:mb-2 text-sm">
             Sitio web creado por SALYAM SOLUCIONES DIGITALES
           </h3>
         </div>

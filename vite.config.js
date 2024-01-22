@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/penna-project/",
   build: { chunkSizeWarningLimit: 1600 },
+  server: {
+    historyApiFallback: true,
+  },
 });

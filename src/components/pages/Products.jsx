@@ -28,17 +28,17 @@ const Products = () => {
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.
           </p>
-          <p className="">
+          <p>
             En el año alcanzamos un surtido de más de 45 tipos de equipos, desde
             los más sencillos hasta los más complejos.
           </p>
-          <p className="">
+          <p>
             A partir de un proceso inversionista en el 2020, dos de nuestras
             industrias modernizaron su infraestructura tecnológica, permitiendo
             un incremento en las producciones, superior a los dos mil equipos de
             complejidad media, anualmente.
           </p>
-          <p className="lg:-mt-6">
+          <p>
             En la década de 1980 a 1990 la industria produjo como promedio anual
             mil 700 equipos y se cubrió el 83% de la demanda nacional en
             remolques, semirremolques y aplicaciones.
