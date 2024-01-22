@@ -25,7 +25,7 @@ const News = () => {
               .slice(0, 4)
               .map(({ port_img, title, autor, fountain, path }) => (
                 <div className="m-4">
-                  <img src={port_img} alt="" />
+                  <img src={port_img} alt={`Imagen para ${title}`} />
                   <h3 className="font-bold text-xl">{title}</h3>
                   <p className="text-sm">Autor: {autor}</p>
                   <p className="text-sm">Fuente: {fountain}</p>

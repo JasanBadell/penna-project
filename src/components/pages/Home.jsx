@@ -53,7 +53,7 @@ const Home = () => {
             navigation={false}
             prevArrow={false}
             nextArrow={false}
-            className="w-1/2 lg:ml-80 lg:-mt-40 text-center"
+            className="w-1/3 lg:ml-80 lg:-mt-40 text-center"
           >
             {slogan.map(({ opinion }) => (
               <p

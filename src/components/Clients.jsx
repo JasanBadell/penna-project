@@ -20,7 +20,11 @@ const Clients = () => {
               nacional.
             </p>
           </div>
-          <img src={clients} alt="img" className="lg:w-1/2 lg:mr-4 w-screen -mb-10 lg:-mb-20 z-10" />
+          <img
+            src={clients}
+            alt="img"
+            className="lg:w-1/2 lg:mr-4 w-screen -mb-10 lg:-mb-20 z-10"
+          />
         </div>
       </div>
       <div className="flex flex-col justify-center gap-8">
@@ -41,7 +45,7 @@ const Clients = () => {
               <img
                 className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 logo"
                 src={logo}
-                alt="img"
+                alt={`Logotipo de ${title}`}
               />
               <h4 className="font-bold my-2">{title}</h4>
               <p className="text-sm ">{description}</p>

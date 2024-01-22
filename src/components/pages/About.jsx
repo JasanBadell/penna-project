@@ -24,7 +24,7 @@ const About = () => {
         <div className=" pt-0 lg:pt-36">
           <Banner />
         </div>
-        <div className="flex  flex-col place-items-start lg:ml-96 mt-10 lg:-mt-8 mb-8">
+        <div className="flex  flex-col lg:px-8 place-items-start lg:ml-96 mt-10 lg:-mt-16 mb-8 lg:mb-4">
           <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-20 text-defaultBlue leading-snug uppercase">
             Líderes en la fabricación de
           </p>
@@ -67,7 +67,11 @@ const About = () => {
         </div>
         <div>
           <div className="hidden lg:w-full lg:flex md:flex-row-reverse items-center bg-defaultBlue -mb-8">
-            <img src={services1} alt="img" className="lg:w-2/3 lg:my-0" />
+            <img
+              src={services1}
+              alt="Imagen de Soldador"
+              className="lg:w-2/3 lg:my-0"
+            />
             <div className="mt-10 mx-4 lg:mx-20">
               <div className="flex md:flex-col items-left justify-around gap-4">
                 <p className="text-2xl text-white">VANGUARDIA</p>

@@ -9,7 +9,7 @@ const Banner = () => {
           <img src={vector} alt="imagen" className="lg:mt-16 lg:w-full w-0" />
         </div>
         <div className="w-full lg:w-2/3 -mt-12 lg:-ml-10">
-          <img src={imgCarrusel_1} alt="" className="" />
+          <img src={imgCarrusel_1} alt="Imagen de Soldador" className="" />
         </div>
       </div>
     </>

@@ -23,22 +23,22 @@ const Products = () => {
             <img src={productions} alt="" className="mr-0 lg:w-auto w-0" />
           </div>
         </div>
-        <div className="mx-8 lg:mx-60 my-10 gap-4 lg:grid lg:grid-cols-2">
-          <p className="mt-4">
+        <div className="mx-8 lg:mx-60 my-10 gap-2 lg:grid lg:grid-cols-2">
+          <p className="mb-2">
             Nuestra línea de producciones se realiza con alto nivel de
             integración tecnológica y suficiente experiencia del capital humano.
           </p>
-          <p className="mt-4">
+          <p className="">
             En el año alcanzamos un surtido de más de 45 tipos de equipos, desde
             los más sencillos hasta los más complejos.
           </p>
-          <p className="mt-4">
+          <p className="">
             A partir de un proceso inversionista en el 2020, dos de nuestras
             industrias modernizaron su infraestructura tecnológica, permitiendo
             un incremento en las producciones, superior a los dos mil equipos de
             complejidad media, anualmente.
           </p>
-          <p className="mt-4">
+          <p className="lg:-mt-6">
             En la década de 1980 a 1990 la industria produjo como promedio anual
             mil 700 equipos y se cubrió el 83% de la demanda nacional en
             remolques, semirremolques y aplicaciones.

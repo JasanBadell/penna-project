@@ -46,9 +46,9 @@ const Search = () => {
       <form className="lg:flex p-5 bg-defaultBlue">
         <div className="flex flex-col gap-4 relative">
           <div className="flex border rounded-lg">
-            <button className="flex w-10 items-center justify-center rounded-xl border-white bg-defaultBlue">
+            <div className="flex w-10 items-center justify-center rounded-xl border-white bg-defaultBlue">
               <AiOutlineSearch color="white" />
-            </button>
+            </div>
             <input
               type="search"
               placeholder="Buscar"

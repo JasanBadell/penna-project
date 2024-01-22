@@ -126,7 +126,7 @@ const Navbar = () => {
             <Link to="/penna-project/" className="flex items-center space-x-3">
               <img
                 src={brandLogo}
-                alt="Brand Logo"
+                alt="Logo Empresa Industrial Ramon Peña"
                 className="lg:inline-block w-auto my-4 mx-4 lg:mx-20"
               />
             </Link>

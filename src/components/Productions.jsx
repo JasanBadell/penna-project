@@ -31,7 +31,7 @@ const Productions = () => {
                 <Card className="mx-8 mb-12 rounded-none shadow-2xl">
                   <div className="flex flex-col items-center justify-center hover:">
                     <div className="">
-                      <img src={img} alt="image 1" />
+                      <img src={img} alt={title} />
                     </div>
                     <div className="m-5">
                       <h3 className="text-base text-left font-semibold uppercase mb-2">

@@ -9,6 +9,7 @@ import Products from "./components/pages/Products";
 import BrandNews from "./components/pages/BrandNews";
 import MoreInfoProduct from "./components/MoreInfoProduct";
 import { products } from "./assets/dummy";
+import BrandNew from "./components/pages/BrandNew";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/penna-project/products" element={<Products />} />
         <Route path="/penna-project/services" element={<Services />} />
         <Route path="/penna-project/brandnews" element={<BrandNews />} />
+        <Route path="/penna-project/brandnew/:id" element={<BrandNew />} />
         <Route
           path={`/penna-project/moreinfoproduct/${products.id}`}
           element={<MoreInfoProduct />}

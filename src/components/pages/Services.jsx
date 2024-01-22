@@ -25,8 +25,8 @@ const Services = () => {
         <div className="pt-0 lg:pt-36">
           <Banner />
         </div>
-        <div className="flex  flex-col lg:place-items-center place-items-start lg:ml-20 mt-10 lg:-mt-8 mb-8">
-          <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-0 text-defaultBlue leading-snug uppercase">
+        <div className="flex  flex-col lg:px-8 place-items-start lg:ml-96 mt-10 lg:-mt-16 mb-8 lg:mb-4">
+          <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-20 text-defaultBlue leading-snug uppercase">
             OPORTUNIDADES
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug mx-8 lg:ml-20 uppercase">

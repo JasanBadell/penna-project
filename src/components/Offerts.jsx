@@ -44,7 +44,7 @@ const Offerts = () => {
             className="lg:w-1/4 text-center lg:text-start rounded-xl flex flex-col justify-around"
           >
             <div className="mt-4 flex flex-col lg:flex-row items-center justify-start lg:items-start content-center">
-              <img src={logo} alt="" width={60} className="mx-2" />
+              <img src={logo} alt={title} width={60} className="mx-2" />
               <div className="flex flex-col text-center lg:text-start items-start lg:justify-start">
                 <h3 className="text-defaultBlue  font-semibold text-sm lg:text-lg lg:w-5/6">
                   {title}

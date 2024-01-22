@@ -4,7 +4,7 @@ import { certificated } from "../assets/dummy";
 import ProductModal from "./ProductModal";
 import Button from "./Button";
 import InfoModal from "./InfoModal";
-import { FaTelegram, FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -49,7 +49,7 @@ const Footer = () => {
                 <img
                   className="col-span-2 max-h-32 w-full object-contain lg:col-span-1 items-center mb-4"
                   src={logo}
-                  alt={name}
+                  alt={`Logotipo de ${name}`}
                 />
                 <p className="text-sm text-white">{description}</p>
               </div>
@@ -125,7 +125,7 @@ const Footer = () => {
           CONTACTO
         </h3>
         <div className="lg:flex lg:flex-col hidden justify-end lg:absolute lg:self-end lg:ml-96">
-          <h3 className="bg-defaultBlue text-white lg:ml-36 lg:my-4 text-sm">
+          <h3 className="text-white lg:ml-32 lg:mt-8 mb-4 text-sm">
             Sitio web creado por SALYAM SOLUCIONES DIGITALES
           </h3>
         </div>

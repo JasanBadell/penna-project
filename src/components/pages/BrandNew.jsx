@@ -1,11 +1,12 @@
-/* eslint-disable react/jsx-key */
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { brandNews, brands, brandimg, brandimg1 } from "../../assets/dummy";
+import { useParams } from "react-router-dom";
+import { brandNews, brandimg, brandimg1, brands } from "../../assets/dummy";
 import Button from "../Button";
 import InstalsModal from "../InstalsModal";
+import { useState } from "react";
 
-const BrandNews = () => {
+function BrandNew() {
+  const { id } = useParams();
+
   const [showCertifications, setShowCertifications] = useState(false);
 
   const handleShowCertifications = () => {
@@ -16,38 +17,54 @@ const BrandNews = () => {
     setShowCertifications(false);
   };
 
+  // Buscar la noticia correspondiente en el arreglo brandnews
+  const noticia = brandNews.find((noticia) => noticia.brandnewId === id);
+
+  if (!noticia) {
+    return <div>Noticia no encontrada</div>;
+  }
+
   return (
     <>
       <div className="overflow-hidden bg-white mt-32 lg:mt-52 ml-0 lg:ml-20 ">
         <div className="flex  flex-col place-items-start ml-0 mb-8">
           <p className="text-1xl lg:text-3xl font-extralight mx-8 lg:mx-0 text-defaultBlue leading-snug uppercase">
-            LA MEJOR FORMA DE ESTAR,
+            nuestras noticias,
           </p>
           <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug lg:mx-0 mx-8 uppercase">
-            NOTICIAS
+            {noticia.title}
           </h3>
         </div>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-2 mx-8 lg:-mb-32">
-          {brandNews.map(({ port_img, title, autor, fountain, path }) => (
-            <div className="w-full lg:w-1/2 m-4">
-              <img src={port_img} alt={title} />
-              <h3 className="font-bold text-xl">{title}</h3>
-              <p className="text-sm">Autor: {autor}</p>
-              <p className="text-sm">Fuente: {fountain}</p>
-              <button className="my-4 border border-black rounded hover:bg-defaultBlue transition-all hover:text-white hover:border-defaultBlue ease-out duration-300">
-                <Link
-                  to={path}
-                  target="_blank"
-                  className="text-sm items-center m-2 space-y-68"
-                >
-                  Ver noticia
-                </Link>
-              </button>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-row-reverse items-start lg:items-end">
-          <img src={brands} alt="img" className="lg:w-1/4 w-0" />
+      </div>
+      <img
+        src={noticia.port_img}
+        alt="Imagen de la noticia"
+        className="w-full"
+      />
+      <div className="flex  flex-col lg:flex-row place-items-start mx-32 my-8 text-defaultRed">
+        <p className="mx-4">Autor: {noticia.autor}</p>
+        <p className="mx-4">Fuente: {noticia.fountain}</p>
+      </div>
+      <div>
+        <h3 className="text-4xl text-defaultBlue mx-8 lg:mx-20 font-extrabold ">
+          {noticia.description}
+        </h3>
+
+        <div>
+          <div>
+            <p className="flex flex-col lg:flex-row lg:justify-between py-4 lg:p-space lg:mr-60 lg:ml-40 mb-2">
+              {noticia.content1}
+            </p>
+            <p className="flex flex-col lg:flex-row lg:justify-between py-4 lg:p-space lg:mr-60 lg:ml-40 mb-6">
+              {noticia.content2}
+            </p>
+            <p className="flex flex-col lg:flex-row lg:justify-between py-4 lg:p-space lg:mr-60 lg:ml-40 mb-6">
+              {noticia.content3}
+            </p>
+          </div>
+          <div className="flex flex-row-reverse items-start lg:items-end lg:-mt-32">
+            <img src={brands} alt="img" className="lg:w-1/4 w-0" />
+          </div>
         </div>
       </div>
       <div className="bg-defaultBlue flex flex-col lg:flex-row-reverse items-center">
@@ -95,6 +112,6 @@ const BrandNews = () => {
       </div>
     </>
   );
-};
+}
 
-export default BrandNews;
+export default BrandNew;
