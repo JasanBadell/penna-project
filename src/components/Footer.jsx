@@ -63,13 +63,13 @@ const Footer = () => {
             CONTACTO
           </h3>
           <div className="w-4/6 lg:hidden ">
-            <h3 className="bg-defaultBlue text-white mx-4 mt-10 mb-4 text-sm">
+            <h3 className="bg-defaultBlue text-white mx-8 mt-10 mb-4 text-sm">
               Sitio web creado por SALYAM SOLUCIONES DIGITALES
             </h3>
           </div>
           <img src={footer} alt="footer" className="m-0 w-auto items-start" />
         </div>
-        <div className="flex flex-col lg:flex-row mx-4 lg:mx-10 mt-20 gap-8">
+        <div className="flex flex-col lg:flex-row mx-8 lg:mx-10 mt-20 gap-8">
           <div className="text-white text-2xl space-y-1 w-full lg:w-1/2">
             <h4 className="text-sm">DIRECCIÓN:</h4>
             <p className="text-xs text-gray-300 font-bold">

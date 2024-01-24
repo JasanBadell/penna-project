@@ -27,7 +27,7 @@ const BrandNews = () => {
             NOTICIAS
           </h3>
         </div>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-2 mx-8 lg:-mb-32">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-2 ml-4 mr-8 lg:mx-8 lg:-mb-32">
           {brandNews.map(({ port_img, title, autor, fountain, path }) => (
             <div className="w-full lg:w-1/2 m-4">
               <img src={port_img} alt={title} />

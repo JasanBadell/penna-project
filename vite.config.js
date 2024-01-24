@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/penna-project/",
+  base: "https://JasanBadell.github.io/penna-project/",
   build: { chunkSizeWarningLimit: 1600 },
   server: {
     historyApiFallback: true,
