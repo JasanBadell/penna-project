@@ -493,6 +493,25 @@ export const brandNews = [
   },
 ];
 
+export const bannerContent = [
+  {
+    title: "Conoce sobre Peña",
+    slogan: "POLO PRODUCTIVO INDUSTRIAL",
+    frase:
+      "Nuestro equipo de trabajo lo conforman tres unidades empresariales y una mipyme",
+    text: "Líderes en la fabricación de",
+    text1: "remolques y semirremolques en Cuba",
+  },
+  {
+    title: "Servicios",
+    slogan: "POLO PRODUCTIVO INDUSTRIAL",
+    frase:
+      "Nuestro equipo de trabajo lo conforman tres unidades empresariales y una mipyme",
+    text: "OPORTUNIDADES",
+    text1: "NUESTROS SERVICIOS",
+  },
+];
+
 export const client = [
   {
     id: "1",
@@ -555,11 +574,20 @@ export const certificated = [
   },
 ];
 
+export const phone = [
+  { idPhone: "1", number: "+ 7 797 47 77", ext: "100" },
+  { idPhone: "2", number: "", ext: "101" },
+];
+export const mail = [
+  { idMail: "1", email: "comercial@cem.cu" },
+  { idMail: "2", email: "info@cem.cu" },
+];
+
 export const navItems = [
-  { link: "Acerca de nosotros", path: "/penna-project/about" },
-  { link: "Servicios", path: "/penna-project/services" },
-  { link: "Producciones", path: "/penna-project/products" },
-  { link: "Noticias", path: "/penna-project/brandnews" },
+  { id: "1", link: "Acerca de nosotros", path: "/penna-project/about" },
+  { id: "2", link: "Servicios", path: "/penna-project/services" },
+  { id: "3", link: "Producciones", path: "/penna-project/products" },
+  { id: "4", link: "Noticias", path: "/penna-project/brandnews" },
 ];
 
 export const clientopinion = [

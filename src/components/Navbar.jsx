@@ -4,14 +4,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaSquareXTwitter, FaBars } from "react-icons/fa6";
-import { CiMail } from "react-icons/ci";
-import { MdOutlineLocalPhone, MdOutlineClose } from "react-icons/md";
-
+import { MdOutlineClose } from "react-icons/md";
 import brandLogo from "../assets/Logos_Penna-Project/Brand_Logo.png";
-import navbarImage from "../assets/NavBar_Red.png";
 import Search from "./Search";
 import { navItems } from "../assets/dummy";
 import Suscription from "./Suscription";
+import Contact from "./Contact";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,10 +53,6 @@ const Navbar = () => {
       document.removeEventListener("click", handleClick);
     };
   }, [isMenuOpen]);
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -153,25 +147,7 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-              <div className="hidden lg:flex flex-col text-xs">
-                <p>
-                  <MdOutlineLocalPhone className="h-6 w-6 text-defaultBlue inline" />
-                  TELÉFONO:
-                </p>
-                <p>+53 7 797 47 77 y +53 7 797 79 13</p>
-                <p>
-                  <CiMail className="h-6 w-6 text-defaultBlue inline" />
-                  EMAIL:
-                </p>
-                <p>peñaempresaindustrial@gmail.com</p>
-              </div>
-              <div className="hidden lg:flex lg:justify-end">
-                <img
-                  src={navbarImage}
-                  alt="triangulo rojo"
-                  className="w-8/12"
-                />
-              </div>
+              <Contact />
             </div>
             <div className="lg:hidden flex">
               <button
@@ -192,11 +168,11 @@ const Navbar = () => {
             }`}
           >
             <ul className="lg:flex lg:items-strech lg:justify-between hidden z-20 ">
-              {navItems.map(({ link, path }) => (
+              {navItems.map(({ id, link, path }) => (
                 <button className="hover:bg-defaultBlue text-defaultBlue hover:text-white transition-all duration-300 ease-in">
                   <Link
                     to={path}
-                    key={path}
+                    key={id}
                     className="block text-xxl  mx-10 first:font-medium"
                   >
                     {link}

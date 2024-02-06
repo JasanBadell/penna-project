@@ -30,9 +30,9 @@ const Footer = () => {
   return (
     <>
       <div className="bg-Gray">
-        <div className="container mx-auto px-4 pt-20 lg:px-20">
+        <div className="container mx-auto px-8 pt-10 lg:pt-20 lg:px-20">
           <div className="flex flex-col lg:flex-row items-center justify-between">
-            <h3 className="text-3xl md:text-5xl font-extrabold text-white leading-snug">
+            <h3 className="text-2xl md:text-5xl font-extrabold text-white leading-snug">
               CERTIFICACIONES
             </h3>
             <div className="text-white" onClick={handleShowCertifications}>

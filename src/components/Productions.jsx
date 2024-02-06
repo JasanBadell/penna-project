@@ -26,7 +26,7 @@ const Productions = () => {
         <Tabs />
         <Carousel className="flex h-auto w-full lg:hidden" loop autoplay>
           {products.slice(0, 8).map(({ img, title, description }) => (
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1" key={title}>
               <div className="flex flex-row items-center justify-between">
                 <Card className="mx-8 mb-12 rounded-none shadow-2xl">
                   <div className="flex flex-col items-center justify-center hover:">

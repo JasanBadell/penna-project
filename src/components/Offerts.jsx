@@ -40,7 +40,7 @@ const Offerts = () => {
             to={link}
             spy={true}
             offset={-100}
-            key={link}
+            key={title}
             className="lg:w-1/4 text-center lg:text-start rounded-xl flex flex-col justify-around"
           >
             <div className="mt-4 flex flex-col lg:flex-row items-center justify-start lg:items-start content-center">

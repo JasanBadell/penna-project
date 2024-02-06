@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <ScrollToTop /> {/* Agrega el componente ScrollToTop aquí */}
+      <ScrollToTop />
       <Routes>
         <Route path="/penna-project/" element={<Home />} />
         <Route path="/penna-project/about" element={<About />} />

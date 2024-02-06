@@ -86,7 +86,6 @@ const BrandNews = () => {
             onClose={handleCloseCertifications}
           />
         </div>
-        <div></div>
         <img
           src={brandimg1}
           alt="Imagen de un ranchon"

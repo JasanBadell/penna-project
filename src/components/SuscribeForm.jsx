@@ -30,35 +30,6 @@ const SuscribeForm = () => {
     validateEmail();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    validateEmail();
-
-    // Verifica si hay errores de validación
-    if (Object.keys(errors).length === 0) {
-      const submittedEmails =
-        JSON.parse(localStorage.getItem("submittedEmails")) || [];
-
-      if (submittedEmails.includes(email)) {
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          email: "Este correo electrónico ya ha sido enviado anteriormente",
-        }));
-      } else {
-        // Agrega el correo electrónico a los enviados previamente
-        submittedEmails.push(email);
-        localStorage.setItem(
-          "submittedEmails",
-          JSON.stringify(submittedEmails)
-        );
-
-        // Envía el formulario
-        e.target.submit();
-      }
-    }
-  };
-
   return (
     <>
       <form

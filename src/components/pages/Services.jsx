@@ -1,39 +1,13 @@
-/* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable react/jsx-key */
 import React from "react";
-import { sections } from "../../assets/dummy";
-import Clients from "../Clients";
+import { bannerContent, sections } from "../../assets/dummy";
 import Banner from "../Banner";
-import "../../App.css";
+import Clients from "../Clients";
 
 const Services = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white flex flex-col lg:ml-20">
-        <div className="lg:absolute lg:bg-transparent bg-vector-1 lg:mt-60 mt-10 w-screen lg:w-1/3 lg:mx-4 ml-0 z-20">
-          <p className="text-2xl lg:text-xl mx-8 lg:ml-16 text-defaultBlue mt-16 lg:mt-10">
-            Servicios
-          </p>
-          <h3 className="text-4xl text-defaultBlue mx-8 lg:ml-16 font-extrabold lg:w-1/2 ">
-            POLO PRODUCTIVO INDUSTRIAL
-          </h3>
-          <p className="text-sm ml-8 lg:ml-16 lg:text-lg w-1/2 lg:w-1/2 mb-12">
-            Nuestro equipo de trabajo lo conforman tres unidades empresariales y
-            una mipyme
-          </p>
-        </div>
-        <div className="pt-0 lg:pt-36">
-          <Banner />
-        </div>
-        <div className="flex  flex-col lg:px-8 place-items-start lg:ml-96 mt-10 lg:-mt-16 mb-8 lg:mb-4">
-          <p className="text-1xl md:text-3xl font-extralight mx-8 lg:mx-20 text-defaultBlue leading-snug uppercase">
-            OPORTUNIDADES
-          </p>
-          <h3 className="text-3xl md:text-5xl font-extrabold text-defaultBlue leading-snug mx-8 lg:ml-20 uppercase">
-            NUESTROS SERVICIOS
-          </h3>
-        </div>
-      </div>
+      <Banner content={bannerContent[1]} />
       <div className="lg:mx-60 mx-4 lg:my-10 gap-4 flex flex-col lg:grid lg:grid-cols-2">
         <div className="grid gap-4 ">
           <p className="mt-4">
@@ -86,7 +60,7 @@ const Services = () => {
                 </h3>
                 <img
                   src={logo}
-                  alt=""
+                  alt={title}
                   width={100}
                   className="w-1/4 lg:w-1/4 m-4 lg:m-10"
                 />

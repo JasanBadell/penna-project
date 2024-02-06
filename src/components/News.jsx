@@ -8,7 +8,7 @@ const News = () => {
   return (
     <>
       <div className="my-12 flex flex-col ">
-        <div className=" flex flex-col lg:flex-row justify-between m-4 lg:mx-20">
+        <div className=" flex flex-col lg:flex-row justify-between mx-8 lg:mx-20">
           <div>
             <p className="text-xl md:text-2xl font-extralight text-defaultBlue leading-snug">
               NO PIERDAS LA PISTA
@@ -24,7 +24,7 @@ const News = () => {
             {brandNews
               .slice(0, 4)
               .map(({ port_img, title, autor, fountain, path }) => (
-                <div className="m-4">
+                <div className="m-4" key={title}>
                   <img src={port_img} alt={`Imagen para ${title}`} />
                   <h3 className="font-bold text-xl">{title}</h3>
                   <p className="text-sm">Autor: {autor}</p>
