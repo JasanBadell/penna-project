@@ -6,6 +6,7 @@ import Button from "./Button";
 import InfoModal from "./InfoModal";
 import { FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Contact from "./Contact";
 
 const Footer = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -69,7 +70,7 @@ const Footer = () => {
           </div>
           <img src={footer} alt="footer" className="m-0 w-auto items-start" />
         </div>
-        <div className="flex flex-col lg:flex-row mx-8 lg:mx-10 mt-20 gap-8">
+        <div className="flex flex-col lg:flex-row mx-8 lg:mx-10 mt-14 gap-8">
           <div className="text-white text-2xl space-y-1 w-full lg:w-1/2">
             <h4 className="text-sm">DIRECCIÓN:</h4>
             <p className="text-xs text-gray-300 font-bold">
@@ -93,12 +94,16 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-white text-2xl space-y-1 w-full lg:w-1/4">
-            <h4 className="text-sm">TELÉFONOS Y CORREO:</h4>
-            <p className="text-xs text-gray-300">+53 7 797 47 77</p>
-            <p className="text-xs text-gray-300">+53 7 797 79 13</p>
+            <h4 className="text-sm">TELÉFONOS Y CORREOS:</h4>
             <p className="text-xs text-gray-300">
-              peñaempresaindustrial@gmail.com
+              +53 7 797 47 77 extensión: 100
             </p>
+            <p className="text-xs text-gray-300">
+              +53 7 797 47 77 extensión: 101
+            </p>
+            <h5 className="text-sm">Correos:</h5>
+            <p className="text-xs text-gray-300">info@cem.cu</p>
+            <p className="text-xs text-gray-300">comercial@cem.cu</p>
             <p className="text-sm text pt-2">VISÍTANOS EN:</p>
             <div className="flex flex-row gap-2">
               <Link to="">
@@ -109,6 +114,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+
           <div className="text-white text-left space-y-4">
             <p className="text-sm">COMUNÍCATE CON NOSOTROS</p>
             <button className="border rounded hover:bg-white transition-all hover:text-defaultBlue hover:border-defaultBlue ease-out duration-300">
