@@ -3,7 +3,13 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaSquareXTwitter, FaBars } from "react-icons/fa6";
+import {
+  FaSquareXTwitter,
+  FaBars,
+  FaSquareInstagram,
+  FaSquareYoutube,
+  FaSquareFacebook,
+} from "react-icons/fa6";
 import { MdOutlineClose } from "react-icons/md";
 import brandLogo from "../assets/Logos_Penna-Project/Brand_Logo.png";
 import Search from "./Search";
@@ -139,11 +145,17 @@ const Navbar = () => {
                   CONTÁCTENOS
                 </p>
                 <div className="hidden lg:flex flex-row items-center justify-center my-2 gap-3">
-                  <Link to="">
-                    <FaFacebook className="h-6 w-6 text-defaultBlue" />
+                  <Link to="https://www.facebook.com/ramonpeña">
+                    <FaSquareFacebook className="h-6 w-6 text-defaultBlue" />
                   </Link>
-                  <Link to="">
+                  <Link to="https://twitter.com/ramonpeña">
                     <FaSquareXTwitter className="h-6 w-6 text-defaultBlue" />
+                  </Link>
+                  <Link to="https://www.youtube.com/@ramonpeña">
+                    <FaSquareYoutube className="h-6 w-6 text-defaultBlue" />
+                  </Link>
+                  <Link to="https://www.instagram.com/ramonpeña/">
+                    <FaSquareInstagram className="h-6 w-6 text-defaultBlue" />
                   </Link>
                 </div>
               </div>

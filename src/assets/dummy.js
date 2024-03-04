@@ -475,22 +475,22 @@ export const brandNews = [
     fountain: "Diario El Artemiseño",
     path: "https://artemisadiario.cu/2020/01/imeca-sigue-produciendo/",
   },
-  {
-    brandnewId: "445",
-    title: "Esta es una noticia de prueba",
-    port_img: news1,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
-    content1:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
-    content2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
-    content3:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
-    autor: "Julio Jasan Badell Argudin",
-    fountain: "SALYAM",
-    path: "/penna-project/brandnew/445",
-  },
+  // {
+  //   //   brandnewId: "445",
+  //   //   title: "Esta es una noticia de prueba",
+  //   //   port_img: news1,
+  //   //   description:
+  //   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
+  //   //   content1:
+  //   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
+  //   //   content2:
+  //   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
+  //   //   content3:
+  //   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum quam asperiores numquam porro doloremque vero, saepe hic, voluptatem dolorum quas atque vel aliquam id obcaecati modi impedit quisquam ipsam!",
+  //   //   autor: "Julio Jasan Badell Argudin",
+  //   //   fountain: "SALYAM",
+  //   //   path: "/penna-project/brandnew/445",
+  // },
 ];
 
 export const bannerContent = [

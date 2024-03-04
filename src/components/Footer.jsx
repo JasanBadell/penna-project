@@ -4,7 +4,12 @@ import { certificated } from "../assets/dummy";
 import ProductModal from "./ProductModal";
 import Button from "./Button";
 import InfoModal from "./InfoModal";
-import { FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
+import {
+  FaSquareFacebook,
+  FaSquareInstagram,
+  FaSquareXTwitter,
+  FaSquareYoutube,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Contact from "./Contact";
 
@@ -106,11 +111,17 @@ const Footer = () => {
             <p className="text-xs text-gray-300">comercial@cem.cu</p>
             <p className="text-sm text pt-2">VISÍTANOS EN:</p>
             <div className="flex flex-row gap-2">
-              <Link to="">
-                <FaFacebook />
+              <Link to="https://www.facebook.com/ramonpeña">
+                <FaSquareFacebook />
               </Link>
-              <Link to="">
+              <Link to="https://twitter.com/ramonpeña">
                 <FaSquareXTwitter />
+              </Link>
+              <Link to="https://www.youtube.com/@ramonpeña">
+                <FaSquareYoutube />
+              </Link>
+              <Link to="https://www.instagram.com/ramonpeña/">
+                <FaSquareInstagram />
               </Link>
             </div>
           </div>
