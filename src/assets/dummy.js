@@ -584,10 +584,10 @@ export const mail = [
 ];
 
 export const navItems = [
-  { id: "1", link: "Acerca de nosotros", path: "/penna-project/about" },
-  { id: "2", link: "Servicios", path: "/penna-project/services" },
-  { id: "3", link: "Producciones", path: "/penna-project/products" },
-  { id: "4", link: "Noticias", path: "/penna-project/brandnews" },
+  { id: "1", link: "Acerca de nosotros", path: "/about" },
+  { id: "2", link: "Servicios", path: "/services" },
+  { id: "3", link: "Producciones", path: "/products" },
+  { id: "4", link: "Noticias", path: "/brandnews" },
 ];
 
 export const clientopinion = [

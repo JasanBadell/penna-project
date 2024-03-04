@@ -17,17 +17,16 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/penna-project/" element={<Home />} />
-        <Route path="/penna-project/about" element={<About />} />
-        <Route path="/penna-project/products" element={<Products />} />
-        <Route path="/penna-project/services" element={<Services />} />
-        <Route path="/penna-project/brandnews" element={<BrandNews />} />
-        <Route path="/penna-project/brandnew/:id" element={<BrandNew />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/brandnews" element={<BrandNews />} />
+        <Route path="/brandnew/:id" element={<BrandNew />} />
         <Route
-          path={`/penna-project/moreinfoproduct/${products.id}`}
+          path={`/moreinfoproduct/${products.id}`}
           element={<MoreInfoProduct />}
         />
-        {/* <Route path={products.path} element={<Products />} /> */}
       </Routes>
       <Footer />
     </>

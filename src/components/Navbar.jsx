@@ -123,7 +123,7 @@ const Navbar = () => {
       >
         <nav>
           <div className="flex items-center justify-between shadow-lg">
-            <Link to="/penna-project/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
               <img
                 src={brandLogo}
                 alt="Logo Empresa Industrial Ramon Peña"

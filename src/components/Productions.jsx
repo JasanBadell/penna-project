@@ -19,7 +19,7 @@ const Productions = () => {
             </h3>
           </div>
           <div className="lg:mt-8">
-            <Button to="/penna-project/products" />
+            <Button to="/products" />
           </div>
           <img src={productions} alt="" className="lg:w-1/4 hidden" />
         </div>

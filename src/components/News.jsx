@@ -17,7 +17,7 @@ const News = () => {
               NOVEDADES
             </h3>
           </div>
-          <Button to="/penna-project/brandnews" />
+          <Button to="/brandnews" />
         </div>
         <div className="mx-4 mb-4 lg:mx-20">
           <div className=" mt-4 lg:mt-20 flex flex-col lg:grid lg:grid-cols-4 lg:gap-2 text-xxl first:font-medium items-start lg:items-start justify-evenly">
